@@ -1,12 +1,49 @@
 /*Layout*/
+
+/*general site layout*/
 .l-navbar {}
 .l-droplet-icon {}
 
+/*Section-specific layout*/
+.l-pricing-tables {}
+
 
 /*Presentation*/
-body {}
+/*general site presentation*/
+body { /*default font white helvetica*/ }
+body .divet { /*default white*/ }
+
+.p-title-line {}
+
+h1 .l-title { /*default white*/ }
+h2 .l-title { /*default white*/ }
+
+/*Section-specific presentation*/
+
+.p-home {}
 .p-droplet-icon {}
 .p-home {}
 .p-home u{
   color: orange;
 }
+
+.p-services {}
+.p-services .p-divet {
+  color:;
+}
+.p-services .p-pricing-tables {}
+.p-services .p-pricing-tables:first-child {}
+.p-services .p-pricing-tables:nth-child(2) {}
+.p-services .p-pricing-tables:last-child {}
+
+
+
+
+
+
+
+
+
+
+reserve for black
+.p-services .p-title-line {}
