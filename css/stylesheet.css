@@ -1,4 +1,6 @@
 /*Layout*/
+<meta name="viewport" content="width=device-width" />
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -75,9 +77,6 @@ h2 .l-title { /*default white*/ }
   border-top: 20px solid white;
 }
 
-
-
-
-
-reserve for black
-.p-services .p-title-line {}
+media only screen and (min-width: 960px) {
+CSS rules for this query go in this space
+}
