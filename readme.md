@@ -58,4 +58,6 @@ In the last assignment we covered the concepts behind semantic and modular HTML.
 
 1. Icon Fonts from icomoon. Details can be found in the AvengersCreative.json file. If you change anything in regards to the icons, please be sure to update this file and the main.css file!
 
+2. Fonts are Open Sans SemiBold and Helvetica
+
 

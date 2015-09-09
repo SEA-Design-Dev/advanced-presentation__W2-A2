@@ -1,7 +1,14 @@
-.logo {
-  background-color: #fd6632;
-  padding: 1% 1.5%;
-  border-radius: 50%;
+/* reset to intuitive box layout */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  border: 1px dashed black;
 }
 
 /*=== ICONS ===*/
@@ -25,17 +32,27 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
+  /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-big {
+  font-size: 3em;
+  background-color: white;
+  color: black;
+  width: 100%;
+  border-radius: 50%;
+  padding: 4%;
 }
 
 .icon-cog:before {
   content: "\e600";
 }
+
 .icon-lab:before {
   content: "\e601";
 }
+
 .icon-brush:before {
   content: "\e602";
 }
@@ -68,4 +85,145 @@
 }
 .icon-linkedin:before {
   content: "\e60c";
+}
+
+/*=== FONTS ===*/
+@font-face {
+  font-family: 'Helvetica';
+}
+
+/* Need to upload Helvetica */
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('opensans-semibold-webfont.eot');
+    src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-semibold-webfont.woff2') format('woff2'),
+         url('opensans-semibold-webfont.woff') format('woff'),
+         url('opensans-semibold-webfont.ttf') format('truetype'),
+         url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*=== LAYOUT ===*/
+body {
+  width: 100%;
+}
+
+
+.l-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.l-flex-item {
+  max-width: 85%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.l-flex-prices {
+  width: 75%;
+}
+
+.l-slider {
+  max-width: 100%;
+}
+
+/*=== STYLES ===*/
+body {
+  font-family: 'Helvetica', 'Arial', Sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  font-family: 'Open Sans', 'Helvetica', Sans-serif;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+td {
+  background-color: #ffffff;
+  color: #2e2e2e;
+}
+
+.b-orange {
+  background-color: #fd6632;
+  color: white;
+}
+
+.f-light {
+  font-weight: 300;
+}
+
+.th-title {
+  background-color: #7e3319;
+}
+
+.td-btn {
+  background-color: #be4c25;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.logo {
+  background-color: #fd6632;
+  padding: 1% 1.5%;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  background-color: #0b9ce0;
+}
+
+.btn {
+  background-color: #fd6632;
+  color: white;
+}
+
+.slider {
+  display: block;
+}
+
+.slider-break {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=== BREAKPOINTS ===*/
+@media only screen and (min-width: 667px) {
+  .slider-break {
+    display: block;
+    width: 100%;
+  }
+  .slider {
+    display: none;
+  }
+/*  .hero-image {
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }*/
 }
