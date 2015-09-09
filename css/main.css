@@ -109,6 +109,7 @@ html {
 /*=== LAYOUT ===*/
 body {
   width: 100%;
+  margin: 0;
 }
 
 .l-flex-container {
