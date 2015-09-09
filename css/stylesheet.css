@@ -1,45 +1,79 @@
 /*Layout*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 /*general site layout*/
 .l-navbar {}
 .l-droplet-icon {}
+.l-divet {
+
+}
 
 /*Section-specific layout*/
-.l-pricing-tables {}
+.l-pricing-tables {
+  margin-bottom: 0%;
+}
 
 
 /*Presentation*/
 /*general site presentation*/
 body { /*default font white helvetica*/ }
-body .divet { /*default white*/ }
-
+.p-divet { 
+  width: 0; 
+  height: 0;
+  border-top: 20px solid orange;
+  border-left: 80px solid transparent; 
+  border-right: 80px solid transparent; 
+  margin: auto;
+}
 .p-title-line {}
-
+.p-navbar {}
 h1 .l-title { /*default white*/ }
 h2 .l-title { /*default white*/ }
 
 /*Section-specific presentation*/
 
 .p-home {}
+
 .p-droplet-icon {}
 .p-home {}
 .p-home u{
   color: orange;
 }
 
-.p-services {}
+.p-services {
+  background-color: orange;
+}
 .p-services .p-divet {
-  color:;
+    border-top: 20px solid white;
 }
 .p-services .p-pricing-tables {}
 .p-services .p-pricing-tables:first-child {}
 .p-services .p-pricing-tables:nth-child(2) {}
 .p-services .p-pricing-tables:last-child {}
 
+.p-about {
+  color: white;
+  background-color: black;
+}
+.p-about .p-divet {
+  border-top: 20px solid white;
+}
 
+.team {}
+.p-team .p-divet {
+  border-top: 20px solid black;
+}
 
-
-
+.p-contact {
+  background-color: orange;
+}
+.p-contact .p-divet {
+  border-top: 20px solid white;
+}
 
 
 
