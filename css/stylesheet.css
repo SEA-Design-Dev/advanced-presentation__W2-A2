@@ -14,13 +14,12 @@
 
 .l-icon-outer {
   position: relative;
-  padding: 1%;
-  padding-top: 5%;
+  padding-top: 11%;
   margin: auto;
   border-radius: 50%;
   border: 0%;
-  height: 4em;
-  width: 4em;
+  height: 150px;
+  width: 150px;
   background-color: orange;
 }
 .l-droplet-icon {
@@ -46,7 +45,7 @@ ul {
   height: 4em;
 }
 .l-home-text {
-  font-size: 1.6em;
+  font-size: 2.5em;
   font-weight: lighter;
   margin: auto;
   width: auto;
@@ -55,6 +54,18 @@ ul {
 }
 .l-pricing-tables {
   margin-bottom: 0%;
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 36px;
+}
+p {
+  font-size: 28px;
 }
 
 
@@ -113,19 +124,49 @@ h2 .l-title { /*default white*/ }
 }
 .p-services ul {}
 .p-services h2 {
-  font-size: 1em;
+  font-size: 3em;
+}
+p.services p {
+
 }
 .p-services .l-icon-outer {
   background-color: white;
 }
 .p-services figcaption {
-
+  margin: auto;
+  width: 50%;
+  font-size: 2em;
 }
-.p-services .p-pricing-tables {}
-.p-services .p-pricing-tables:first-child {}
-.p-services .p-pricing-tables:nth-child(2) {}
-.p-services .p-pricing-tables:last-child {}
-
+.p-pricing-tables {
+  font-family: "Lato";
+  font-size: 2.5em;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  color: black;
+  padding-left: 0%;
+}
+.p-pricing-tables li:first-child {
+  background-color: #7f331b;
+  font-family: "Droid sans";
+  font-weight: bolder;
+  color: white;
+}
+.p-pricing-tables li:nth-child(2) {
+  color: orange;
+  font-family: "Droid sans";
+  font-weight: bolder;
+}
+.p-pricing-tables div:last-child {
+  height: 2em;
+  background-color: #be4c27;
+}
+.p-pricing-tables button {
+  background-color: orange;
+  color: white;
+}
 .p-about {
   color: white;
   background-color: black;
@@ -146,7 +187,7 @@ h2 .l-title { /*default white*/ }
   border-top: 20px solid white;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 568px) {
 .l-navbar {
   display: inline;
 }
