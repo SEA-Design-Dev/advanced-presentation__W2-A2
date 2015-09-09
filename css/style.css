@@ -22,7 +22,12 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.p-services [class^="icon-"], [class*=" icon-"] {
+	background-color: white;
+	color: black;
+	margin: auto;
+	font-size: 2em;
+}
 .icon-paint-format:before {
 	content: "\e605";
 }
@@ -31,10 +36,6 @@
 }
 .icon-lab:before {
 	content: "\e607";
-	background-color: white;
-	color: black;
-	margin: auto;
-	font-size: 2em;
 }
 .icon-google-plus:before {
 	content: "\e600";
