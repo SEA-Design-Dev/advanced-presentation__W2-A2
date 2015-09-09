@@ -8,13 +8,49 @@
 }
 
 /*general site layout*/
-.l-navbar {}
-.l-droplet-icon {}
+.l-navbar {
+  display: none;
+}
+
+.l-icon-outer {
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+  border: 0%;
+  height: 4em;
+  width: 4em;
+  background-color: orange;
+}
+.l-droplet-icon {
+  position: absolute;
+  margin: auto;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform:rotate(-45deg);
+  z-index: 99;
+  background: white;
+}
+
 .l-divet {
 
 }
 
 /*Section-specific layout*/
+.l-home-spacer {
+  height: 4em;
+}
+.l-home-text {
+  font-size: 1.6em;
+  font-weight: lighter;
+  margin: auto;
+  width: auto;
+  text-align: center;
+  font-family: "Droid sans";
+}
 .l-pricing-tables {
   margin-bottom: 0%;
 }
@@ -31,14 +67,31 @@ body { /*default font white helvetica*/ }
   border-right: 80px solid transparent; 
   margin: auto;
 }
-.p-title-line {}
+.p-title-line {
+  height: 2px;
+  width: auto;
+  margin: auto;
+  position: relative;
+  background-color: white;
+}
+.l-title p {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  opacity: 100%;
+  font-family: Helvetica;
+  color: white;
+}
+
 .p-navbar {}
 h1 .l-title { /*default white*/ }
 h2 .l-title { /*default white*/ }
 
 /*Section-specific presentation*/
 
-.p-home {}
+.p-home {
+  font-family: Helvetica;
+}
 
 .p-droplet-icon {}
 .p-home {}
@@ -77,6 +130,13 @@ h2 .l-title { /*default white*/ }
   border-top: 20px solid white;
 }
 
-media only screen and (min-width: 960px) {
-CSS rules for this query go in this space
+@media only screen and (min-width: 960px) {
+.l-navbar {
+  display: inline;
+}
+.l-home-spacer {
+  height: 12em;
+}
+.l-upper-columns {}
+
 }
