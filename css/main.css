@@ -36,13 +36,23 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-big {
+  font-size: 3em;
+  background-color: white;
+  color: black;
+  width: 100%;
+  border-radius: 50%;
+  padding: 4%;
+}
 
 .icon-cog:before {
   content: "\e600";
 }
+
 .icon-lab:before {
   content: "\e601";
 }
+
 .icon-brush:before {
   content: "\e602";
 }
@@ -114,6 +124,7 @@ body {
   max-width: 85%;
   margin-top: 1%;
   margin-bottom: 1%;
+  text-align: center;
 }
 
 .l-flex-prices {
@@ -140,8 +151,26 @@ ul {
   padding: 0;
 }
 
+td {
+  background-color: #ffffff;
+  color: #2e2e2e;
+}
+
+.b-orange {
+  background-color: #fd6632;
+  color: white;
+}
+
 .f-light {
   font-weight: 300;
+}
+
+.th-title {
+  background-color: #7e3319;
+}
+
+.td-btn {
+  background-color: #be4c25;
 }
 
 .f-bold {
@@ -159,7 +188,8 @@ ul {
 }
 
 .btn {
-
+  background-color: #fd6632;
+  color: white;
 }
 
 .slider {
@@ -170,6 +200,18 @@ ul {
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
   .slider-break {
     display: block;
