@@ -14,6 +14,8 @@
 
 .l-icon-outer {
   position: relative;
+  padding: 1%;
+  padding-top: 5%;
   margin: auto;
   border-radius: 50%;
   border: 0%;
@@ -35,8 +37,8 @@
   background: white;
 }
 
-.l-divet {
-
+ul {
+  list-style-type: none;
 }
 
 /*Section-specific layout*/
@@ -69,18 +71,18 @@ body { /*default font white helvetica*/ }
 }
 .p-title-line {
   height: 2px;
-  width: auto;
-  margin: auto;
-  position: relative;
+  width: 35%;
+  margin: 5%;
   background-color: white;
 }
-.l-title p {
+.l-title {
   position: relative;
   margin: auto;
   text-align: center;
   opacity: 100%;
   font-family: Helvetica;
   color: white;
+  display: inline-block;
 }
 
 .p-navbar {}
@@ -101,9 +103,23 @@ h2 .l-title { /*default white*/ }
 
 .p-services {
   background-color: orange;
+  font-family: "Droid sans";
+  color: white;
+  text-align: center;
+  font-size: 1em;
 }
 .p-services .p-divet {
     border-top: 20px solid white;
+}
+.p-services ul {}
+.p-services h2 {
+  font-size: 1em;
+}
+.p-services .l-icon-outer {
+  background-color: white;
+}
+.p-services figcaption {
+
 }
 .p-services .p-pricing-tables {}
 .p-services .p-pricing-tables:first-child {}

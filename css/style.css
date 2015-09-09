@@ -31,6 +31,10 @@
 }
 .icon-lab:before {
 	content: "\e607";
+	background-color: white;
+	color: black;
+	margin: auto;
+	font-size: 2em;
 }
 .icon-google-plus:before {
 	content: "\e600";
