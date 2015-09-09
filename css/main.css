@@ -7,9 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-* {
+/** {
   border: 1px dashed black;
-}
+}*/
 
 /*=== ICONS ===*/
 @font-face {
@@ -159,6 +159,14 @@ td {
   color: #2e2e2e;
 }
 
+article {
+  padding: 2em 1em;
+}
+
+.hero-text-padding {
+  padding: 15em 0;
+}
+
 .b-orange {
   background-color: #fd6632;
   color: white;
@@ -185,6 +193,18 @@ td {
   font-weight: 700;
 }
 
+.f-font-paragraph {
+  font-size: 1em;
+}
+
+.f-large {
+  font-size: 2em;
+}
+
+.f-small-line-height {
+  line-height: .5;
+}
+
 .logo {
   background-color: #fd6632;
   padding: 1rem 1.5rem;
@@ -194,6 +214,10 @@ td {
 
 .logo:hover {
   background-color: #0b9ce0;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .btn {
@@ -208,7 +232,6 @@ td {
 .slider-break {
   display: none;
 }
-
 
 
 /*=== BREAKPOINTS ===*/
