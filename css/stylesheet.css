@@ -14,7 +14,6 @@
 
 .l-icon-outer {
   position: relative;
-  padding-top: 11%;
   margin: auto;
   border-radius: 50%;
   border: 0%;
@@ -67,7 +66,9 @@ h3 {
 p {
   font-size: 28px;
 }
-
+footer h1{
+  margin: 0px;
+}
 
 /*Presentation*/
 /*general site presentation*/
@@ -162,11 +163,22 @@ p.services p {
 .p-pricing-tables div:last-child {
   height: 2em;
   background-color: #be4c27;
+  padding-top: .75em;
 }
 .p-pricing-tables button {
   background-color: orange;
   color: white;
+  font-size: .75em;
 }
+.p-pricing-tables button:hover {
+background-color: #7f331b;
+color: orange;
+}
+.p-pricing-tables button:active {
+color: orange;
+border: solid black 3px;
+}
+
 .p-about {
   color: white;
   background-color: black;

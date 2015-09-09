@@ -16,7 +16,8 @@
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 1;
+	line-height: 3;
+	font-size: 48px;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -26,7 +27,6 @@
 	background-color: white;
 	color: black;
 	margin: auto;
-	font-size: 4em;
 }
 .icon-paint-format:before {
 	content: "\e605";
@@ -39,16 +39,39 @@
 }
 .icon-google-plus:before {
 	content: "\e600";
+	background-color: #dd4b39;
 }
 .icon-facebook:before {
 	content: "\e601";
+	background-color: #3b5998;
 }
 .icon-twitter:before {
 	content: "\e602";
+	background-color: #00aced;
 }
 .icon-dribbble:before {
 	content: "\e603";
+	background-color: #ea4c89;
 }
 .icon-linkedin2:before {
 	content: "\e604";
+	background-color: #007bb6;
+}
+.icons {
+	margin: auto;
+	width: 50%;
+}
+.icons span{
+	color: white;
+	display: inline-block;
+	-webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  line-height: 1;
+}
+.icons span:hover {
+	border: white;
+  -ms-transform: scale(1.25,1.25);
+  -webkit-transform: scale(1.25,1.25);
+  transform: scale(1.25,1.25);
+  transition: .25s ease-in-out;
 }
