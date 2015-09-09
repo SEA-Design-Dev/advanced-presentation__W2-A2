@@ -110,6 +110,7 @@ html {
 body {
   width: 100%;
   margin: 0;
+  text-align: center;
 }
 
 .l-flex-container {
@@ -160,6 +161,11 @@ td {
 
 .b-orange {
   background-color: #fd6632;
+  color: white;
+}
+
+.b-black {
+  background-color: #252629;
   color: white;
 }
 
