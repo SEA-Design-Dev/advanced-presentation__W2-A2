@@ -1,0 +1,19 @@
+@media only screen and (max-width : 640px) {
+
+nav ul, nav:active ul {
+  display: none;
+
+}
+
+nav li {
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+nav:hover ul {
+
+    display: block;
+
+  }
