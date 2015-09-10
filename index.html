@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
+    <input type="checkbox" id="mobileNavToggle" class="mobileNavToggle">
+    <header class="l-nav">
       <nav>
-        <ul>
-          <li><a href="">Home.</a></li>
-          <li><a href="">Services.</a></li>
-          <li><a href="">Portfolio.</a></li>
-          <li><a href="">About.</a></li>
-          <li><a href="">Team.</a></li>
-          <li><a href="">Contact.</a></li>
+        <ul role="navigation">
+          <li role="menuitem" class="nav-link"><a href="">Home.</a></li>
+          <li role="menuitem" class="nav-link"><a href="">Services.</a></li>
+          <li role="menuitem" class="nav-link"><a href="">Portfolio.</a></li>
+          <li role="menuitem" class="nav-link"><a href="">About.</a></li>
+          <li role="menuitem" class="nav-link"><a href="">Team.</a></li>
+          <li role="menuitem" class="nav-link"><a href="">Contact.</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page-wrapper">
+      <label for="mobileNavToggle" class="nav-toggle">☰</label>
+      <label for="mobileNavToggle" class="trigger"></label>
       <section class="hero-text-padding hero-image">
         <img src="img/tear_drop.png" alt="Avengers Logo" class="logo">
         <h1 class="f-light">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong><span class="underline">awesome</span></strong> mobile and websites</h1>

@@ -60,4 +60,8 @@ In the last assignment we covered the concepts behind semantic and modular HTML.
 
 2. Fonts are Open Sans SemiBold and Helvetica
 
+3. Resources used to help create an off-canvas navigation menu for mobile:
+    - Semantic help from Zurb (http://foundation.zurb.com/docs/components/sidenav.html)
+    - Building help from Trevan Hetzel (http://codepen.io/trevanhetzel/pen/Lrbjf)
+
 
