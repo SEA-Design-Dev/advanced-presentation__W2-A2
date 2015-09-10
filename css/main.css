@@ -425,6 +425,10 @@ progress::-webkit-progress-value {
   line-height: .1;
 }
 
+.contact-btn {
+  height: 3em;
+}
+
 /*=== FORM ===*/
 form {
   width: 100%;
