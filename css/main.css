@@ -474,6 +474,10 @@ input, textarea {
   height: 3em;
 }
 
+.s-theme-author {
+  color: #fd6632;
+}
+
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
