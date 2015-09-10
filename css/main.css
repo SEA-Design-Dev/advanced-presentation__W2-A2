@@ -7,9 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-* {
+/** {
   border: 1px dashed black;
-}
+}*/
 
 /*=== ICONS ===*/
 @font-face {
@@ -110,6 +110,7 @@ html {
 body {
   width: 100%;
   margin: 0;
+  text-align: center;
 }
 
 .l-flex-container {
@@ -144,6 +145,7 @@ body {
 }
 
 nav {
+  display: none;
   font-family: 'Open Sans', 'Helvetica', Sans-serif;
   font-weight: 600;
 }
@@ -156,10 +158,29 @@ ul {
 td {
   background-color: #ffffff;
   color: #2e2e2e;
+  font-size: 1.5em;
+}
+
+article {
+  padding: 2em 1em;
+}
+
+th, td {
+  padding: .25em 1em;
+  margin: .8em auto;
+}
+
+.hero-text-padding {
+  padding: 15em 5%;
 }
 
 .b-orange {
   background-color: #fd6632;
+  color: white;
+}
+
+.b-black {
+  background-color: #252629;
   color: white;
 }
 
@@ -169,6 +190,7 @@ td {
 
 .th-title {
   background-color: #7e3319;
+  font-size: 1.75rem;
 }
 
 .td-btn {
@@ -177,6 +199,18 @@ td {
 
 .f-bold {
   font-weight: 700;
+}
+
+.f-font-paragraph {
+  font-size: 1em;
+}
+
+.f-large {
+  font-size: 2em;
+}
+
+.f-small-line-height {
+  line-height: .5;
 }
 
 .logo {
@@ -190,9 +224,18 @@ td {
   background-color: #0b9ce0;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .btn {
   background-color: #fd6632;
   color: white;
+  font-size: .65em;
+  box-shadow: none;
+  border: none;
+  padding: .3em 1em;
+  margin: .3em auto;
 }
 
 .slider {
@@ -203,6 +246,26 @@ td {
   display: none;
 }
 
+progress {
+  width: 90%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: .75em;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #3a3a3a;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fd6632;
+}
+
+.s-progress-paragraph {
+  text-align: left;
+  margin-left: 5%;
+  line-height: .1;
+}
 
 
 /*=== BREAKPOINTS ===*/
