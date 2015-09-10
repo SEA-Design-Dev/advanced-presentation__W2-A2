@@ -1,4 +1,12 @@
+.icon-menu{
+  display: none;
+}
+
 @media only screen and (max-width : 640px) {
+
+.icon-menu{
+    display:inline-block;
+  }
 
 nav ul, nav:active ul {
   display: none;
@@ -17,3 +25,4 @@ nav:hover ul {
     display: block;
 
   }
+}
