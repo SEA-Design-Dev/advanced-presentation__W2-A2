@@ -89,28 +89,31 @@ footer h1{
 /*Presentation*/
 /*general site presentation*/
 body { /*default font white helvetica*/ }
-.p-divet { 
-  width: 0; 
+.p-divet {
+  width: 0;
   height: 0;
   border-top: 20px solid orange;
-  border-left: 80px solid transparent; 
-  border-right: 80px solid transparent; 
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
   margin: auto;
 }
-.p-title-line {
-  height: 2px;
-  width: 35%;
-  margin: 5%;
-  background-color: white;
+
+.p-title-line{
+    border-bottom: 1px white solid;
+    width: 25%;
 }
-.l-title {
-  position: relative;
-  margin: auto;
-  text-align: center;
-  opacity: 100%;
-  font-family: Helvetica;
-  color: white;
-  display: inline-block;
+
+.p-title {
+  text-transform: uppercase;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.l-title{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-navbar {}
