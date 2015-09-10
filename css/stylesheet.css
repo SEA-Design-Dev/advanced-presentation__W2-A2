@@ -39,17 +39,17 @@ nav:hover ul {
   margin: auto;
   border-radius: 50%;
   border: 0%;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   background-color: orange;
 }
 .l-droplet-icon {
   position: absolute;
-  left: 50px;
-  top: 50px;
+  left: 25px;
+  top: 25px;
   margin: auto;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   overflow: hidden;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -60,11 +60,11 @@ nav:hover ul {
 }
 .l-droplet-icon-interior {
   position: absolute;
-  left: 5px;
-  top: 5px;
+  left: 2.5px;
+  top: 2.5px;
   margin: auto;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   overflow: hidden;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -75,6 +75,7 @@ nav:hover ul {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /*Section-specific layout*/
@@ -82,7 +83,6 @@ ul {
   height: 4em;
 }
 .l-home-text {
-  font-size: 2.5em;
   font-weight: lighter;
   margin: auto;
   width: auto;
@@ -92,20 +92,19 @@ ul {
 .l-pricing-tables {
   margin-bottom: 0%;
 }
-h1 {
-  font-size: 64px;
-}
+
 h2 {
-  font-size: 50px;
+  font-size: 1.6em;
 }
 h3 {
-  font-size: 36px;
+  font-size: 1.0em;
 }
 p {
-  font-size: 28px;
+  font-family: Helvetica;
+  font-size: 1em;
 }
 footer h1{
-  margin: 0px;
+  margin: .9px;
 }
 
 /*Presentation*/
@@ -165,8 +164,8 @@ h2 .l-title { /*default white*/ }
     border-top: 20px solid white;
 }
 .p-services ul {}
-.p-services h2 {
-  font-size: 3em;
+.p-services {
+
 }
 p.services p {
 
@@ -176,8 +175,8 @@ p.services p {
 }
 .p-services figcaption {
   margin: auto;
-  width: 50%;
-  font-size: 2em;
+  width: 100%;
+  font-size: 1em;
 }
 .p-pricing-tables {
   font-family: "Lato";
@@ -220,6 +219,12 @@ color: orange;
 border: solid black 3px;
 }
 
+/*-- About Section --*/
+
+.l-upper-columns {
+  text-align: center;
+}
+
 .p-about {
   color: white;
   background-color: black;
@@ -241,6 +246,8 @@ border: solid black 3px;
 }
 
 @media only screen and (min-width: 568px) {
+
+
 .icon-menu{
   display: none;
 }
@@ -257,7 +264,6 @@ nav ul {
 nav ul, nav:active ul {
   display: inline-block;
   float: left;
-
 }
 
 .l-navbar {
@@ -266,6 +272,49 @@ nav ul, nav:active ul {
 .l-home-spacer {
   height: 12em;
 }
-.l-upper-columns {}
-
+.l-upper-columns {
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
 }
+
+l-icon-outer {
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+  border: 0%;
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+}
+.l-droplet-icon {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform:rotate(-45deg);
+  z-index: 99;
+  background: white;
+}
+.l-droplet-icon-interior {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  z-index: 150;
+  background: orange;
+}
+
