@@ -12,6 +12,28 @@
   display: none;
 }
 
+.icon-l{
+    display:inline-block;
+  }
+
+nav ul, nav:active ul {
+  display: none;
+
+}
+
+nav li {
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  padding: 10px 0;
+  }
+
+nav:hover ul {
+
+    display: block;
+
+  }
+
 .l-icon-outer {
   position: relative;
   margin: auto;
@@ -219,6 +241,25 @@ border: solid black 3px;
 }
 
 @media only screen and (min-width: 568px) {
+.icon-menu{
+  display: none;
+}
+
+  .icon-list{
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: inline;
+}
+
+nav ul, nav:active ul {
+  display: inline-block;
+  float: left;
+
+}
+
 .l-navbar {
   display: inline;
 }

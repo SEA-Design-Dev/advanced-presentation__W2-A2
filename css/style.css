@@ -75,3 +75,7 @@
   transform: scale(1.25,1.25);
   transition: .25s ease-in-out;
 }
+
+.icon-menu:before {
+   content: "\e608";
+}
