@@ -145,6 +145,7 @@ body {
 }
 
 nav {
+  display: none;
   font-family: 'Open Sans', 'Helvetica', Sans-serif;
   font-weight: 600;
 }
@@ -157,10 +158,16 @@ ul {
 td {
   background-color: #ffffff;
   color: #2e2e2e;
+  font-size: 1.5em;
 }
 
 article {
   padding: 2em 1em;
+}
+
+th, td {
+  padding: .25em 1em;
+  margin: .8em auto;
 }
 
 .hero-text-padding {
@@ -183,6 +190,7 @@ article {
 
 .th-title {
   background-color: #7e3319;
+  font-size: 1.75rem;
 }
 
 .td-btn {
@@ -223,6 +231,11 @@ article {
 .btn {
   background-color: #fd6632;
   color: white;
+  font-size: .65em;
+  box-shadow: none;
+  border: none;
+  padding: .3em 1em;
+  margin: .3em auto;
 }
 
 .slider {
