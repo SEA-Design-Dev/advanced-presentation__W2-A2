@@ -304,8 +304,25 @@ th, td {
   margin: .8em auto;
 }
 
-.heading-big {
+h2 {
+  width: 100%;
+  display: inline-block;
+}
 
+h2:before, h2:after {
+  content: " ";
+  display: inline-block;
+  border-top: solid 1px white;
+  width: 20%;
+  height: 1px;
+  z-index: 1;
+  position: relative;
+  margin: .25em;
+  white-space: nowrap;
+}
+
+.b-white h2:before, .b-white h2:after {
+  border-top: solid 1px black;
 }
 
 .contact a, .contact a:hover, .contact a:visited {
