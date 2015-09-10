@@ -308,7 +308,7 @@ th, td {
   margin: .8em auto;
 }
 
-a, a:hover, a:visited {
+.contact a, .contact a:hover, .contact a:visited {
   text-decoration: none;
   color: white;
 }
