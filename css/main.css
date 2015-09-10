@@ -425,6 +425,10 @@ progress::-webkit-progress-value {
   line-height: .1;
 }
 
+.contact-btn {
+  height: 3em;
+}
+
 /*=== FORM ===*/
 form {
   width: 100%;
@@ -472,6 +476,15 @@ input, textarea {
   background-color: #fff;
   color: #7e3218;
   height: 3em;
+}
+
+.s-theme-author {
+  color: #fd6632;
+}
+
+.s-footer {
+  font-size: .75em;
+  color: grey;
 }
 
 
