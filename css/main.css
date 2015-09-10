@@ -14,11 +14,11 @@ html {
 /*=== ICONS ===*/
 @font-face {
   font-family: 'avengers_creative_icons';
-  src:url('../fonts/avengers_creative_icons.eot?nvpozf');
-  src:url('../fonts/avengers_creative_icons.eot?#iefixnvpozf') format('embedded-opentype'),
-    url('../fonts/avengers_creative_icons.ttf?nvpozf') format('truetype'),
-    url('../fonts/avengers_creative_icons.woff?nvpozf') format('woff'),
-    url('../fonts/avengers_creative_icons.svg?nvpozf#avengers_creative_icons') format('svg');
+  src:url('/fonts/avengers_creative_icons.eot?nvpozf');
+  src:url('/fonts/avengers_creative_icons.eot?#iefixnvpozf') format('embedded-opentype'),
+    url('/fonts/avengers_creative_icons.ttf?nvpozf') format('truetype'),
+    url('/fonts/avengers_creative_icons.woff?nvpozf') format('woff'),
+    url('/fonts/avengers_creative_icons.svg?nvpozf#avengers_creative_icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -347,7 +347,7 @@ th, td {
   margin: .3em auto;
 }
 
-.s-portfolio-filter-links:hover {
+.s-portfothelio-filter-links:hover {
   background-color: #fd6632;
   color: white;
 }
@@ -515,7 +515,7 @@ input, textarea {
     display: none;
   }
 /*  .hero-image {
-    background-image: url("../img/Background.png");
+    background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
   }*/
