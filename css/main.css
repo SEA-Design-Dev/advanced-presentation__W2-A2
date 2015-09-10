@@ -216,13 +216,12 @@ body {
 
 .l-flex-item {
   max-width: 85%;
-  margin-top: 1%;
-  margin-bottom: 1%;
   text-align: center;
+  margin: auto;
 }
 
 .l-flex-prices {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
