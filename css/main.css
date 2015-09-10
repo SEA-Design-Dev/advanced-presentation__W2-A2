@@ -308,11 +308,6 @@ th, td {
   margin: .8em auto;
 }
 
-a, a:hover, a:visited {
-  text-decoration: none;
-  color: white;
-}
-
 .nav-link {
   padding-top: 10%;
 }
