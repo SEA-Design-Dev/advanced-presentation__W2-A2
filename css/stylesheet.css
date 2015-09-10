@@ -325,7 +325,15 @@ l-icon-outer {
   margin-left: 5%;
   margin-right: 5%;
   display: inline-block;
-  float: left;
+}
+.p-pricing-tables {
+  font-size: 1em;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 15%;
+  display: inline-block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
