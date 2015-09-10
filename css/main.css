@@ -7,9 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-/** {
+* {
   border: 1px dashed black;
-}*/
+}
 
 /*=== ICONS ===*/
 @font-face {
@@ -371,6 +371,55 @@ progress::-webkit-progress-value {
   text-align: left;
   margin-left: 5%;
   line-height: .1;
+}
+
+/*=== FORM ===*/
+form {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+}
+
+input, textarea {
+  height: 3em;
+  width: 80%;
+  font-size: .80rem;
+  color: #fff;
+  border: 1px solid #7e3218;
+  margin-bottom: 5%;
+  background-color: #7e3218;
+  padding: 0 .7em;
+  display: inline;
+}
+
+.s-form-message-field {
+  height: 15em;
+  padding-top: 1em;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-moz-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+.s-form-btn {
+  background-color: #fff;
+  color: #7e3218;
+  height: 3em;
 }
 
 
