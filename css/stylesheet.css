@@ -8,11 +8,28 @@
 }
 
 /*general site layout*/
-.l-navbar {
-  display: none;
+.port-navbar {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
-.icon-l{
+.port-navbar a {
+  font-size: 1em;
+  font-family: Helvetica;
+  text-decoration: none;
+  color:#a3a3a3;
+}
+.port-navbar a:hover {
+  background-color: red;
+}
+
+.icon-menu{
     display:inline-block;
   }
 
@@ -266,9 +283,26 @@ nav ul, nav:active ul {
   float: left;
 }
 
-.l-navbar {
-  display: inline;
+.p-navbar {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
+
+.l-navbar a {
+  font-family: Helvetica;
+  text-decoration: none;
+  color:#a3a3a3;
+}
+.l-navbar a:hover {
+  background-color: red;
+}
+
 .l-home-spacer {
   height: 12em;
 }
