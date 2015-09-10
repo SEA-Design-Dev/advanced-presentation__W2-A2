@@ -371,6 +371,13 @@ th, td {
   line-height: .5;
 }
 
+.f-team {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: .1;
+  margin: .5em 0;
+}
+
 .logo {
   background-color: #fd6632;
   padding: 1rem 1.5rem;
