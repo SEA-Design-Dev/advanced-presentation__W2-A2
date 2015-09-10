@@ -7,9 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-* {
+/** {
   border: 1px dashed black;
-}
+}*/
 
 /*=== ICONS ===*/
 @font-face {
@@ -42,7 +42,7 @@ html {
   color: black;
   width: 100%;
   border-radius: 50%;
-  padding: 1.25rem 1.25rem;
+  padding: 1.25rem 1.25rem;;
 }
 
 .icon-cog:before {
@@ -69,8 +69,26 @@ html {
   content: "\e605";
 }
 
+.icon-circle-right {
+  text-decoration: none;
+  color: #000000;
+  font-size: 3.25rem;
+  padding: 10%;
+  margin: auto;
+  order: 3;
+}
+
 .icon-circle-right:before {
   content: "\e606";
+}
+
+.icon-circle-left {
+  text-decoration: none;
+  color: #000000;
+  font-size: 3.25rem;
+  margin: auto;
+  padding: 10%;
+  order: 1;
 }
 
 .icon-circle-left:before {
@@ -215,19 +233,48 @@ body {
 }
 
 .l-flex-item {
-  max-width: 85%;
-  margin-top: 1%;
-  margin-bottom: 1%;
   text-align: center;
+  margin: auto;
+  max-width: 85%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.l-flex-child {
+  margin-bottom: 10%;
+}
+
+.l-flex-child-p {
+  margin-top: 10%;
 }
 
 .l-flex-prices {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
 .l-slider {
   max-width: 100%;
+}
+
+.l-client {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.l-client-item {
+  max-width: 85%;
+  order: 2;
+  text-align: center;
+  margin: auto;
+}
+
+.l-footer {
+  margin-bottom: 5%;
 }
 
 /*=== STYLES ===*/
