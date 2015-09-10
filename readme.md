@@ -62,6 +62,6 @@ In the last assignment we covered the concepts behind semantic and modular HTML.
 
 3. Resources used to help create an off-canvas navigation menu for mobile:
     - Semantic help from Zurb (http://foundation.zurb.com/docs/components/sidenav.html)
-    - Building help from CSS Script (http://appendto.com/2014/05/canvas-navigation-css-checkbox/)
+    - Building help from Trevan Hetzel (http://codepen.io/trevanhetzel/pen/Lrbjf)
 
 
