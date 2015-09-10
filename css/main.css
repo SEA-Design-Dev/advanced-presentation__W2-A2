@@ -114,7 +114,7 @@ body {
 }
 
 .nav-toggle {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 1em;
   height: 1.25em;
@@ -126,7 +126,7 @@ body {
 .trigger {
   position: fixed;
   top: 0;
-  left: 17.5em;
+  left: 15em;
   width: 100%;
   height: 100%;
   pointer-events: none;
@@ -135,10 +135,11 @@ body {
 
 .l-nav {
   position: fixed;
-  left: -10em;
-  width: 10em;
+  left: -15em;
+  width: 15em;
   height: 100%;
   background: #2e2e2e;
+  opacity: .95;
   transition: left 0.3s ease;
 }
 
@@ -155,13 +156,13 @@ body {
   left: 0;
 }
 #mobileNavToggle:checked ~ .icon-menu {
-  left: 10em;
+  left: 15em;
 }
 #mobileNavToggle:checked ~ .trigger {
   pointer-events: auto;
 }
 #mobileNavToggle:checked ~ .page-wrapper {
-  right: -10em;
+  right: -15em;
 }
 
 .l-flex-container {
@@ -220,14 +221,15 @@ th, td {
   margin: .8em auto;
 }
 
+.nav-link {
+  padding-top: 10%;
+}
+
 .nav-link a {
   text-decoration: none;
   color: white;
-}
-
-.nav-link a:visited {
-  text-decoration: none;
-  color: white;
+  font-size: 1.2em;
+  padding-top: 2%;
 }
 
 .nav-link a:active {
