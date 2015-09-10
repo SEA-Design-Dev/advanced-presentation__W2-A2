@@ -69,8 +69,24 @@ html {
   content: "\e605";
 }
 
+.icon-circle-right {
+  text-decoration: none;
+  color: #000000;
+  font-size: 2rem;
+  margin: auto;
+  order: 3;
+}
+
 .icon-circle-right:before {
   content: "\e606";
+}
+
+.icon-circle-left {
+  text-decoration: none;
+  color: #000000;
+  font-size: 2rem;
+  margin: auto;
+  order: 1;
 }
 
 .icon-circle-left:before {
@@ -209,7 +225,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: ceneter;
+  justify-content: center;
   align-content: center;
   align-items: center;
 }
@@ -237,6 +253,22 @@ body {
 
 .l-slider {
   max-width: 100%;
+}
+
+.l-client {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.l-client-item {
+  max-width: 85%;
+  order: 2;
+  text-align: center;
+  margin: auto;
 }
 
 /*=== STYLES ===*/
