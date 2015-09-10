@@ -342,6 +342,16 @@ th, td {
   color: white;
 }
 
+.s-portfolio-filter-links {
+  width: 60%;
+  margin: .3em auto;
+}
+
+.s-portfolio-filter-links:hover {
+  background-color: #fd6632;
+  color: white;
+}
+
 .f-light {
   font-weight: 300;
 }
