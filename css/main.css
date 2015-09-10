@@ -171,7 +171,7 @@ th, td {
 }
 
 .hero-text-padding {
-  padding: 15em 0;
+  padding: 15em 5%;
 }
 
 .b-orange {
@@ -244,6 +244,27 @@ th, td {
 
 .slider-break {
   display: none;
+}
+
+progress {
+  width: 90%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: .75em;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #3a3a3a;
+}
+
+progress::-webkit-progress-value {
+  background-color: #fd6632;
+}
+
+.s-progress-paragraph {
+  text-align: left;
+  margin-left: 5%;
+  line-height: .1;
 }
 
 
