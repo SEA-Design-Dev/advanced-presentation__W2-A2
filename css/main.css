@@ -607,7 +607,12 @@ input, textarea {
 }
 
 .s-theme-author {
+  text-decoration: none;
   color: #fd6632;
+}
+
+.s-theme-author:hover {
+  color: #0b9ce0;
 }
 
 /*=== BREAKPOINTS ===*/
