@@ -235,6 +235,8 @@ color: orange;
 color: orange;
 border: solid black 3px;
 }
+/*-- Portfolio Section--*/
+
 
 /*-- About Section --*/
 
@@ -272,6 +274,19 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   background: #fd6632;
+}
+
+.about-button{
+  text-align: center;
+  display: block;
+  padding-bottom: 3em;
+}
+
+.about-button button{
+  background-color: #fd6632;
+  color: #fff;
+  border: 0;
+  padding: 5px 30px px 30px;
 }
 
 .team {}
@@ -361,18 +376,6 @@ progress::-webkit-progress-value {
   background: #fd6632;
 }
 
-.about-button{
-  text-align: center;
-  display: block;
-  padding-bottom: 3em;
-}
-
-.about-button button{
-  background-color: #fd6632;
-  color: #fff;
-  border: 0;
-  padding: 5px 30px 5px 30px;
-}
 
 l-icon-outer {
   position: relative;
