@@ -279,7 +279,6 @@ body {
 
 .l-flex-contact {
   padding-top: 0;
-  margin: 0 auto;
   padding-bottom: 0;
 }
 
@@ -609,6 +608,7 @@ input, textarea {
   }
 
   .s-contact-info {
+    display: inline-block;
     background-image: url("/img/map_base.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -639,13 +639,10 @@ input, textarea {
   }
 
   .l-flex-contact {
-    text-align: left;
+    text-align: right;
+    margin-left: .5em;
+    margin-right: .5em;
 }
-
-  .s-form-btn-desktop {
-    background-color: white;
-
-  }
 
   .s-arrow {
     display: block;
