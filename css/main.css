@@ -472,6 +472,12 @@ h2:before, h2:after {
   line-height: .5;
 }
 
+.f-price {
+  font-weight: 400;
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
 .f-team {
   font-size: 1.5em;
   line-height: .1;
@@ -701,19 +707,58 @@ input, textarea {
     padding: 0;
   }
 
+  .l-flex-prices {
+    width: 20%;
+    margin: 1%;
+  }
+
+  td {
+  background-color: #ffffff;
+  color: #2e2e2e;
+  font-size: 1em;
+}
+
+  th, td {
+    padding: .25em 1em;
+    margin: 1em auto;
+  }
+
   .l-flex-contact {
     text-align: right;
     margin-left: .5em;
     margin-right: .5em;
   }
 
-  .l-flex-child {
+  .l-child-m {
+    max-width: 100%;
     padding-bottom: 0%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
 
   .l-team {
     max-width: 25%;
+  }
+
+  .f-team {
+  font-size: 1.5em;
+  line-height: 1;
+  padding: 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  }
+
+  .l-client-img {
+    display: flex;
+    float: left;
+    clear: right;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+  }
+
+  .l-client-txt {
+    display: flex;
+    flex-flow: column;
   }
 
   .s-arrow {
