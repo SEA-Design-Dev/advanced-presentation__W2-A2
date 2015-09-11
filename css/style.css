@@ -17,7 +17,7 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 3;
-	font-size: 48px;
+	font-size: 24px;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -59,7 +59,9 @@
 }
 .icons {
 	margin: auto;
-	width: 50%;
+	margin-bottom: 10%;
+	width: 100%;
+	text-align: center;
 }
 .icons span{
 	color: white;

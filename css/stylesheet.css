@@ -8,6 +8,13 @@
 }
 
 /*general site layout*/
+a {
+  text-decoration: none;
+} 
+
+footer {
+  text-align: center;
+}
 .port-navbar {
   display:flex;
   flex-direction: row;
@@ -110,14 +117,17 @@ ul {
   margin-bottom: 0%;
 }
 
+
+
 h2 {
   font-size: 1.6em;
 }
 h3 {
   font-size: 1.0em;
+  font-family: Helvetica, sans-serif;
 }
 p {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
 footer h1{
@@ -157,6 +167,38 @@ body { /*default font white helvetica*/ }
 .p-navbar {}
 h1 .l-title { /*default white*/ }
 h2 .l-title { /*default white*/ }
+
+.l-team {
+  text-align: center;
+}
+.l-team-member {
+  margin-bottom: 10%;
+}
+
+.p-team h4 {
+color: orange;
+}
+.p-team h5 {}
+
+.l-client-link {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: orange;
+  text-align: center;
+  margin: auto;
+}
+
+.p-client-link {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: white;
+}
+.l-client-link:hover {
+  background-color: #7f331b;
+}
 
 /*Section-specific presentation*/
 
@@ -202,10 +244,17 @@ p.services p {
   margin-bottom: 0%;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: white;
+  padding-bottom: 10%;
+  background-color: orange;
   color: black;
   padding-left: 0%;
+  border-bottom: 1px;
 }
+.p-pricing-tables li {
+  background-color: white;
+  border-bottom: solid #7f331b 2px;
+}
+
 .p-pricing-tables li:first-child {
   background-color: #7f331b;
   font-family: "Droid sans";
@@ -303,7 +352,14 @@ progress::-webkit-progress-value {
   padding: 5px 30px px 30px;
 }
 
-.team {}
+.p-team {
+  font-family: Helvetica, sans-serif;
+  color: #999f9f;
+}
+
+.p-team h3, .p-team h2 {
+  color: black;
+}
 .p-team .p-divet {
   border-top: 20px solid black;
 }
@@ -407,16 +463,6 @@ progress::-webkit-progress-value {
   background: #fd6632;
 }
 
-
-l-icon-outer {
-  position: relative;
-  margin: auto;
-  border-radius: 50%;
-  border: 0%;
-  height: 150px;
-  width: 150px;
-  background-color: orange;
-}
 .l-droplet-icon {
   position: absolute;
   left: 20px;
@@ -450,11 +496,62 @@ l-icon-outer {
   display: inline-block;
 }
 .l-services-item {
-  width: 20%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 23%;
+  margin-left: 2%;
+  margin-right: 2%;
   display: inline-block;
 }
+.l-team {
+  display: inline-block;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+}
+
+.l-team-member {
+  display: inline-block;
+  width: 20%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.l-team-member img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.l-client-inline {
+  display: inline-block;
+  margin: 0%;
+}
+.l-client-link {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.l-client-figure {
+  display: inline-block;
+  width: 70%;
+  margin: 3%;
+}
+.l-client-figure img {
+  display: inline-block;
+}
+
+.l-client-figure-txt {
+  width: 70%;
+  display: inline-block;
+}
+.l-client-caption {
+  display: block;
+}
+.l-client-inline h4, .l-client-inline h5 {
+  display: inline-block;
+}
+
+.l-client {
+display: inline-block;
+}
+
 .p-pricing-tables {
   font-size: 1em;
   margin-top: 2.5%;
@@ -463,14 +560,4 @@ l-icon-outer {
   margin-right: 2.5%;
   width: 15%;
   display: inline-block;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  line-height: 3;
-  font-size: 24px;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
