@@ -541,9 +541,9 @@ progress::-webkit-progress-value {
 }
 
 /*=== FORM ===*/
-form {
-  width: 100%;
-}
+/*form {
+  width: 20em;
+}*/
 
 label {
   display: inline-block;
@@ -595,6 +595,11 @@ input, textarea {
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
+
+  article {
+  padding: 2em  5% /*6em*/;
+}
+
   .icon-social {
   text-decoration: none;
   font-size: 1rem;
@@ -644,6 +649,7 @@ input, textarea {
     display: block;
     width: 100%;
   }
+
   .slider {
     display: none;
   }
@@ -652,16 +658,6 @@ input, textarea {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .s-contact-info {
-    display: inline-block;
-    background-image: url("/img/map_base.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0;
-    width: 35%;
-    height: 20em;
   }
 
   .l-subnav {
@@ -680,14 +676,20 @@ input, textarea {
     padding-bottom: 0%;
   }
 
-  input, textarea {
-    width: 100%;
+  .s-contact-info {
+    display: inline-block;
+    background-image: url("/img/map_base.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    height: 20em;
   }
 
   .s-contact-info ul {
      background-color: rgba(37, 38, 41, .8);
      padding: .75em 1em .5em .25em;
      margin-top: 0;
+     text-align: left;
   }
 
   .s-contact-info li {
@@ -697,7 +699,6 @@ input, textarea {
   }
 
   .s-contact-info li:last-child {
-    text-align: right;
     padding: 0;
   }
 
@@ -710,6 +711,14 @@ input, textarea {
   .l-flex-child {
     padding-bottom: 0%;
     margin-bottom: 1%;
+  }
+
+  .s-form-map-width {
+    width: 45%;
+  }
+
+  input, textarea {
+    width: 100%;
   }
 
   .l-team {
