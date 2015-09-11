@@ -69,12 +69,19 @@ html {
   content: "\e605";
 }
 
-.icon-circle-right {
+.s-icon-circle {
   text-decoration: none;
   color: #fd6632;
   font-size: 3.25rem;
   padding: 10%;
   margin: auto;
+}
+
+.s-icon-circle:hover {
+  color: #0b9ce0;
+}
+
+.icon-circle-right {
   order: 3;
 }
 
@@ -83,11 +90,6 @@ html {
 }
 
 .icon-circle-left {
-  text-decoration: none;
-  color: #fd6632;
-  font-size: 3.25rem;
-  margin: auto;
-  padding: 10%;
   order: 1;
 }
 
@@ -438,7 +440,7 @@ h2:before, h2:after {
   margin: .3em auto;
 }
 
-.s-portfothelio-filter-links:hover {
+.s-portfolio-filter-links:hover {
   background-color: #fd6632;
   color: white;
 }
@@ -684,10 +686,7 @@ input, textarea {
 
   .s-portfolio-filter-links {
     width: auto;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 0%;
+    padding: 1%;
   }
 
   .s-contact-info {
@@ -806,6 +805,7 @@ input, textarea {
     flex-flow: column;
     text-align: left;
     margin: 5% auto;
+    padding-left: 3%;
   }
 
   .l-contact-txt {
