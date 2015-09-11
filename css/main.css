@@ -219,6 +219,47 @@ body {
   right: -15em;
 }
 
+/*=== Divots ===*/
+.b-orange::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: #fff;
+  margin-top: -2.1em;
+  -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.b-white::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: #fd6632;
+  margin-top: -2.1em;
+  -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.b-black::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: #fff;
+  margin-top: -2.1em;
+  -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+.b-black-white::before {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: #252629;
+  margin-top: -2.1em;
+  -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
 .l-flex-container {
   display: flex;
   flex-direction: row;
@@ -271,6 +312,7 @@ body {
 
 .l-footer {
   margin-bottom: 5%;
+  margin-top: 2%;
 }
 
 /*=== STYLES ===*/
@@ -368,9 +410,11 @@ h2:before, h2:after {
 
 .hero-text-padding {
   padding: 11em 5% 15em 5%;
+  margin-bottom: -5%;
 }
 
-.b-orange {
+.b-orange,
+.b-orange-first {
   background-color: #fd6632;
   color: white;
 }
@@ -542,7 +586,6 @@ input, textarea {
   color: grey;
 }
 
-
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
   .slider-break {
@@ -552,9 +595,9 @@ input, textarea {
   .slider {
     display: none;
   }
-/*  .hero-image {
+  .hero-image {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
-  }*/
+  }
 }
