@@ -606,19 +606,14 @@ input, textarea {
   .l-nav {
     left: 0em;
     width: 100%;
-    height: 5em;
+    height: 3.5em;
     background: #ffffff;
     opacity: 1;
     z-index: 5;
   }
 
   .main-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    display: block;
   }
 
   .nav-link {
@@ -661,6 +656,22 @@ input, textarea {
     margin-top: 0;
     width: 35%;
     height: 20em;
+  }
+
+  .l-subnav {
+    display: block;
+  }
+
+  .l-subnav-link {
+    display: inline-block;
+  }
+
+  .s-portfolio-filter-links {
+    width: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 0%;
   }
 
   input, textarea {
