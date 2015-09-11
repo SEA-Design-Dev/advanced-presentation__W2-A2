@@ -692,10 +692,10 @@ input, textarea {
   }
 
   .s-contact-info ul {
-     background-color: rgba(37, 38, 41, .8);
-     padding: .75em 1em .5em .25em;
-     margin-top: 0;
-     text-align: left;
+    background-color: rgba(37, 38, 41, .8);
+    padding: .75em 1em .5em .25em;
+    margin-top: 0;
+    text-align: left;
   }
 
   .s-contact-info li {
@@ -714,10 +714,10 @@ input, textarea {
   }
 
   td {
-  background-color: #ffffff;
-  color: #2e2e2e;
-  font-size: 1em;
-}
+    background-color: #ffffff;
+    color: #2e2e2e;
+    font-size: 1em;
+  }
 
   th, td {
     padding: .25em 1em;
@@ -749,11 +749,11 @@ input, textarea {
   }
 
   .f-team {
-  font-size: 1.5em;
-  line-height: 1;
-  padding: 0%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .l-client-img {
