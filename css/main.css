@@ -507,7 +507,7 @@ h2:before, h2:after {
 }
 
 .underline {
-  text-decoration: underline;
+  border-bottom: solid 2px #fd6632;
 }
 
 .btn {
