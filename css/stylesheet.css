@@ -236,6 +236,20 @@ color: orange;
 border: solid black 3px;
 }
 
+/*-- Portfolio section--*/
+
+.big_little_slider{
+  display: block;
+  margin: auto;
+  content:url("http://i.imgur.com/o7Przf2.png")
+}
+
+.protfolio_pieces{
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  }
+
 /*-- About Section --*/
 
 .l-upper-columns {
@@ -262,8 +276,14 @@ border: solid black 3px;
   border-top: 20px solid white;
 }
 
+
 @media only screen and (min-width: 568px) {
 
+.protfolio_pieces{
+  display: inline-block;
+  margin-left: 5%;
+  text-align: center;
+  }
 
 .icon-menu{
   display: none;
@@ -281,6 +301,10 @@ nav ul {
 nav ul, nav:active ul {
   display: inline-block;
   float: left;
+}
+
+.big_little_slider{
+  content:url("https://i.imgur.com/5Js2v9g.png");
 }
 
 .p-navbar {
