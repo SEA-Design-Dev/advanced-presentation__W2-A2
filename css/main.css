@@ -179,6 +179,10 @@ body {
   transition: left 0.3s ease;
 }
 
+.nav-toggle:before {
+  content: '☰';
+}
+
 .trigger {
   position: fixed;
   top: 0;
@@ -610,7 +614,7 @@ input, textarea {
 @media only screen and (min-width: 667px) {
 
   article {
-    padding: 2em 5%;
+    padding: 2em 10%;
   }
 
   .h3-lines:before, .h3-lines:after {
