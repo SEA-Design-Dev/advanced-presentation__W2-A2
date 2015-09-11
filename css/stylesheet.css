@@ -10,7 +10,7 @@
 /*general site layout*/
 a {
   text-decoration: none;
-} 
+}
 
 footer {
   text-align: center;
@@ -271,16 +271,17 @@ p.services p {
   background-color: #be4c27;
   padding-top: .75em;
 }
-.p-pricing-tables button {
+.p-pricing-tables a {
   background-color: orange;
+  padding:.4em 10% .4em 10%;
   color: white;
   font-size: .75em;
 }
-.p-pricing-tables button:hover {
+.p-pricing-tables a:hover {
 background-color: #7f331b;
 color: orange;
 }
-.p-pricing-tables button:active {
+.p-pricing-tables a:active {
 color: orange;
 border: solid black 3px;
 }
