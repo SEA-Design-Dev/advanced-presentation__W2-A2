@@ -346,6 +346,10 @@ th, td {
   margin: .8em auto;
 }
 
+em {
+  font-style: none;
+}
+
 h2 {
   width: 100%;
   display: inline-block;
@@ -464,10 +468,13 @@ h2:before, h2:after {
 }
 
 .f-team {
-  font-weight: 700;
   font-size: 1.5em;
   line-height: .1;
   margin: .5em 0;
+}
+
+.f-client {
+  color: #fd6632;
 }
 
 .logo {
