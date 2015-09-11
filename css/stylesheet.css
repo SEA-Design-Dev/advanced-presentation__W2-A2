@@ -238,7 +238,7 @@ border: solid black 3px;
 
 /*-- About Section --*/
 
-.l-upper-columns {
+.l-upper-columns p{
   text-align: center;
 }
 
@@ -306,11 +306,18 @@ nav ul, nav:active ul {
 .l-home-spacer {
   height: 12em;
 }
-.l-upper-columns {
-  width: 30%;
+.l-upper-columns{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
   margin-left: 5%;
   margin-right: 5%;
-  display: inline-block;
+}
+
+.l-upper-columns p{
+ margin-left: 2%;
+ margin-right: 2%;
 }
 
 l-icon-outer {
