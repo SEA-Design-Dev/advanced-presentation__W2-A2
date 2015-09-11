@@ -422,6 +422,14 @@ h2:before, h2:after {
   margin-bottom: -5%;
 }
 
+.s-portfolio-image:hover {
+  opacity: .3;
+}
+
+.s-portfolio-image {
+  background-color: #000;
+}
+
 .b-orange,
 .b-orange-first {
   background-color: #fd6632;
