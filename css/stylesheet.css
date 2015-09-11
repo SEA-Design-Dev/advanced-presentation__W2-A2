@@ -10,6 +10,10 @@
 /*general site layout*/
 a {
   text-decoration: none;
+} 
+
+footer {
+  text-align: center;
 }
 .port-navbar {
   display:flex;
@@ -365,7 +369,7 @@ nav ul, nav:active ul {
   display: inline-block;
 }
 
-l-icon-outer {
+/*l-icon-outer {
   position: relative;
   margin: auto;
   border-radius: 50%;
@@ -373,7 +377,7 @@ l-icon-outer {
   height: 150px;
   width: 150px;
   background-color: orange;
-}
+}*/
 .l-droplet-icon {
   position: absolute;
   left: 20px;
