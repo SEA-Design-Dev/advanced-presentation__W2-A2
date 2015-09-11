@@ -581,11 +581,6 @@ input, textarea {
   color: #fd6632;
 }
 
-.s-footer {
-  font-size: .75em;
-  color: grey;
-}
-
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
   .slider-break {
