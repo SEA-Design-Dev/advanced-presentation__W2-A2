@@ -542,6 +542,27 @@ input, textarea {
   color: grey;
 }
 
+/*=== SCROLLING TRANSITIONS ===*/
+
+#home:target {
+  transition: transform all 0.6s ease;
+}
+
+#services:target {
+  transition: transform all 0.6s ease;
+}
+
+#portfolio:target {
+  transition: transform all 0.6s ease;
+}
+
+#about:target {
+  transition: transform all 0.6s ease;
+}
+
+#contact:target {
+  transition: transform all 0.6s ease;
+}
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
