@@ -246,8 +246,39 @@ border: solid black 3px;
   color: white;
   background-color: black;
 }
-.p-about .p-divet {
-  border-top: 20px solid white;
+
+.l-about-bars{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.l-about-bars li{
+  padding-top: .5em;
+}
+
+progress {
+  width: 400px;
+  -webkit-appearance: none;
+  border: none;
+}
+
+ /* Reset the default appearance from CSS tricks */
+progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+
+progress::-webkit-progress-bar {
+  background: gray;
+}
+
+progress::-webkit-progress-value {
+  background: orange;
 }
 
 .team {}
@@ -261,6 +292,7 @@ border: solid black 3px;
 .p-contact .p-divet {
   border-top: 20px solid white;
 }
+
 
 @media only screen and (min-width: 568px) {
 
