@@ -600,4 +600,37 @@ input, textarea {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .l-contact {
+    display: inline-block;
+  }
+
+  .contact {
+    background-image: url("/img/map_base.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 20em;
+  }
+
+  .contact ul {
+     background-color: rgba(37, 38, 41, .8);
+     padding: 1.5em .25em .5em .25em;
+  }
+
+  .contact li {
+    display: inline-block;
+    padding: 0 .75em 1em .75em;
+    line-height: 2;
+  }
+
+  .s-arrow {
+  display: block;
+  height: 4em;
+  content: " ";
+  background-color: rgba(37, 38, 41, .8);
+  margin-top: -1em;
+  -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  }
 }
