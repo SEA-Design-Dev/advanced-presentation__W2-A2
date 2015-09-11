@@ -213,9 +213,6 @@ footer h1{
   justify-content: center;
   align-items: center;
 }
-.p-navbar {}
-h1 .l-title { /*default white*/ }
-h2 .l-title { /*default white*/ }
 .l-team {
   text-align: center;
 }
@@ -246,8 +243,6 @@ color: #fc6432;
 .p-home {
   font-family: Helvetica;
 }
-.p-droplet-icon {}
-.p-home {}
 .p-home u{
   color: #fc6432;
 }
@@ -396,7 +391,6 @@ nav ul {
 }
 nav ul, nav:active ul {
   display: inline-block;
-  float: left;
 }
 .big_little_slider {
   content:url("https://i.imgur.com/5Js2v9g.png");
@@ -537,10 +531,7 @@ display: inline-block;
 }
 .p-pricing-tables {
   font-size: 1em;
-  margin-top: 2.5%;
-  margin-bottom: 5%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin-top: 2.5% 5% 2.5% 2.5%;
   width: 15%;
   display: inline-block;
 }
