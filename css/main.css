@@ -351,6 +351,10 @@ th, td {
   margin: .8em auto;
 }
 
+em {
+  font-style: none;
+}
+
 h2 {
   width: 100%;
   display: inline-block;
@@ -469,10 +473,13 @@ h2:before, h2:after {
 }
 
 .f-team {
-  font-weight: 700;
   font-size: 1.5em;
   line-height: .1;
   margin: .5em 0;
+}
+
+.f-client {
+  color: #fd6632;
 }
 
 .logo {
@@ -586,13 +593,53 @@ input, textarea {
   color: #fd6632;
 }
 
-.s-footer {
-  font-size: .75em;
-  color: grey;
-}
-
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
+  .icon-social {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0%;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .trigger {
+    display: none;
+  }
+
+  .l-nav {
+    left: 0em;
+    width: 100%;
+    height: 3.5em;
+    background: #ffffff;
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .nav-link {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0;
+    padding: 0 1%;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: .85em;
+    padding: 1%;
+  }
+
+  .nav-link a:active {
+    color: #fd6632;
+  }
+
   .slider-break {
     display: block;
     width: 100%;
@@ -615,6 +662,22 @@ input, textarea {
     margin-top: 0;
     width: 35%;
     height: 20em;
+  }
+
+  .l-subnav {
+    display: block;
+  }
+
+  .l-subnav-link {
+    display: inline-block;
+  }
+
+  .s-portfolio-filter-links {
+    width: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 0%;
   }
 
   input, textarea {
@@ -642,7 +705,16 @@ input, textarea {
     text-align: right;
     margin-left: .5em;
     margin-right: .5em;
-}
+  }
+
+  .l-flex-child {
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+  }
+
+  .l-team {
+    max-width: 25%;
+  }
 
   .s-arrow {
     display: block;
