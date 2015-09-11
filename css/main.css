@@ -547,9 +547,9 @@ progress::-webkit-progress-value {
 }
 
 /*=== FORM ===*/
-form {
-  width: 100%;
-}
+/*form {
+  width: 20em;
+}*/
 
 label {
   display: inline-block;
@@ -601,6 +601,11 @@ input, textarea {
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
+
+  article {
+  padding: 2em  5% /*6em*/;
+}
+
   .icon-social {
   text-decoration: none;
   font-size: 1rem;
@@ -650,6 +655,7 @@ input, textarea {
     display: block;
     width: 100%;
   }
+
   .slider {
     display: none;
   }
@@ -658,16 +664,6 @@ input, textarea {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .s-contact-info {
-    display: inline-block;
-    background-image: url("/img/map_base.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0;
-    width: 35%;
-    height: 20em;
   }
 
   .l-subnav {
@@ -686,14 +682,20 @@ input, textarea {
     padding-bottom: 0%;
   }
 
-  input, textarea {
-    width: 100%;
+  .s-contact-info {
+    display: inline-block;
+    background-image: url("/img/map_base.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    height: 20em;
   }
 
   .s-contact-info ul {
-     background-color: rgba(37, 38, 41, .8);
-     padding: .75em 1em .5em .25em;
-     margin-top: 0;
+    background-color: rgba(37, 38, 41, .8);
+    padding: .75em 1em .5em .25em;
+    margin-top: 0;
+    text-align: left;
   }
 
   .s-contact-info li {
@@ -703,7 +705,6 @@ input, textarea {
   }
 
   .s-contact-info li:last-child {
-    text-align: right;
     padding: 0;
   }
 
@@ -713,10 +714,10 @@ input, textarea {
   }
 
   td {
-  background-color: #ffffff;
-  color: #2e2e2e;
-  font-size: 1em;
-}
+    background-color: #ffffff;
+    color: #2e2e2e;
+    font-size: 1em;
+  }
 
   th, td {
     padding: .25em 1em;
@@ -735,16 +736,24 @@ input, textarea {
     margin-bottom: 5%;
   }
 
+  .s-form-map-width {
+    width: 45%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
   .l-team {
     max-width: 25%;
   }
 
   .f-team {
-  font-size: 1.5em;
-  line-height: 1;
-  padding: 0%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .l-client-img {
