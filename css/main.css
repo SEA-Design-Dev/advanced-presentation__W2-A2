@@ -595,6 +595,50 @@ input, textarea {
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .trigger {
+    display: none;
+  }
+
+  .l-nav {
+    left: 0em;
+    width: 100%;
+    height: 5em;
+    background: #ffffff;
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0;
+    padding: 0 1%;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: .85em;
+    padding: 1%;
+  }
+
+  .nav-link a:active {
+    color: #fd6632;
+  }
+
   .slider-break {
     display: block;
     width: 100%;
@@ -644,7 +688,7 @@ input, textarea {
     text-align: right;
     margin-left: .5em;
     margin-right: .5em;
-}
+  }
 
   .s-arrow {
     display: block;
