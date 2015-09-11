@@ -8,6 +8,9 @@
 }
 
 /*general site layout*/
+a {
+  text-decoration: none;
+}
 .port-navbar {
   display:flex;
   flex-direction: row;
@@ -166,6 +169,31 @@ h2 .l-title { /*default white*/ }
 }
 .l-team-member {
   margin-bottom: 10%;
+}
+
+.p-team h4 {
+color: orange;
+}
+.p-team h5 {}
+
+.l-client-link {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: orange;
+  text-align: center;
+  margin: auto;
+}
+
+.p-client-link {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: white;
+}
+.l-client-link:hover {
+  background-color: #7f331b;
 }
 
 /*Section-specific presentation*/
@@ -388,6 +416,7 @@ l-icon-outer {
   display: inline-block;
   margin-left: 0%;
   margin-right: 0%;
+  margin-bottom: 0%;
 }
 
 .l-team-member {
@@ -400,6 +429,10 @@ l-icon-outer {
 .l-team-member img {
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+.l-client {
+display: inline-block;
 }
 
 .p-pricing-tables {
