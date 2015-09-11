@@ -458,6 +458,11 @@ h2:before, h2:after {
   background-color: #be4c25;
 }
 
+.btn:hover {
+  background-color: #0b9ce0;
+  color: white;
+}
+
 .f-bold {
   font-weight: 700;
 }
