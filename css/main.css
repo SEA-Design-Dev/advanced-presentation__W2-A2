@@ -69,12 +69,19 @@ html {
   content: "\e605";
 }
 
-.icon-circle-right {
+.s-icon-circle {
   text-decoration: none;
   color: #fd6632;
   font-size: 3.25rem;
   padding: 10%;
   margin: auto;
+}
+
+.s-icon-circle:hover {
+  color: #0b9ce0;
+}
+
+.icon-circle-right {
   order: 3;
 }
 
@@ -83,11 +90,6 @@ html {
 }
 
 .icon-circle-left {
-  text-decoration: none;
-  color: #fd6632;
-  font-size: 3.25rem;
-  margin: auto;
-  padding: 10%;
   order: 1;
 }
 
@@ -175,6 +177,10 @@ body {
   font-size: 2em;
   margin: .5em;
   transition: left 0.3s ease;
+}
+
+.nav-toggle:before {
+  content: '☰';
 }
 
 .trigger {
@@ -438,7 +444,7 @@ h2:before, h2:after {
   margin: .3em auto;
 }
 
-.s-portfothelio-filter-links:hover {
+.s-portfolio-filter-links:hover {
   background-color: #fd6632;
   color: white;
 }
@@ -454,6 +460,11 @@ h2:before, h2:after {
 
 .td-btn {
   background-color: #be4c25;
+}
+
+.btn:hover {
+  background-color: #0b9ce0;
+  color: white;
 }
 
 .f-bold {
@@ -500,7 +511,7 @@ h2:before, h2:after {
 }
 
 .underline {
-  text-decoration: underline;
+  border-bottom: solid 2px #fd6632;
 }
 
 .btn {
@@ -596,14 +607,19 @@ input, textarea {
 }
 
 .s-theme-author {
+  text-decoration: none;
   color: #fd6632;
+}
+
+.s-theme-author:hover {
+  color: #0b9ce0;
 }
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
 
   article {
-    padding: 2em 5%;
+    padding: 2em 10%;
   }
 
   .h3-lines:before, .h3-lines:after {
@@ -684,10 +700,7 @@ input, textarea {
 
   .s-portfolio-filter-links {
     width: auto;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 0%;
+    padding: 1%;
   }
 
   .s-contact-info {
@@ -806,6 +819,7 @@ input, textarea {
     flex-flow: column;
     text-align: left;
     margin: 5% auto;
+    padding-left: 3%;
   }
 
   .l-contact-txt {
