@@ -547,10 +547,6 @@ progress::-webkit-progress-value {
 }
 
 /*=== FORM ===*/
-/*form {
-  width: 20em;
-}*/
-
 label {
   display: inline-block;
 }
@@ -664,6 +660,12 @@ input, textarea {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .s-hero-text {
+    padding: 0 .5em;
+    font-size: 3.25em;
+    line-height: 1.5;
   }
 
   .l-subnav {
