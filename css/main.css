@@ -277,6 +277,11 @@ body {
   padding-bottom: 2.5%;
 }
 
+.l-flex-contact {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .l-flex-child {
   margin-bottom: 10%;
 }
@@ -388,7 +393,7 @@ h2:before, h2:after {
   border-top: solid 1px black;
 }
 
-.contact a, .contact a:hover, .contact a:visited {
+.s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
   text-decoration: none;
   color: white;
 }
@@ -595,9 +600,57 @@ input, textarea {
   .slider {
     display: none;
   }
+
   .hero-image {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .s-contact-info {
+    display: inline-block;
+    background-image: url("/img/map_base.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    width: 35%;
+    height: 20em;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  .s-contact-info ul {
+     background-color: rgba(37, 38, 41, .8);
+     padding: .75em 1em .5em .25em;
+     margin-top: 0;
+  }
+
+  .s-contact-info li {
+    display: inline-block;
+    padding: 0 1em 1em 0;
+    line-height: 2;
+  }
+
+  .s-contact-info li:last-child {
+    text-align: right;
+    padding: 0;
+  }
+
+  .l-flex-contact {
+    text-align: right;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+  .s-arrow {
+    display: block;
+    height: 4em;
+    content: " ";
+    background-color: rgba(37, 38, 41, .8);
+    margin-top: -1em;
+    -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+    clip-path: polygon(50% 60%, 40% 0, 60% 0);
   }
 }
