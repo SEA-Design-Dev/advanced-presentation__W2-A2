@@ -235,6 +235,8 @@ color: orange;
 color: orange;
 border: solid black 3px;
 }
+/*-- Portfolio Section--*/
+
 
 /*-- Portfolio section--*/
 
@@ -252,7 +254,7 @@ border: solid black 3px;
 
 /*-- About Section --*/
 
-.l-upper-columns {
+.l-about-columns p{
   text-align: center;
 }
 
@@ -260,8 +262,45 @@ border: solid black 3px;
   color: white;
   background-color: black;
 }
-.p-about .p-divet {
-  border-top: 20px solid white;
+
+.l-about-bars{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.l-about-bars li{
+  padding-top: .5em;
+}
+
+ /* Reset the default appearance from CSS tricks */
+progress[value] {
+  -webkit-appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+
+progress::-webkit-progress-bar {
+  background: gray;
+}
+
+progress::-webkit-progress-value {
+  background: #fd6632;
+}
+
+.about-button{
+  text-align: center;
+  display: block;
+  padding-bottom: 3em;
+}
+
+.about-button button{
+  background-color: #fd6632;
+  color: #fff;
+  border: 0;
+  padding: 5px 30px px 30px;
 }
 
 .team {}
@@ -330,12 +369,44 @@ nav ul, nav:active ul {
 .l-home-spacer {
   height: 12em;
 }
+
 .l-upper-columns {
-  width: 30%;
+ width: 30%;
+ margin-left: 5%;
+ margin-right: 5%;
+ display: inline-block;
+}
+
+.l-about-columns{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
   margin-left: 5%;
   margin-right: 5%;
-  display: inline-block;
 }
+
+.l-about-columns p{
+ margin-left: 2%;
+ margin-right: 2%;
+}
+
+ /* Reset the default appearance from CSS tricks */
+progress[value] {
+  -webkit-appearance: none;
+
+  width: 550px;
+  height: 20px;
+}
+
+progress::-webkit-progress-bar {
+  background: gray;
+}
+
+progress::-webkit-progress-value {
+  background: #fd6632;
+}
+
 
 l-icon-outer {
   position: relative;
