@@ -595,6 +595,12 @@ input, textarea {
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
+  .icon-social {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0%;
+  }
+
   .nav-toggle {
     display: none;
   }
@@ -699,6 +705,15 @@ input, textarea {
     text-align: right;
     margin-left: .5em;
     margin-right: .5em;
+  }
+
+  .l-flex-child {
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+  }
+
+  .l-team {
+    max-width: 25%;
   }
 
   .s-arrow {
