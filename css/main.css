@@ -226,6 +226,7 @@ body {
   content: " ";
   background-color: #fff;
   margin-top: -2.1em;
+  -moz-clip-path: none;
   -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
   clip-path: polygon(50% 60%, 40% 0, 60% 0);
 }
@@ -261,8 +262,18 @@ body {
 }
 
 .l-flex-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
