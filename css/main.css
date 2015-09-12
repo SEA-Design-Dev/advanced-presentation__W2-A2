@@ -422,12 +422,38 @@ h2:before, h2:after {
   margin-bottom: -5%;
 }
 
-.s-portfolio-image:hover {
-  opacity: .3;
+.s-portfolio-image {
+  background-color: black;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.s-portfolio-image {
+.overlay-button {
   background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  z-index: 3;
+}
+
+.portfolio-popup {
+  font-size: 4em;
+  background-color: #fd6632;
+  color: white;
+  padding: 0 .35em .15em .35em;
+  border-radius: 50%;
+  z-index: 4;
+  opacity: 1;
+}
+
+.overlay-button:hover {
+  opacity: .6;
 }
 
 .b-orange,
