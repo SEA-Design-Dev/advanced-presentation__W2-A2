@@ -262,10 +262,11 @@ body {
 }
 
 .l-flex-container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -o-flex;
+  display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
@@ -275,8 +276,11 @@ body {
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-content: center;
   align-content: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -459,7 +463,6 @@ https://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for
   top: 0;
   left: 0;
   padding-top: 30%;
-  -webkit-transition: opacity 0.5s ease-in 0s;
   transition: opacity 0.5s ease-in 0s;
 }
 
@@ -497,7 +500,6 @@ https://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for
 }
 
 .first-level-hover-wrapper .portfolio-overlay-button {
-  -webkit-transition: all 0.5s ease-in 0.5s;
   transition: all 0.5s ease-in 0.5s;
   top: -60px;
 }
@@ -684,6 +686,10 @@ input, textarea {
 
   article {
     padding: 2em 5%;
+  }
+
+  #portfolio {
+    padding:2em 9%;
   }
 
   .h3-lines:before, .h3-lines:after {
