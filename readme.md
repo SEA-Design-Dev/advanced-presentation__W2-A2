@@ -63,5 +63,6 @@ In the last assignment we covered the concepts behind semantic and modular HTML.
 3. Resources used to help create an off-canvas navigation menu for mobile:
     - Semantic help from Zurb (http://foundation.zurb.com/docs/components/sidenav.html)
     - Building help from Trevan Hetzel (http://codepen.io/trevanhetzel/pen/Lrbjf)
+    - Silky hover effects adapted from  Marcin Merchel (https://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for-images-using-css3-and-html)
 
 
