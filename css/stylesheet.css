@@ -105,7 +105,7 @@ footer {
   display: inline-block;
   text-align: center;
   font-size: 1em;
-  font-family: Helvetica;
+  font-family: "Droid sans", sans-serif;
   text-decoration: none;
   color:#a3a3a3;
 }
@@ -186,10 +186,10 @@ h2 {
 }
 h3 {
   font-size: 1.0em;
-  font-family: Helvetica, sans-serif;
+  font-family: "Droid sans", sans-serif, sans-serif;
 }
 p {
-  font-family: Helvetica, sans-serif;
+  font-family: "Droid sans", sans-serif, sans-serif;
   font-size: 1em;
 }
 footer h1{
@@ -260,7 +260,7 @@ color: #fc6432;
   background-color: #7f331b;
 }
 .p-home {
-  font-family: Helvetica;
+  font-family: "Droid sans", sans-serif;
 }
 .p-services {
   background-color: #fc6432;
@@ -381,10 +381,10 @@ progress::-webkit-progress-value {
   padding: 10px 40px 10px 40px;
 }
 .p-team {
-  font-family: Helvetica, sans-serif;
+  font-family: "Droid sans", sans-serif, sans-serif;
   color: #999f9f;
 }
-.p-title .p-team, .p-title .p-subtitle {
+.p-team .p-title, .p-team .p-subtitle {
   color: black;
 }
 .p-team .p-divet {
@@ -477,7 +477,6 @@ progress::-webkit-progress-value {
 @media only screen and (min-width: 568px) {
 .protfolio-pieces{
   display: inline-block;
-  margin-left: 5%;
   text-align: center;
 }
 .icon-menu{
@@ -507,7 +506,7 @@ nav ul, nav:active ul {
   margin-right: 30%;
 }
 .l-navbar a {
-  font-family: Helvetica;
+  font-family: "Droid sans", sans-serif;
   text-decoration: none;
   color:#a3a3a3;
 }
@@ -579,17 +578,16 @@ progress::-webkit-progress-value {
     border-bottom: 1px white solid;
     width: 35%;
 }
-.p-title-line_gray{
+.p-title-line-gray{
   color: black;
   border-bottom: 1px #bfbfbf solid;
   width: 35%;
 }
-.p-title-line_little{
+.p-title-line-little{
   border-bottom: 1px white solid;
   width: 20%;
 }
-
-.p-title-line_little_gray{
+.p-title-line-little-gray{
   color:black;
   border-bottom: 1px gray solid;
   width: 20%;
