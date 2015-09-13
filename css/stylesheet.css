@@ -99,6 +99,8 @@ footer {
   margin-right: 30%;
 }
 .port-navbar a {
+  display: inline-block;
+  text-align: center;
   font-size: 1em;
   font-family: Helvetica;
   text-decoration: none;
@@ -121,6 +123,16 @@ nav li {
 }
 nav:hover ul {
    display: block;
+}
+
+.protfolio_pieces{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom: 4em;
+  text-align: center;
 }
 .l-icon-outer {
   position: relative;
@@ -217,6 +229,20 @@ footer h1{
   border-bottom: 1px gray solid;
   width: 10%;
 }
+
+.l-title{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-title{
+  text-transform: uppercase;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
 .l-team {
   text-align: center;
 }
@@ -315,7 +341,7 @@ color: #fc6432;
 color: #fc6432;
 }
 .big_little_slider{
-  display: block;
+  display: inline block;
   margin: auto;
   content:url("http://i.imgur.com/o7Przf2.png")
 }
