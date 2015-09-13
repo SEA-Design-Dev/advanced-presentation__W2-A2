@@ -102,6 +102,8 @@ footer {
   margin-right: 30%;
 }
 .port-navbar a {
+  display: inline-block;
+  text-align: center;
   font-size: 1em;
   font-family: Helvetica;
   text-decoration: none;
@@ -205,11 +207,24 @@ footer h1{
     border-bottom: 1px white solid;
     width: 25%;
 }
-.p-title {
+.p-title{
   text-transform: uppercase;
   padding-left: 4%;
   padding-right: 4%;
-  font-family: Helvetica, sans-serif;
+}
+.p-title-line_gray{
+  color: black;
+  border-bottom: 1px #bfbfbf solid;
+  width: 15%;
+}
+.p-title-line_little{
+  border-bottom: 1px white solid;
+  width: 10%;
+}
+.p-title-line_little_gray{
+  color:black;
+  border-bottom: 1px gray solid;
+  width: 10%;
 }
 .l-title{
   display:flex;
@@ -246,9 +261,6 @@ color: #fc6432;
 }
 .p-home {
   font-family: Helvetica;
-}
-.p-home u{
-  color: #fc6432;
 }
 .p-services {
   background-color: #fc6432;
@@ -306,16 +318,27 @@ color: #fc6432;
   font-family: "Droid sans";
   color: white;
 }
+.p-pricing-tables a:hover {
+background-color: #7f331b;
+color: #fc6432;
+}
+.p-pricing-tables a:active {
+color: #fc6432;
+}
 .big-little-slider{
   display: block;
   margin: auto;
   content:url("http://i.imgur.com/o7Przf2.png")
 }
-.protfolio-pieces{
-  display: inline-block;
-  margin: auto;
+.protfolio_pieces{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom: 4em;
   text-align: center;
-  }
+}
 .l-about-columns p{
   text-align: center;
 }
@@ -355,7 +378,7 @@ progress::-webkit-progress-value {
   background-color: #fd6632;
   color: #fff;
   border: 0;
-  padding: 5px 30px 0 30px;
+  padding: 10px 40px 10px 40px;
 }
 .p-team {
   font-family: Helvetica, sans-serif;
@@ -551,6 +574,36 @@ progress::-webkit-progress-value {
   border-top-left-radius: 50%;
   z-index: 150;
   background: #fc6432;
+}
+.p-title-line{
+    border-bottom: 1px white solid;
+    width: 35%;
+}
+.p-title-line_gray{
+  color: black;
+  border-bottom: 1px #bfbfbf solid;
+  width: 35%;
+}
+.p-title-line_little{
+  border-bottom: 1px white solid;
+  width: 20%;
+}
+
+.p-title-line_little_gray{
+  color:black;
+  border-bottom: 1px gray solid;
+  width: 20%;
+}
+.p-title {
+  text-transform: uppercase;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.l-title{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .l-services-list {
   display: inline-block;
