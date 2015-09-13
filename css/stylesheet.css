@@ -82,6 +82,52 @@
 .icon-menu:before {
    content: "\e608";
 }
+
+/*Nav bar mobile*/
+.icon-menu {
+  width:100%;
+  text-align:center;
+}
+
+.mobile-menu ul {
+  list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:97.2%;
+  position: absolute;
+  background: #999f9f;
+}
+
+.mobile-menu li a {
+  display:block;
+  font-family: Helvetica;
+  color: #fff;
+  text-transform:uppercase;
+  text-decoration: none;
+  font-size: 1.3em;
+  line-height: 2em;
+  padding: 10px 0;
+}
+
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+.mobile-menu input[type=checkbox]:checked ~ .menu{
+  display: block;
+}
+
+.mobile-menu ul {
+  display: none;
+  z-index: 100;
+}
+
+.icon-menu {
+    display:inline-block;
+}
+/*nav bar end*/
+
 a {
   text-decoration: none;
 }
@@ -496,23 +542,20 @@ progress::-webkit-progress-value {
   color: #fc6432;
 }
 @media only screen and (min-width: 568px) {
-.protfolio-pieces{
-  display: inline-block;
-  text-align: center;
-}
+
 .icon-menu{
   display: none;
 }
-.icon-list{
-  display: none;
+
+.protfolio-pieces{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
 }
-nav ul {
-  list-style: none;
-  display: inline;
-}
-nav ul, nav:active ul {
-  display: inline-block;
-}
+
 .big-little-slider {
   content:url("https://i.imgur.com/5Js2v9g.png");
 }
@@ -722,7 +765,7 @@ progress::-webkit-progress-value {
   height: 268px;
   margin: 0;
 }
-<<<<<<< HEAD
+
 .l-client-link {
   display: inline-block;
   margin-left: 3%;
