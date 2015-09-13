@@ -1,4 +1,4 @@
-/* reset to intuitive box layout */
+/*=== RESET TO INTUITIVE BOX LAYOUT ===*/
 html {
   box-sizing: border-box;
 }
@@ -28,7 +28,8 @@ html {
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering */
+
+  /*=== BETTER FONT RENDERING ===*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -144,18 +145,16 @@ html {
   font-family: 'Helvetica';
 }
 
-/* Need to upload Helvetica */
-
 @font-face {
-    font-family: 'open_sanssemibold';
-    src: url('opensans-semibold-webfont.eot');
-    src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-semibold-webfont.woff2') format('woff2'),
-         url('opensans-semibold-webfont.woff') format('woff'),
-         url('opensans-semibold-webfont.ttf') format('truetype'),
-         url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'open_sanssemibold';
+  src: url('opensans-semibold-webfont.eot');
+  src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('opensans-semibold-webfont.woff2') format('woff2'),
+       url('opensans-semibold-webfont.woff') format('woff'),
+       url('opensans-semibold-webfont.ttf') format('truetype'),
+       url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*=== LAYOUT ===*/
@@ -208,20 +207,24 @@ body {
 .mobileNavToggle {
   display: none;
 }
+
 .mobileNavToggle:checked ~ .l-nav {
   left: 0;
 }
+
 .mobileNavToggle:checked ~ .icon-menu {
   left: 15em;
 }
+
 .mobileNavToggle:checked ~ .trigger {
   pointer-events: auto;
 }
+
 .mobileNavToggle:checked ~ .page-wrapper {
   right: -15em;
 }
 
-/*=== Divots ===*/
+/*=== DIVOTS ===*/
 .b-orange::before {
   display: block;
   height: 4em;
@@ -426,10 +429,6 @@ h2:before, h2:after {
 }
 
 /*=== PORTFOLIO HOVER ===*/
-/*Code adapted from
-https://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for-images-using-css3-and-html
-*/
-
 .s-portfolio-image {
   background-color: black;
   position: relative;
@@ -690,6 +689,8 @@ input, textarea {
 
   h1 {
     font-size: 2.4em;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   article {
@@ -722,7 +723,7 @@ input, textarea {
   }
 
   .l-portfolio-flex {
-  -webkit-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
   }
 
   .h3-lines:before, .h3-lines:after {
@@ -925,7 +926,7 @@ input, textarea {
     clear: right;
     margin: 5% auto;
     padding: 2%;
-}
+  }
 
   .l-client-txt {
     display: flex;
