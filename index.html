@@ -156,7 +156,7 @@
         </section>
 
         <figure>
-          <div class="big_little_slider"></div>
+          <div class="big-little-slider"></div>
         </figure>
 
         <nav class="port-navbar">
@@ -167,7 +167,7 @@
           <a href="">Brand & Logotypes</a>
         </nav>
 
-        <ul class="protfolio_pieces">
+        <ul class="protfolio-pieces">
           <li>
             <figure>
               <img src="https://i.imgur.com/JkeRcc8.png" alt="iphone web application">
@@ -191,7 +191,7 @@
           </li>
         </ul>
 
-        <ul class="protfolio_pieces">
+        <ul class="protfolio-pieces">
           <li>
             <figure>
               <img src="https://i.imgur.com/xwvS1zk.png" alt="logotypes webpage">
@@ -215,7 +215,7 @@
           </li>
         </ul>
 
-        <ul class="protfolio_pieces">
+        <ul class="protfolio-pieces">
           <li>
             <figure>
               <img src="https://i.imgur.com/ni8qOUP.png" alt="Managment Webpage">
@@ -401,16 +401,18 @@
 
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
 
-        <section>
-          <form class="l-contact-map">
-            <input type="text" name="company name" placeholder="Company Name">
-            <input type="text" name="email" placeholder="egmail">
-            <input type="text" name="message" placeholder="Message...">
-            <button type="button">SEND MESSAGE</button>
+        <section class="l-contact-body">
+          <form class="l-contact-form">
+            <input class="l-contact-input-company p-contact-form" type="text" name="company name" placeholder="COMPANY NAME">
+            <input class="l-contact-input-email p-contact-form" type="email" name="email" placeholder="YOUR@EMAIL.COM">
+            <textarea class="l-contact-input-message p-contact-form" type="text" name="message" placeholder="MESSAGE..."></textarea>
+            <div class="p-button-holder l-message-button">
+              <div class="p-button-holder">SEND MESSAGE</div>
+            </div>
           </form>
 
-          <figure>
-            <img src="" alt="USA,  San Francisco, 57010, Little Parry St. 826/31 +970 897 580 (7:00 - 20:00) info@company.com" title="company location">
+          <figure class="l-contact-map">
+            <img src="img/map.png" alt="USA,  San Francisco, 57010, Little Parry St. 826/31 +970 897 580 (7:00 - 20:00) info@company.com" title="company location">
           </figure>
         </section>
       </section>
@@ -423,8 +425,6 @@
           <a href="404.html"><span class="icon-dribbble"></span></a>
           <a href="404.html"><span class="icon-google-plus"></span></a>
         </div>
-        <!-- Facebook, twitter, dribble incons.  -->
       </footer>
     </body>
   </html>
-
