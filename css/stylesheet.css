@@ -88,6 +88,9 @@ a {
 footer {
   text-align: center;
 }
+.p-home {
+  background-image: url("https://i.imgur.com/oVRIX4Z.png");
+}
 .port-navbar {
   display:flex;
   flex-direction: row;
