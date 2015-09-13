@@ -1,0 +1,70 @@
+/* Created via icomoon.com */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-3u1mbw');
+	src:url('fonts/icomoon.eot?#iefix-3u1mbw') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-3u1mbw') format('truetype'),
+		url('fonts/icomoon.woff?-3u1mbw') format('woff'),
+		url('fonts/icomoon.svg?-3u1mbw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-droplet:before {
+	content: "\e601";
+}
+.icon-quill:before, .icon-flask:before, .icon-gear:before  {
+	content: "\e600";
+}
+.icon-flask:before {
+	content: "\e606";
+}
+.icon-gear:before {
+	content: "\e605";
+}
+/* changed to :after b/c :before is being used for
+ the background change on hover in main.css */
+.portfolio figure a.icon-see-more:after { 
+	content: "\e607";
+}
+.icon-facebook:before, .icon-twitter:before, .icon-dribbble:before, .icon-linkedin:before, .icon-google-plus:before {
+	content: "\e60b";
+}
+.icon-twitter:before {
+	content: "\e60c";
+}
+.icon-dribbble:before {
+	content: "\e60d";
+}
+.icon-linkedin:before {
+	content: "\e60e";
+}
+.icon-google-plus:before {
+	content: "\e60a";
+}
+.icon-go-right:before {
+	content: "\e608";
+}
+.icon-go-left:before {
+	content: "\e609";
+}
+.icon-envelope:before {
+	content: "\e602";
+}
+.icon-pushpin:before {
+	content: "\e603";
+}
+.icon-mobile:before {
+	content: "\e604";
+}

@@ -1,0 +1,105 @@
+/* notched edge */
+
+header {
+    position: relative;
+}
+
+header:after, header:before {
+    position: absolute;
+    content: "";
+    width: calc(50% - 105px);
+    height: 0;
+    border-bottom: 1.333em solid #fd6632;
+    border-left: 100px solid transparent;
+    left: calc(50% + 5px);
+    bottom: 0;
+}
+header:before {
+  border-left: none;
+    border-right: 100px solid transparent;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+/* Team bios and client slider*/
+.team {
+  padding: 10px;
+  text-align: center;
+  color: rgb(124,131,135);
+  font-weight: 100;
+}
+.team h3 {
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0.08em;
+}
+.team h4 {
+  font-size: 75%;
+  padding: 5px 0 20px 0;
+}
+.team p {
+  line-height: 1;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.team figcaption {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.slider-button {
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+}
+figure ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+figure li {
+  display: inline;
+}
+
+
+/* Portfolio image links and hover behavior */
+.portfolio h4 {
+  font-weight: bold; 
+  color: #000;
+  padding-bottom: 0.5em;
+}
+.portfolio figure {
+  margin: 20px calc(50% - 150px);
+}
+.portfolio figcaption {
+  margin-top: 10px;
+}
+.portfolio figure a {
+  display: inline-block;
+  width: 300px;
+  height: 220px;
+  position: relative;
+}
+.portfolio figure a:after {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 220px;
+  width: 300px;
+  opacity: 0;
+  font-size: 2em;
+  line-height: 220px;
+  color: #fd6632;
+  background-color: rgba(0,0,0,0.5);
+}
+.portfolio figure a:hover:after {
+  opacity: 1;
+}

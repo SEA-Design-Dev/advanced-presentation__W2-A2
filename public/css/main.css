@@ -1,0 +1,934 @@
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+    General styles
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+}
+body {
+  width: 100%;
+}
+article {
+  clear: left;
+  padding: 2em 2em 1em 2em;
+}
+p {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: #fd6632;
+  color: white;
+  padding: 1em 1.5em;
+  font-size: 1em;
+}
+button:hover {
+  cursor: pointer;
+}
+article h1, .services h3, .about h2, .clients h2 {
+  position: relative;
+  font-size: 1.777em;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.flex-container {
+  /*adapted from flexboxin5.com*/
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.nav ul {
+  list-style-type: none;
+}
+.nav a {
+  color: rgb(124,131,135);
+}
+.nav a:hover {
+  color: rgb(0,0,0);
+}
+/* General styles desktop layout */
+@media screen and (min-width: 50em) {
+  body {
+    max-width: 80em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  article {
+    padding: 2em 8%;
+  }
+  article h1, .services h3, .about h2, .clients h2 {
+    font-size: 2.369em;
+  }
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+    Mock strikethrough styles
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+article h1:before, article h1:after, .services h3:before, .services h3:after, .about h2:before, .about h2:after, .clients h2:before, .clients h2:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: '\a0';
+  background-color: #fff;
+}
+.portfolio h1:before, .portfolio h1:after, .team h1:before, .team h1:after, .clients h2:before, .clients h2:after {
+  background-color: rgb(124,131,135);
+}
+article h1:before, .services h3:before, .about h2:before, .team h1:before, .clients h2:before {
+  margin-left: -50%;
+  text-align: right;
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+    Bottom-notch styles
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.header-notch:after, .header-notch:before {
+  position: absolute;
+  content: "";
+  width: calc(50% - 88px);
+  height: 0;
+  border-bottom: 20px solid #fd6632;
+  border-left: 85px solid transparent;
+  left: calc(50% + 3px);
+  bottom: 0;
+}
+.header-notch:before {
+  border-left: none;
+  border-right: 85px solid transparent;
+  left: 0;
+}
+.orange-notch, .white-notch, .black-notch {
+  position: relative;
+  left: 50%;
+  bottom: 16px;
+}
+.orange-notch:before,
+.orange-notch:after, .white-notch:before,
+.white-notch:after, .black-notch:before,
+.black-notch:after {
+    position: absolute;
+    content: "";
+    left: calc(50% + 10px);
+    bottom: -41px;
+    width: 40px;
+    height: 100px;
+    background-color: #fd6632;
+    -moz-border-radius: 0 180px 50px 50px;
+    border-radius: 0 100px 50px 50px;
+    -webkit-transform: rotate(-75deg);
+       -moz-transform: rotate(-75deg);
+        -ms-transform: rotate(-75deg);
+         -o-transform: rotate(-75deg);
+            transform: rotate(-75deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.orange-notch:after, .white-notch:after, .black-notch:after {
+    left: calc(50% - 55px);
+    -moz-border-radius: 100px 0 50px 50px;
+    border-radius: 100px 0 50px 50px;
+    -webkit-transform: rotate(75deg);
+       -moz-transform: rotate(75deg);
+        -ms-transform: rotate(75deg);
+         -o-transform: rotate(75deg);
+            transform: rotate(75deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+}
+.white-notch:before, .white-notch:after {
+  background-color: #fff;
+  z-index: 1;
+}
+.black-notch:before, .black-notch:after {
+  background-color: #2a2a2e;
+}
+@media screen and (min-width: 50em) {
+  .orange-notch:before,
+  .orange-notch:after, .white-notch:before,
+  .white-notch:after, .black-notch:before,
+  .black-notch:after {
+    bottom: -38px;
+  }
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+    Top navigation bar
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.top-nav {
+  padding: auto 0;
+}
+.top-nav li {
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: .5em;
+  font-weight: 300;
+}
+/* flex nav wrapper - adapted from flexboxin5.com */
+.flex-navbar {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-align-content: flex-start;
+  -webkit-align-items: flex-start;
+}
+/* flex nav items - adapted from flexboxin5.com */
+.flex-nav-1, .flex-nav-2, .flex-nav-3, .flex-nav-4, .flex-nav-5, .flex-nav-6 {
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -webkit-flex-basis: 8em;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 8em;
+}
+/* Nav desktop layout */
+@media screen and (min-width: 50em) {
+  .top-nav {
+    padding-left: 10em;
+    padding-right: 10em;
+    border-bottom: 1px solid rgba(124,131,135,0.5);
+  }
+  .top-nav li {
+    border: none;
+  }
+  /* flex nav items - adapted from flexboxin5.com */
+  .flex-nav-1, .flex-nav-2, .flex-nav-3, .flex-nav-4, .flex-nav-5, .flex-nav-6 {
+    -webkit-flex-basis: 4em;
+    flex-basis: 4em;
+  }
+}
+/*&&&&&&&&&&&&&&&&
+
+    Header
+
+&&&&&&&&&&&&&&&&&&*/
+header {
+  clear: left;
+  position: relative;
+  background-image: url("../images/top-bkgrnd.jpg");
+  /* TA Dale said a relative path like this, inside our css file, was fine */
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 15em;
+  text-align: center;
+  padding-bottom: 1em;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.icon-droplet {
+  margin-bottom: .3em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #fd6632;
+  font-size: 3.157em;
+  color: #fff;
+  line-height: 1.5;
+}
+header h1 {
+  padding: 1em .5em;
+}
+.headertext {
+  width: 90%;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+.underline {
+  border-bottom: 1px solid #fd6632;
+}
+/* Header desktop layout */
+@media screen and (min-width: 50em) {
+  header {
+    height: 25em;
+  }
+  .headertext {
+    max-width: 28em;
+    font-size: 1.618em;
+  }
+}
+/*&&&&&&&&&&&&&&&&
+
+    Services article
+
+&&&&&&&&&&&&&&&&&&*/
+.services {
+  position: relative;
+  background-color: #fd6632;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+}
+.services h2, .services h3 {
+  font-size: 1.777em;
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+}
+.services h1 {
+  margin-bottom: 1em; 
+}
+.services h3 {
+  margin: 0 10%;
+}
+.services p {
+  margin: 0em 0 2em 0;
+}
+ /* Services article flex paragraphs */
+.flex-paragraphs {
+  -webkit-flex-direction: row; /* safari mobile needs -webkit- */
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-align-content: flex-start;
+  -webkit-align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: stretch;
+}
+.flex-paragraph-1 {
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -webkit-flex-basis: 98%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 98%;
+}
+.flex-paragraph-2, .flex-paragraph-3 {
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -webkit-flex-basis: 48%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 48%;
+  padding-right: 1em;
+}
+.strengths {
+  background-color: #fd6632;
+  color: white;
+  font-family: Helvetica;
+  text-align: center;
+}
+.strengths figcaption {
+  font-size: 0.75em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 80%;
+  margin: 1em auto 2.5em auto;
+}
+.icon-quill:before, .icon-flask:before, .icon-gear:before  {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 3.157em;
+  color: #fd6632;
+  line-height: 2;
+}
+/*Pricing tables */
+table {
+  text-align: center;
+  background-color: #fff;
+  display: inline-block;
+  margin: 1em;
+}
+caption {
+  background-color: #7f3319;
+  padding: 1em;
+}
+th, td {
+  color: #414141;
+  padding: 1em;
+  border-top: 1px solid #fd6632;
+  font-size: 0.75em;
+}
+th strong {
+  font-size: 1.333em;
+}
+.price {
+  color: #fd6632;
+}
+.signup {
+  background-color: #be4c25;
+  padding: 1.5em 4.157em;
+  border-top: 1px solid #fd6632;
+}
+/* Services article desktop layout */
+@media screen and (min-width: 50em) {
+  .services {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .selling-points {
+    margin: 2em auto;
+  }
+  .strengths {
+    display: inline-block;
+    width: 32%;
+  }
+  .strengths figcaption {
+    font-size: 0.9em;
+  }
+  .price-tables h3 {
+    margin-bottom: 0.5em;
+  }
+
+}
+/*&&&&&&&&&&&&&&&&
+
+    Portfolio article
+
+&&&&&&&&&&&&&&&&&&*/
+.portfolio {
+  text-align: center;
+  color: rgb(124,131,135);
+  padding-top: 2.5em; 
+}
+.portfolio > img {
+  margin: 1em calc(50% - 470px); /* 470 is half the img width */
+}
+.secondary-nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+.secondary-nav li {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  padding: .5em;
+  margin: 0.5em auto;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 0.5em;
+}
+.portfolio h4 {
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 0.5em;
+}
+.portfolio figure {
+  margin: 2em calc(50% - 150px) 1em calc(50% - 150px); /* 150px is half the img width */
+}
+.portfolio figcaption {
+  margin-top: 1em;
+}
+.portfolio figure a {
+  display: inline-block;
+  width: 300px;  /* dimensions of img */
+  height: 220px;
+  position: relative;
+}
+/* defines hover area for fadeout */
+.portfolio figure a:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 220px;  /* dimensions of img */
+  width: 300px;
+}
+/* black fadeout over portfolio link img on hover */
+.portfolio figure a:hover:before {
+  background-color: rgba(0,0,0,0.5);
+}
+/* changed to :after b/c :before is being used for
+ the background change on hover */
+.portfolio figure a.icon-see-more:after {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 1em);
+  left: calc(50% - 1em);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #fd6632;
+  font-size: 2.369em;
+  color: #fff;
+  line-height: 2;
+  opacity: 0;
+}
+.portfolio figure a.icon-see-more:hover:after {
+  opacity: 1;
+}
+/* Portfolio article desktop layout */
+@media screen and (min-width: 50em) {
+  .portfolio figure {
+    margin: 0 0 1em 0;
+  }
+  .secondary-nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .secondary-nav li {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+  .secondary-nav a {
+    display: inline-block;
+    padding: 0.5em;
+  }
+  .secondary-nav a:hover {
+    color: rgb(0,0,0);
+    background-color: #fd6632;
+  }
+  /* secondary nav wrapper */
+  .flex-secnav {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+  }
+  /* secondary nav items */
+  .flex-secnav-item-1, .flex-secnav-item-2, .flex-secnav-item-3, .flex-secnav-item-4, .flex-secnav-item-5 {
+    -webkit-flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-basis: 20em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 20em;
+  }
+  .thumbnail {
+    padding: 1em 0.5em;
+  }
+  /* portfolio gallery wrapper */
+  .gallery-flex {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: row; /*safari also required these to have -webkit*/
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-content: flex-start;
+    -webkit-align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+    padding-bottom: 1em;
+  }
+  /* portfolio gallery items */
+  .gallery-item-flex-1, .gallery-item-flex-2, .gallery-item-flex-3, .gallery-item-flex-4, .gallery-item-flex-5, .gallery-item-flex-6, .gallery-item-flex-7, .gallery-item-flex-8, .gallery-item-flex-9 {
+    -webkit-flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-basis: 300px;/* set to match img width of 300*/
+    width: 300px; /*img dimensions*/
+    height: 250px;
+  }
+}
+/*&&&&&&&&&&&&&&&&&
+
+    About article
+
+&&&&&&&&&&&&&&&&&*/
+.about {
+  background-color: #2a2a2e;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  padding-bottom: 2.5em;
+  padding-top: 2.5em;
+}
+.about h2 {
+  font-size: 1.777em;
+  margin: 0 10% 1em 10%;
+  letter-spacing: 0.05em;
+}
+.about h3 {
+  padding: 1em 0 1.5em 0;
+}
+.about p {
+  margin: 1em 0;
+}
+.about figure {
+  padding: 1em auto;
+}
+.about figcaption {
+  text-align: left;
+}
+.about button {
+  padding: 1em 3em;
+}
+progress {
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 1.5em;
+  background: #3a3a3a;
+  margin: 0 0 1.5em;
+}
+/* for FIREFOX */
+progress::-moz-progress-bar {
+  background: #fd6632;
+}
+/* for SAFARI */
+progress::-webkit-progress-value {
+  background: #fd6632;
+}
+/* background for SAFARI & CHROME */
+progress::-webkit-progress-bar {
+  background-color: #3a3a3a;
+}
+/* About article desktop layout */
+@media screen and (min-width: 50em) {
+  .about {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .about .flex-paragraphs {
+    padding: 1em 0 2em 0;
+  }
+  .progressbars {
+     padding: 1em 0;
+  }
+}
+/*$$$$$$$$$$$$$$$$$$
+
+    Team article
+
+$$$$$$$$$$$$$$$$$$$*/
+.team {
+  text-align: center;
+  color: rgb(124,131,135);
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+.team h1 {
+  color: #000;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+.team h2 {
+  font-size: 1.777em;
+  color: #000;
+  margin: 0em 10% 1em 10%;
+}
+.team h3 {
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0.08em;
+  margin-top: 2em;
+}
+.team h4 {
+  font-size: 0.75em;
+  padding: 0.5em 0 1.5em 0;
+  letter-spacing: 0.05em;
+}
+.team p {
+  margin: 1.5em 0;
+}
+.team figcaption {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 100;
+}
+/* Clients slider */
+.clients {
+  padding-top: 1.5em;
+}
+.clients figure {
+  border: 1px solid rgb(124,131,135);
+  border-radius: 1em;
+  padding: 1.5em;
+  margin: 0 0.5em;
+}
+.clients h3 {
+  margin-top: 1em;
+  padding: 0;
+  color: #fd6632;
+  line-height: 1;
+}
+.clients h4 {
+  padding: 0;
+  color: #000;
+  line-height: 1;
+}
+.clients figcaption {
+  width: 100%;
+}
+.slider-button-L, .slider-button-R {
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+}
+.slider-button-L {
+  float: left;
+}
+.slider-button-R {
+  float: right;
+}
+.icon-go-right:before, .icon-go-left:before  {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  font-size: 1.777em;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(124,131,135);
+}
+@media screen and (min-width: 50em) {
+  .icon-go-right:before, .icon-go-left:before {
+    font-size: 3.157em;
+    background-color: #fd6632;
+  }
+}
+/* Social media icons */
+.social-icons {
+  list-style-type: none;
+  margin: 1.5em 0 1em 0;
+}
+.social-icons li {
+  display: inline;
+}
+.icon-facebook:before, .icon-twitter:before, .icon-dribbble:before, .icon-linkedin:before, .icon-google-plus:before {
+  background-color: #3B5998;
+  color: #fff;
+  height: 1.4em;
+  width: 1.4em;
+  line-height: 1.4em;
+  padding: 3px;
+}
+.icon-twitter:before {
+  background-color: #00aced;
+}
+.icon-dribbble:before {
+  background-color: #ea4c89;
+}
+.icon-linkedin:before {
+  background-color: #007bb6;
+}
+.icon-google-plus:before {
+  background-color: #ecbb0a;
+}
+.icon-facebook:hover:before, .icon-twitter:hover:before, .icon-dribbble:hover:before, .icon-linkedin:hover:before, .icon-google-plus:hover:before {
+  background-color: #fd6632;
+}
+/* Team article desktop layout */
+@media screen and (min-width: 50em) {
+  /* Team article */
+  .team-member {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: .5em;
+  }
+  .team h3 {
+    margin-top: 0;
+  }
+  /* Clients slider */
+  .clients {
+    clear: both;
+    text-align: left;
+  }
+  .clients h3, .clients h4 {
+    display: inline;
+  }
+  .clients p {
+    margin-top: 1em;
+    line-height: none;
+    letter-spacing: none;
+  }
+  .clients figure {
+    border: none;
+    border-radius: 0;
+    padding-top: 2em;
+  }
+  .clients img {
+    float: left;
+    margin-left: 1em;
+  }
+  .clients figcaption {
+    float: left;
+    margin-left: 2em;
+    margin-right: 1em;
+    width: calc(90% - 8em - 82px); /*82px is the img dimension*/
+  }
+  .slider-button-L, .slider-button-R {
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    margin-top: 2em;
+  }
+  .slider-button-L {
+    float: left;
+  }
+  .slider-button-R {
+    float: right;
+  }
+}
+/*$$$$$$$$$$$$$$$$$$
+
+    Contact article
+
+$$$$$$$$$$$$$$$$$$$*/
+.contact {
+  color: #fff;
+  font-weight: 100;
+  padding-top: 2.5em;
+  /*below is background to show map thru orange*/
+  background:
+    linear-gradient(
+      rgba(253, 102, 50, 0.92),
+      rgba(253, 102, 50, 0.92)
+    ),
+    url('../images/bkgrnd-map.png');
+}
+.contact p {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+/* Contact form */
+.contact form {
+  width: 100%;
+  display: inline-block;
+}
+.contact form input, .contact form textarea {
+  box-sizing: border-box;
+  background-color: rgba(126, 50, 24, 0.8);
+  border: none;
+  display: block;
+  padding: 1.5em;
+  width: 100%;
+  margin: 1em auto;
+}
+.contact form input:first-child {
+  margin-top: 0;
+}
+.contact form input::-webkit-input-placeholder,
+.contact form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+.messageinput {
+  height: 10em;
+}
+.contact form button {
+  width: 100%;
+  padding: 1em 0;
+  color: #fd6632;
+  background-color: white;
+  margin-bottom: 2em;
+  font-size: 0.75em;
+}
+/* Location map */
+.contactmap figure {
+  position: relative;
+}
+.contactmap ul {
+  background-color: rgba(77,77,77,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 1em;
+}
+.contactmap li {
+  margin-top: 1.5em;
+  padding-left: 0.8em;
+  display: inline-block;
+  font-size: 0.75em;
+}
+.contactmap a {
+  color: #fff; /* phone number on mobile */
+}
+.contactmap img {
+  width: 100%;
+}
+.icon-envelope:before, .icon-pushpin:before, .icon-mobile:before {
+  padding-right: 0.5em;
+  display: inline-block;
+}
+/* Contact article desktop layout */
+@media screen and (min-width: 50em) {
+  /* Contact form */
+  .contactform {
+    width: calc(50% - 0.5em);
+    float: left;
+    margin: 1em 0.5em 0 0;
+  }
+  .contact {
+    position: relative;
+  }
+  .contact p {
+    margin: 2em 4% 1em 4%;
+  }
+  .contact form button {
+    width: 40%;
+    float: right;
+  }
+  /* Location map */
+  .contactmap {
+    margin: 1em 0 0 0.5em;
+    width: calc(50% - 0.5em);
+    float: left;
+  }
+  .contactmap figure {
+    position: relative;
+  }
+  .contactmap ul {
+    background-color: rgba(77,77,77,0.8);
+    position: absolute;
+    top: 0;
+    padding-bottom: 1em;
+  }
+  .contactmap li {
+    margin-top: 1.5em;
+    padding-left: 0.5em;
+    display: inline-block;
+    font-size: 0.75em;
+  }
+}
+/*$$$$$$$$$$$$$$$$$$
+
+    Footer
+
+$$$$$$$$$$$$$$$$$$$*/
+footer {
+  text-align: center;
+  padding: 3em 1em;
+}
+footer a {
+  color: #fd6632;
+}
+footer a:hover {
+  color: rgb(124,131,135);
+}
