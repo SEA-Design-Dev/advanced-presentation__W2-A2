@@ -320,10 +320,14 @@ color: #fc6432;
   content:url("http://i.imgur.com/o7Przf2.png")
 }
 .protfolio_pieces{
-  display: inline-block;
-  margin: auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom: 4em;
   text-align: center;
-  }
+}
 .l-about-columns p{
   text-align: center;
 }
@@ -381,14 +385,6 @@ progress::-webkit-progress-value {
 
 @media only screen and (min-width: 568px) {
 
-.protfolio_pieces{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  margin-bottom: 4em;
-}
 
 .icon-menu{
   display: none;
