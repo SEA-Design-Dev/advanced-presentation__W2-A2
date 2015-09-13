@@ -208,16 +208,16 @@ body {
 .mobileNavToggle {
   display: none;
 }
-#mobileNavToggle:checked ~ .l-nav {
+.mobileNavToggle:checked ~ .l-nav {
   left: 0;
 }
-#mobileNavToggle:checked ~ .icon-menu {
+.mobileNavToggle:checked ~ .icon-menu {
   left: 15em;
 }
-#mobileNavToggle:checked ~ .trigger {
+.mobileNavToggle:checked ~ .trigger {
   pointer-events: auto;
 }
-#mobileNavToggle:checked ~ .page-wrapper {
+.mobileNavToggle:checked ~ .page-wrapper {
   right: -15em;
 }
 
