@@ -619,6 +619,12 @@ progress::-webkit-progress-value {
   text-align: left;
   margin-left: 5%;
   line-height: .1;
+  margin-bottom:  .1em;
+  margin-top: 2em;
+}
+
+.s-progress-question-text {
+  margin-top: 5em;
 }
 
 .contact-btn {
