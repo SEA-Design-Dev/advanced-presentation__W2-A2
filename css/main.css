@@ -778,6 +778,10 @@ input, textarea {
     color: #fd6632;
   }
 
+   .nav-link a:hover {
+    color: #fd6632;
+  }
+
   .slider-break {
     display: block;
     width: 100%;
