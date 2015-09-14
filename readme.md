@@ -1,3 +1,6 @@
+9/14/15
+Week 3 assignment
+
 # Week Two - Advanced Presentation
 
 The home nav bar was created with the help and information from the following site.
