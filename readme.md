@@ -54,7 +54,38 @@ __DO NOT__ fence yourself in with invisible constraints. Unless it is specifical
 
 In the last assignment we covered the concepts behind semantic and modular HTML. This project assignment is engineered to build on top of those principals and work in more advanced presentation skills, to include RWD. 
 
+SOURCES & COLLABORATORS
+-Authored by Sredna Kunowski & Brian Finck
 
+Stackoverflow
+-Use <figure> element for icons? html5
+-Keeping a string of text together on one line by Jsous
+-CSS Title with Horizontal Line on either side by Romain Pellerin
+
+MDN
+-HTML element reference
+-<hgroup>
+-menu tag
+-<menuitem>
+-HTML forms guide
+
+W3Schools
+-HTML <nav> Tag
+-HTML <button> type Attribute
+-HTML Containers
+-html images
+
+MrColes blog
+-How to use ampersands in HTML: to encode or not to encode?
+
+Icomoon.com
+-Got these icons from the site:facebook,twitter,dribble,linkedin,googleplus, circles left and right.
+
+CSS tricks
+-How to make a triangle in css,https://css-tricks.com/snippets/css/css-triangle/
+
+-Contact form code from James Georde at http://www.sitepoint.com/style-web-forms-css/
+- html placeholders, Placeholder text in an input field with CSS only (no JavaScript) by david jones
 
 
 
