@@ -1,12 +1,16 @@
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Droid sans", sans-serif;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 @font-face {
-  font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?-lo05z1');
-  src:url('fonts/icomoon.eot?#iefix-lo05z1') format('embedded-opentype'),
+  font-family: 'avengers-icons';
+  src: url('fonts/icomoon.eot?-lo05z1');
+  src: url('fonts/icomoon.eot?#iefix-lo05z1') format('embedded-opentype'),
     url('fonts/icomoon.ttf?-lo05z1') format('truetype'),
     url('fonts/icomoon.woff?-lo05z1') format('woff'),
     url('fonts/icomoon.svg?-lo05z1#icomoon') format('svg');
@@ -14,7 +18,7 @@
   font-style: normal;
 }
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
+  font-family: 'avengers-icons';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -22,12 +26,12 @@
   text-transform: none;
   line-height: 3;
   font-size: 24px;
- -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .p-services [class^="icon-"], [class*=" icon-"] {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   margin: auto;
 }
 .icon-paint-format:before {
@@ -65,16 +69,15 @@
   width: 100%;
   text-align: center;
 }
-.icons span{
-  color: white;
+.icons span {
+  color: #fff;
   display: inline-block;
   -webkit-transition: -webkit-transform .25s ease-in-out;
   transition: transform .25s ease-in-out;
   line-height: 1;
 }
 .icons span:hover {
-  border: white;
-  -ms-transform: scale(1.25,1.25);
+  border: #fff;
   -webkit-transform: scale(1.25,1.25);
   transform: scale(1.25,1.25);
   transition: .25s ease-in-out;
@@ -82,52 +85,44 @@
 .icon-menu:before {
    content: "\e608";
 }
-
 /*Nav bar mobile*/
 .icon-menu {
-  width:100%;
-  text-align:center;
+  width: 100%;
+  text-align: center;
 }
-
 .mobile-menu ul {
-  list-style-type:none;
+  list-style-type: none;
   margin: 0 auto;
-  padding-left:0;
-  text-align:center;
-  width:97.2%;
+  padding-left: 0;
+  text-align: center;
+  width: 97.2%;
   position: absolute;
   background: #999f9f;
 }
-
 .mobile-menu li a {
-  display:block;
+  display: block;
   font-family: Helvetica;
   color: #fff;
-  text-transform:uppercase;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 1.3em;
   line-height: 2em;
   padding: 10px 0;
 }
-
-.mobile-menu input[type=checkbox]{
+.mobile-menu input[type=checkbox] {
     display: none;
 }
-
-.mobile-menu input[type=checkbox]:checked ~ .menu{
+.mobile-menu input[type=checkbox]: checked ~ .menu{
   display: block;
 }
-
 .mobile-menu ul {
   display: none;
   z-index: 100;
 }
-
 .icon-menu {
-    display:inline-block;
+    display: inline-block;
 }
 /*nav bar end*/
-
 a {
   text-decoration: none;
 }
@@ -137,8 +132,12 @@ footer {
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png");
 }
+.l-home {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
 .port-navbar {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -151,15 +150,11 @@ footer {
   display: inline-block;
   text-align: center;
   font-size: 1em;
-  font-family: "Droid sans", sans-serif;
   text-decoration: none;
-  color:#a3a3a3;
-}
-.port-navbar a:hover {
-  background-color: red;
+  color: #a3a3a3;
 }
 .icon-menu {
-    display:inline-block;
+  display: inline-block;
 }
 nav ul, nav:active ul {
   display: none;
@@ -173,9 +168,8 @@ nav li {
 nav:hover ul {
    display: block;
 }
-
-.protfolio_pieces{
-  display:flex;
+.protfolio_pieces {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -183,15 +177,18 @@ nav:hover ul {
   margin-bottom: 4em;
   text-align: center;
 }
-.l-icon-outer {
+.l-logo {
   position: relative;
   margin: auto;
-  border-radius: 50%;
+  margin-bottom: 10%;
   height: 75px;
   width: 75px;
+}
+.p-logo-1 {
+  border-radius: 50%;
   background-color: #fc6432;
 }
-.l-droplet-icon {
+.p-logo-2 {
   position: absolute;
   left: 25px;
   top: 25px;
@@ -202,14 +199,14 @@ nav:hover ul {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
-  -webkit-transform:rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   z-index: 99;
-  background: white;
+  background: #fff;
 }
-.l-droplet-icon-interior {
+.p-logo-3 {
   position: absolute;
   left: 2.5px;
-  top: 2.5px;
+  top: 2px;
   margin: auto;
   width: 20px;
   height: 20px;
@@ -220,19 +217,18 @@ nav:hover ul {
   z-index: 150;
   background: #fc6432;
 }
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
 .l-home-spacer {
   height: 4em;
 }
-.l-home-text {
+.p-home-text {
   font-weight: lighter;
   margin: auto;
   width: auto;
   text-align: center;
-  font-family: "Droid sans";
+}
+.p-home-text span {
+  text-decoration: underline;
+  color: #fc6432;
 }
 .l-pricing-tables {
   margin-bottom: 0;
@@ -242,13 +238,11 @@ h2 {
 }
 h3 {
   font-size: 1.0em;
-  font-family: "Droid sans", sans-serif, sans-serif;
 }
 p {
-  font-family: "Droid sans", sans-serif, sans-serif;
   font-size: 1em;
 }
-footer h1{
+footer h1 {
   margin: .9px;
 }
 .p-divet {
@@ -259,44 +253,40 @@ footer h1{
   border-right: 80px solid transparent;
   margin: auto;
 }
-.p-title-line{
-    border-bottom: 1px white solid;
-    width: 15%;
+.p-title-line {
+  border-bottom: 1px #fff solid;
+  width: 15%;
 }
-
-.p-title{
+.p-title {
   text-transform: uppercase;
   padding-left: 4%;
   padding-right: 4%;
 }
-.p-title-line_gray{
-  color: black;
+.p-portfolio .p-title-line, .p-team .p-title-line {
+  color: #000;
   border-bottom: 1px #bfbfbf solid;
   width: 15%;
 }
-.p-title-line_little{
-  border-bottom: 1px white solid;
+.p-subtitle-line {
+  border-bottom: 1px #fff solid;
   width: 10%;
 }
-.p-title-line_little_gray{
-  color:black;
-  border-bottom: 1px gray solid;
+.p-portfolio .p-subtitle-line, .p-team .p-subtitle-line {
+  color: #000;
+  border-bottom: 1px #bfbfbf solid;
   width: 10%;
 }
-
-.l-title{
-  display:flex;
+.l-title {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
-.p-title{
+.p-title {
   text-transform: uppercase;
   padding-left: 4%;
   padding-right: 4%;
 }
-
 .l-team {
   text-align: center;
 }
@@ -306,71 +296,77 @@ footer h1{
 .p-team h4 {
 color: #fc6432;
 }
-.l-client-link {
+.l-client-carousel-button {
   position: relative;
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  background-color: #fc6432;
   text-align: center;
   margin: auto;
+}
+.p-client-carousel-button {
+  border-radius: 50%;
+  background-color: #fc6432;
 }
 .p-client-link {
   position: absolute;
   top: 10px;
   left: 15px;
-  color: white;
+  color: #fff;
 }
-.l-client-link:hover {
+.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
   background-color: #7f331b;
-}
-.p-home {
-  font-family: "Droid sans", sans-serif;
+  color: #fc6432;
 }
 .p-services {
   background-color: #fc6432;
-  font-family: "Droid sans";
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 1em;
 }
 .p-services .p-divet {
-    border-top: 20px solid white;
-}
-.p-services .l-icon-outer {
-  background-color: white;
+    border-top: 20px solid #fff;
 }
 .p-services figcaption {
   margin: auto;
   width: 100%;
   font-size: 1em;
 }
+.l-service-logo {
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 75px;
+  width: 75px;
+}
+.p-service-logo {
+  background-color: #fff;
+  border-radius: 50%;
+}
 .p-pricing-tables {
   font-family: "Lato";
-  font-size: 2.5em;
+  font-size: 2em;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 10%;
   margin-right: 10%;
   padding-bottom: 10%;
   background-color: #fc6432;
-  color: black;
+  color: #000;
   padding-left: 0;
   border-bottom: 1px;
 }
 .p-pricing-tables li {
-  background-color: white;
+  background-color: #fff;
   border-bottom: solid #7f331b 2px;
 }
-.p-pricing-tables li:first-child {
+.p-pricing-tables li:nth-child(1) {
   background-color: #7f331b;
-  font-family: "Droid sans";
   font-weight: bolder;
-  color: white;
+  color: #fff;
 }
 .p-pricing-tables li:nth-child(2) {
   color: #fc6432;
-  font-family: "Droid sans";
   font-weight: bolder;
 }
 .p-pricing-tables div:last-child {
@@ -380,25 +376,16 @@ color: #fc6432;
 }
 .p-pricing-tables a {
   background-color: #fc6432;
-  font-family: "Droid sans";
-  color: white;
-  padding:.4em 10% .4em 10%;
+  color: #fff;
+  padding: .4em 10% .4em 10%;
 }
-.p-pricing-tables a:hover {
-background-color: #7f331b;
-color: #fc6432;
-}
-.p-pricing-tables a:active {
-color: #fc6432;
-}
-
-.big-little-slider{
+.big-little-slider {
   display: block;
   margin: auto;
-  content:url("http://i.imgur.com/o7Przf2.png")
+  content: url("http://i.imgur.com/o7Przf2.png")
 }
-.protfolio_pieces{
-  display:flex;
+.protfolio_pieces {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -406,23 +393,23 @@ color: #fc6432;
   margin-bottom: 4em;
   text-align: center;
 }
-.l-about-columns p{
+.l-about-columns p {
   text-align: center;
 }
 .p-about {
-  color: white;
-  background-color: black;
+  color: #fff;
+  background-color: #000;
 }
 .p-about .p-divet {
-    border-top: 20px solid white;
+  border-top: 20px solid #fff;
 }
-.l-about-bars{
-  display:flex;
+.l-about-bars {
+  display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
 }
-.l-about-bars li{
+.l-about-bars li {
   padding-top: .5em;
 }
 progress[value] {
@@ -448,21 +435,20 @@ progress::-webkit-progress-value {
   padding: 10px 40px 10px 40px;
 }
 .p-team {
-  font-family: "Droid sans", sans-serif, sans-serif;
   color: #999f9f;
 }
 .p-team .p-title, .p-team .p-subtitle {
-  color: black;
+  color: #000;
 }
 .p-team .p-divet {
-  border-top: 20px solid black;
+  border-top: 20px solid #000;
 }
 .p-contact {
   background-color: #fc6432;
-  color: white;
+  color: #fff;
 }
 .p-contact .p-divet {
-  border-top: 20px solid white;
+  border-top: 20px solid #fff;
 }
 .l-contact-blurb {
   margin: auto;
@@ -510,45 +496,40 @@ progress::-webkit-progress-value {
   background-color: #7f331b;
 }
 ::-webkit-input-placeholder {
-  color: white;
-  font-family: "Droid sans", sans-serif;
+  color: #fff;
 }
 :-moz-placeholder {
-  color: white;
+  color: #fff;
   opacity: 1;
-  font-family: "Droid sans", sans-serif;
 }
 ::-moz-placeholder {
-  color:  white;
+  color:  #fff;
   opacity: 1;
-  font-family: "Droid sans", sans-serif;
 }
-:-ms-input-placeholder {
-  color: #909;
-  font-family: "Droid sans", sans-serif;
+::-ms-input-placeholder {
+  color: #fff;
 }
 .p-contact .p-button-holder {
-  background-color: white;
+  background-color: #fff;
   color: #fc6432;
-  font-family: "Droid sans", sans-serif;
   text-align: center;
   padding: 2.5%;
 }
 .p-contact .p-button-holder:hover {
   background-color: #7f331b;
-  color: white;
+  color: #fff;
 }
 .p-author {
   color: #fc6432;
 }
 @media only screen and (min-width: 568px) {
 
-.icon-menu{
+.icon-menu {
   display: none;
 }
 
-.protfolio-pieces{
-  display:flex;
+.protfolio-pieces {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -557,10 +538,10 @@ progress::-webkit-progress-value {
 }
 
 .big-little-slider {
-  content:url("https://i.imgur.com/5Js2v9g.png");
+  content: url("https://i.imgur.com/5Js2v9g.png");
 }
 .p-navbar {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -570,9 +551,8 @@ progress::-webkit-progress-value {
   margin-right: 30%;
 }
 .l-navbar a {
-  font-family: "Droid sans", sans-serif;
   text-decoration: none;
-  color:#a3a3a3;
+  color: #a3a3a3;
 }
 .l-navbar a:hover {
   background-color: red;
@@ -580,22 +560,21 @@ progress::-webkit-progress-value {
 .l-home-spacer {
   height: 12em;
 }
-
 .l-upper-columns {
  width: 30%;
  margin-left: 5%;
  margin-right: 5%;
  display: inline-block;
 }
-.l-about-columns{
-  display:flex;
+.l-about-columns {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   margin-left: 5%;
   margin-right: 5%;
 }
-.l-about-columns p{
+.l-about-columns p {
  margin-left: 2%;
  margin-right: 2%;
 }
@@ -604,13 +583,13 @@ progress[value] {
   width: 550px;
   height: 20px;
 }
-progress::-webkit-progress-bar {
+progress:: -webkit-progress-bar {
   background: gray;
 }
-progress::-webkit-progress-value {
+progress:: -webkit-progress-value {
   background: #fd6632;
 }
-.l-droplet-icon {
+.p-logo-2 {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -621,11 +600,11 @@ progress::-webkit-progress-value {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
-  -webkit-transform:rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   z-index: 99;
-  background: white;
+  background: #fff;
 }
-.l-droplet-icon-interior {
+.p-logo-3 {
   position: absolute;
   left: 5px;
   top: 5px;
@@ -639,25 +618,10 @@ progress::-webkit-progress-value {
   z-index: 150;
   background: #fc6432;
 }
-
-.p-title-line{
-    border-bottom: 1px white solid;
-    width: 35%;
-}
-
-.p-title-line-gray{
-  color: black;
-  border-bottom: 1px #bfbfbf solid;
+.p-title-line {
   width: 35%;
 }
-
-.p-title-line-little{
-  border-bottom: 1px white solid;
-  width: 20%;
-}
-.p-title-line-little-gray{
-  color:black;
-  border-bottom: 1px gray solid;
+.p-subtitle-line {
   width: 20%;
 }
 .p-title {
@@ -665,8 +629,8 @@ progress::-webkit-progress-value {
   padding-left: 4%;
   padding-right: 4%;
 }
-.l-title{
-  display:flex;
+.l-title {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -700,7 +664,7 @@ progress::-webkit-progress-value {
   display: inline-block;
   margin: 0;
 }
-.l-client-link {
+.l-client-carousel-button {
   display: inline-block;
   margin-left: 3%;
   margin-right: 3%;
@@ -798,6 +762,4 @@ display: inline-block;
   width: 15%;
   display: inline-block;
 }
-
 }
-
