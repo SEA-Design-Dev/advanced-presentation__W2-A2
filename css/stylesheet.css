@@ -517,8 +517,7 @@ progress::-webkit-progress-value {
     padding-left: 15%;
     padding-right: 15%; }
   .mobile-menu li {
-  float: left;
-}
+    float: left; }
   .mobile-menu li a {
     color: #999f9f;
     font-size: 16px;
