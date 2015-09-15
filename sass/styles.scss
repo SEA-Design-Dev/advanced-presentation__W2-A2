@@ -49,28 +49,44 @@ $break: 667px;
 .l-flex-item {
   @extend %flex-item;
 
-  table & {
+  [data-flex-container="prices"] & {
     width: 80%;
     margin: auto;
   }
 
-  #contact & {
+  [data-flex-container="contact"] & {
     padding-top: 0;
     padding-bottom: 0;
   }
 
   @media only screen and (min-width: $break) {
 
-    #about & {
+    [data-flex-container="about"] & {
       max-width: 40%;
       padding-bottom: 5%;
     }
 
-    #team & {
+    [data-flex-container="team"] & {
       max-width: 25%;
     }
 
-    #contact & {
+    [data-flex-container="services-one"] & {
+      max-width: 40%;
+      &:first-child  {
+        max-width: 85%;
+      }
+    }
+
+    [data-flex-container="services-two"] & {
+      max-width: 30%;
+    }
+
+    [data-flex-container="prices"] & {
+      width: 20%;
+      margin: 1%;
+    }
+
+    [data-flex-container="contact"] & {
       text-align: right;
       margin-left: .5em;
       margin-right: .5em;
