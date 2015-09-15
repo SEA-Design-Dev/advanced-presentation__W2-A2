@@ -1,8 +1,9 @@
 $dark-orange: #fc6432;
 $white: #fff;
 
-* {
+body {
   box-sizing: border-box;
+  margin: 0 2% 2% 0;
   font-family: "Droid sans", sans-serif;
   text-align: center;
 }
@@ -71,28 +72,31 @@ ul {
   margin-bottom: 10%;
   width: 100%;
   text-align: center;
+  span {
+    color: $white;
+    display: inline-block;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    line-height: 1;
+    &:hover {
+      border: $white;
+      -webkit-transform: scale(1.25,1.25);
+      transform: scale(1.25,1.25);
+      transition: .25s ease-in-out;
+    }
+  }
 }
-.icons span {
-  color: $white;
-  display: inline-block;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  line-height: 1;
-}
-.icons span:hover {
-  border: $white;
-  -webkit-transform: scale(1.25,1.25);
-  transform: scale(1.25,1.25);
-  transition: .25s ease-in-out;
-}
-.icon-menu:before {
-   content: "\e608";
-}
-/*Nav bar mobile*/
+
 .icon-menu {
-  width:100%;
-  text-align:center;
-}
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  &:before {
+     content: "\e608";
+  }
+} 
+
+/*Nav bar mobile*/
 .mobile-menu ul {
   list-style-type:none;
   text-align:center;
@@ -118,9 +122,6 @@ ul {
 .mobile-menu ul {
   display: none;
   z-index: 100;
-}
-.icon-menu {
-    display: inline-block;
 }
 /*nav bar end*/
 
@@ -153,9 +154,6 @@ footer {
   font-size: 1em;
   text-decoration: none;
   color: #a3a3a3;
-}
-.icon-menu {
-  display: inline-block;
 }
 
 .protfolio_pieces {
@@ -516,19 +514,25 @@ progress::-webkit-progress-value {
 @media only screen and (min-width: 568px) {
 .mobile-menu ul {
   margin-top: 0;
-  width:100%;
-  padding-left: 18%;
+  padding-top: 1%;
+  width: 100%;
+  /*padding-left: 18%;*/
   padding-bottom: .5%;
   background-color: #fff;
-  display: inline;
-  border-bottom: 1px solid #999f9f;
+  display: inline-block;
+  border-bottom: 2px solid #999f9f;
+  left: 0;
 }
 .menu{
- padding-left: 15%;
- padding-right: 15%;
+  /*padding-left: 15%;*/
+  /*padding-right: 15%;*/
+  position: fixed;
 }
 .mobile-menu li {
-  float: left;
+  display: inline-block;
+  &:hover {
+  background-color: $dark-orange;
+  }
 }
 .mobile-menu li a {
   color:  #999f9f;
@@ -561,6 +565,7 @@ progress::-webkit-progress-value {
   margin-left: 30%;
   margin-right: 30%;
 }
+
 .l-navbar a {
   text-decoration: none;
   color: #a3a3a3;
@@ -568,14 +573,15 @@ progress::-webkit-progress-value {
 .l-navbar a:hover {
   background-color: red;
 }
+
 .l-home-spacer {
   height: 12em;
 }
 .l-upper-columns {
- width: 30%;
- margin-left: 5%;
- margin-right: 5%;
- display: inline-block;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
 }
 .l-about-columns {
   display: flex;
@@ -750,10 +756,11 @@ progress:: -webkit-progress-value {
   display: inline-block;
   width: 70%;
   margin: 3%;
+  & img {
+    display: inline-block;
+  }
 }
-.l-client-figure img {
-  display: inline-block;
-}
+
 .l-client-figure-txt {
   width: 70%;
   display: inline-block;
