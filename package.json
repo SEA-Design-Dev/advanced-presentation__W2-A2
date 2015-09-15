@@ -1,0 +1,23 @@
+{
+  "name": "a2-w3-sass-and-jquery",
+  "version": "1.0.0",
+  "description": "Lyle Scott & Zach Gordon D44 class week 3 project",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyle-Scott/advanced-presentation__W2-A2.git"
+  },
+  "author": "Lyle Scott & Zach Gordon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lyle-Scott/advanced-presentation__W2-A2/issues"
+  },
+  "homepage": "https://github.com/Lyle-Scott/advanced-presentation__W2-A2#readme"
+}
