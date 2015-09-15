@@ -1,3 +1,6 @@
+$dark-orange: #fc6432;
+$white: #fff;
+
 * {
   box-sizing: border-box;
   font-family: "Droid sans", sans-serif;
@@ -30,7 +33,7 @@ ul {
   -moz-osx-font-smoothing: grayscale;
 }
 .p-services [class^="icon-"], [class*=" icon-"] {
-  background-color: #fff;
+  background-color: $white;
   color: #000;
   margin: auto;
 }
@@ -70,14 +73,14 @@ ul {
   text-align: center;
 }
 .icons span {
-  color: #fff;
+  color: $white;
   display: inline-block;
   -webkit-transition: -webkit-transform .25s ease-in-out;
   transition: transform .25s ease-in-out;
   line-height: 1;
 }
 .icons span:hover {
-  border: #fff;
+  border: $white;
   -webkit-transform: scale(1.25,1.25);
   transform: scale(1.25,1.25);
   transition: .25s ease-in-out;
@@ -100,8 +103,8 @@ ul {
 .mobile-menu li a {
   display:block;
   font-family: Helvetica;
-  color: #fff;
-  text-transform:uppercase;
+  color: $white;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;
   padding-bottom: 2em;
@@ -173,7 +176,7 @@ footer {
 }
 .p-logo-1 {
   border-radius: 50%;
-  background-color: #fc6432;
+  background-color: $dark-orange;
 }
 .p-logo-2 {
   position: absolute;
@@ -188,7 +191,7 @@ footer {
   border-top-left-radius: 50%;
   -webkit-transform: rotate(-45deg);
   z-index: 99;
-  background: #fff;
+  background: $white;
 }
 .p-logo-3 {
   position: absolute;
@@ -202,7 +205,7 @@ footer {
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
   z-index: 150;
-  background: #fc6432;
+  background: $dark-orange;
 }
 .l-home-spacer {
   height: 4em;
@@ -215,7 +218,7 @@ footer {
 }
 .p-home-text span {
   text-decoration: underline;
-  color: #fc6432;
+  color: $dark-orange;
 }
 .l-pricing-tables {
   margin-bottom: 0;
@@ -235,13 +238,13 @@ footer h1 {
 .p-divet {
   width: 0;
   height: 0;
-  border-top: 20px solid #fc6432;
+  border-top: 20px solid $dark-orange;
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
   margin: auto;
 }
 .p-title-line {
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px $white solid;
   width: 15%;
 }
 .p-title {
@@ -255,7 +258,7 @@ footer h1 {
   width: 15%;
 }
 .p-subtitle-line {
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px $white solid;
   width: 10%;
 }
 .p-portfolio .p-subtitle-line, .p-team .p-subtitle-line {
@@ -281,7 +284,7 @@ footer h1 {
   margin-bottom: 10%;
 }
 .p-team h4 {
-color: #fc6432;
+color: $dark-orange;
 }
 .l-client-carousel-button {
   position: relative;
@@ -292,26 +295,26 @@ color: #fc6432;
 }
 .p-client-carousel-button {
   border-radius: 50%;
-  background-color: #fc6432;
+  background-color: $dark-orange;
 }
 .p-client-link {
   position: absolute;
   top: 10px;
   left: 15px;
-  color: #fff;
+  color: $white;
 }
 .l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
   background-color: #7f331b;
-  color: #fc6432;
+  color: $dark-orange;
 }
 .p-services {
-  background-color: #fc6432;
-  color: #fff;
+  background-color: $dark-orange;
+  color: $white;
   text-align: center;
   font-size: 1em;
 }
 .p-services .p-divet {
-    border-top: 20px solid #fff;
+    border-top: 20px solid $white;
 }
 .p-services figcaption {
   margin: auto;
@@ -327,7 +330,7 @@ color: #fc6432;
   width: 75px;
 }
 .p-service-logo {
-  background-color: #fff;
+  background-color: $white;
   border-radius: 50%;
 }
 .p-pricing-tables {
@@ -338,22 +341,22 @@ color: #fc6432;
   margin-left: 10%;
   margin-right: 10%;
   padding-bottom: 10%;
-  background-color: #fc6432;
+  background-color: $dark-orange;
   color: #000;
   padding-left: 0;
   border-bottom: 1px;
 }
 .p-pricing-tables li {
-  background-color: #fff;
+  background-color: $white;
   border-bottom: solid #7f331b 2px;
 }
 .p-pricing-tables li:nth-child(1) {
   background-color: #7f331b;
   font-weight: bolder;
-  color: #fff;
+  color: $white;
 }
 .p-pricing-tables li:nth-child(2) {
-  color: #fc6432;
+  color: $dark-orange;
   font-weight: bolder;
 }
 .p-pricing-tables div:last-child {
@@ -362,8 +365,8 @@ color: #fc6432;
   padding-top: .75em;
 }
 .p-pricing-tables a {
-  background-color: #fc6432;
-  color: #fff;
+  background-color: $dark-orange;
+  color: $white;
   padding: .4em 10% .4em 10%;
 }
 .big-little-slider {
@@ -384,11 +387,11 @@ color: #fc6432;
   text-align: center;
 }
 .p-about {
-  color: #fff;
+  color: $white;
   background-color: #000;
 }
 .p-about .p-divet {
-  border-top: 20px solid #fff;
+  border-top: 20px solid $white;
 }
 .l-about-bars {
   display: flex;
@@ -408,7 +411,7 @@ progress::-webkit-progress-bar {
   background: gray;
 }
 progress::-webkit-progress-value {
-  background: #fd6632;
+  background: $dark-orange;
 }
 .l-about-button {
   text-align: center;
@@ -416,8 +419,8 @@ progress::-webkit-progress-value {
   padding-bottom: 3em;
 }
 .p-about-button {
-  background-color: #fd6632;
-  color: #fff;
+  background-color: $dark-orange;
+  color: $white;
   border: 0;
   padding: 10px 40px 10px 40px;
 }
@@ -431,11 +434,11 @@ progress::-webkit-progress-value {
   border-top: 20px solid #000;
 }
 .p-contact {
-  background-color: #fc6432;
-  color: #fff;
+  background-color: $dark-orange;
+  color: $white;
 }
 .p-contact .p-divet {
-  border-top: 20px solid #fff;
+  border-top: 20px solid $white;
 }
 .l-contact-blurb {
   margin: auto;
@@ -483,31 +486,31 @@ progress::-webkit-progress-value {
   background-color: #7f331b;
 }
 ::-webkit-input-placeholder {
-  color: #fff;
+  color: $white;
 }
 :-moz-placeholder {
-  color: #fff;
+  color: $white;
   opacity: 1;
 }
 ::-moz-placeholder {
-  color:  #fff;
+  color:  $white;
   opacity: 1;
 }
 ::-ms-input-placeholder {
-  color: #fff;
+  color: $white;
 }
 .p-contact .p-button-holder {
-  background-color: #fff;
-  color: #fc6432;
+  background-color: $white;
+  color: $dark-orange;
   text-align: center;
   padding: 2.5%;
 }
 .p-contact .p-button-holder:hover {
   background-color: #7f331b;
-  color: #fff;
+  color: $white;
 }
 .p-author {
-  color: #fc6432;
+  color: $dark-orange;
 }
 
 @media only screen and (min-width: 568px) {
@@ -610,7 +613,7 @@ progress:: -webkit-progress-value {
   border-top-left-radius: 50%;
   -webkit-transform: rotate(-45deg);
   z-index: 99;
-  background: #fff;
+  background: $white;
 }
 .p-logo-3 {
   position: absolute;
@@ -624,7 +627,7 @@ progress:: -webkit-progress-value {
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
   z-index: 150;
-  background: #fc6432;
+  background: $dark-orange;
 }
 .p-title-line {
   width: 35%;
