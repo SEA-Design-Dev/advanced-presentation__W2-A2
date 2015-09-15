@@ -38,12 +38,6 @@ $break: 667px;
 
 .l-flex-container {
   @extend %flex-container;
-
-  @media only screen and (min-width: $break) {
-    [data-flex-container="portfolio"] & {
-      -webkit-flex-flow: row wrap;
-    }
-  }
 }
 
 .l-flex-item {
