@@ -103,8 +103,7 @@
   color: #fff;
   text-transform:uppercase;
   text-decoration: none;
-  font-size: 1.3em;
-  line-height: 2em;
+  font-size: 20px;
 }
 
 .mobile-menu input[type=checkbox]{
@@ -532,16 +531,25 @@ progress::-webkit-progress-value {
 
 
 .mobile-menu ul {
+  margin-top: 0;
+  width:100%;
+  padding-left: 18%;
+  padding-bottom: .5%;
+  background-color: #fff;
   display: inline;
+  border-bottom: 1px solid #999f9f;
 }
 
+.menu{
+ padding-left: 15%;
+ padding-right: 15%;
+}
 .mobile-menu li {
-
   float: left;
 }
 .mobile-menu li a {
-  font-size: 1.3em;
-  margin: 10%;
+  color:  #999f9f;
+  font-size: 16px;
   padding: 5px 50px 5px 50px;
 }
 .icon-menu {
