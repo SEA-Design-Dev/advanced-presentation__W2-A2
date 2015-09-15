@@ -697,7 +697,7 @@ input, textarea {
     padding: 2em 10%;
   }
 
-  .l-flex-container {
+/*  .l-flex-container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -716,15 +716,15 @@ input, textarea {
     align-content: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+  }*/
 
   #portfolio {
     padding:2em 9%;
   }
 
-  .l-portfolio-flex {
+/*  .l-portfolio-flex {
     -webkit-flex-flow: row wrap;
-  }
+  }*/
 
   .h3-lines:before, .h3-lines:after {
     width: 20%;

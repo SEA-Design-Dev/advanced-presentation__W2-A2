@@ -40,7 +40,7 @@ $break: 667px;
   @extend %flex-container;
 
   @media only screen and (min-width: $break) {
-    #portfolio & {
+    [data-flex-container="portfolio"] & {
       -webkit-flex-flow: row wrap;
     }
   }
