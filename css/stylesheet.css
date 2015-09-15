@@ -88,7 +88,6 @@
   width:100%;
   text-align:center;
 }
-
 .mobile-menu ul {
   list-style-type:none;
   text-align:center;
@@ -96,7 +95,6 @@
   position: absolute;
   background: #999f9f;
 }
-
 .mobile-menu li a {
   display:block;
   font-family: Helvetica;
@@ -106,23 +104,18 @@
   font-size: 20px;
   padding-bottom: 2em;
 }
-
-.mobile-menu input[type=checkbox]{
+.mobile-menu input[type=checkbox] {
     display: none;
 }
-
-.mobile-menu input[type=checkbox]:checked ~ .menu{
+.mobile-menu input[type=checkbox]:checked ~ .menu {
   display: block;
 }
-
-
 .mobile-menu ul {
   display: none;
   z-index: 100;
 }
-
 .icon-menu {
-    display:inline-block;
+    display: inline-block;
 }
 /*nav bar end*/
 
@@ -528,9 +521,6 @@ progress::-webkit-progress-value {
   color: #fc6432;
 }
 @media only screen and (min-width: 568px) {
-
-
-
 .mobile-menu ul {
   margin-top: 0;
   width:100%;
@@ -540,7 +530,6 @@ progress::-webkit-progress-value {
   display: inline;
   border-bottom: 1px solid #999f9f;
 }
-
 .menu{
  padding-left: 15%;
  padding-right: 15%;
@@ -556,8 +545,6 @@ progress::-webkit-progress-value {
 .icon-menu {
   display: none;
 }
-
-
 
 .protfolio-pieces{
   display:flex;
