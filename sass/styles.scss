@@ -94,6 +94,12 @@ $break: 667px;
       width: 45%;
       margin-top: 0;
     }
+
+    [data-flex-container="map"] & {
+      text-decoration: none;
+      color: white;
+    }
+
   }
 }
 
