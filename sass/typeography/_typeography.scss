@@ -1,0 +1,99 @@
+$primary-color: #fd6632;
+$secondary-color: #0b9ce0;
+$alt-background-color: #252629;
+
+%heading-lines {
+  content: " ";
+  display: inline-block;
+  border-top: solid 1px white;
+  width: 18%;
+  height: 1px;
+  z-index: 1;
+  position: relative;
+  margin: .25em;
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+}
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('opensans-semibold-webfont.eot');
+  src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('opensans-semibold-webfont.woff2') format('woff2'),
+       url('opensans-semibold-webfont.woff') format('woff'),
+       url('opensans-semibold-webfont.ttf') format('truetype'),
+       url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', Sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  font-family: 'Open Sans', 'Helvetica', Sans-serif;
+  font-weight: 600;
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 2%;
+
+    @media only screen and (min-width: $break) {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-size: .85em;
+      padding: 1%;
+    }
+  }
+
+  li a:hover, li a:active {
+    color: $primary-color;
+  }
+}
+
+
+h2 {
+  width: 100%;
+  display: inline-block;
+
+  &:before, &:after {
+    @extend %heading-lines;
+
+    @media only screen and (min-width: $break) {
+      width: 30%;
+    }
+  }
+
+  .b-white &:before, .b-white &:after  {
+     border-top: solid 1px black;
+  }
+}
+
+h3 {
+  width: 100%;
+  display: inline-block;
+
+  &:before, &:after {
+    @extend %heading-lines;
+
+    @media only screen and (min-width: $break) {
+      width: 20%;
+    }
+  }
+
+  .b-white &:before, .b-white &:after {
+     border-top: solid 1px black;
+  }
+}
+
+
+
+
+

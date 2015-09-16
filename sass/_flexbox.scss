@@ -1,0 +1,96 @@
+%flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+%flex-container-media {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -moz-flex-flow: row wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+%flex-item {
+  text-align: center;
+  margin: auto;
+  max-width: 85%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.l-flex-container {
+  @extend %flex-container;
+
+  @media only screen and (min-width: $break) {
+    @extend %flex-container-media;
+
+    &[data-flex-container="portfolio"] {
+      -webkit-flex-flow: row wrap;
+    }
+  }
+}
+
+.l-flex-item {
+  @extend %flex-item;
+
+  [data-flex-container="prices"] & {
+    width: 80%;
+    margin: auto;
+  }
+
+  [data-flex-container="contact"] & {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media only screen and (min-width: $break) {
+
+    [data-flex-container="about"] & {
+      max-width: 40%;
+      padding-bottom: 5%;
+    }
+
+    [data-flex-container="team"] & {
+      max-width: 25%;
+    }
+
+    [data-flex-container="services-one"] & {
+      max-width: 40%;
+      &:first-child  {
+        max-width: 85%;
+      }
+    }
+
+    [data-flex-container="services-two"] & {
+      max-width: 30%;
+    }
+
+    [data-flex-container="prices"] & {
+      width: 20%;
+      margin: 1%;
+    }
+
+    [data-flex-container="contact"] & {
+      text-align: right;
+      margin-left: .5em;
+      margin-right: .5em;
+      width: 45%;
+      margin-top: 0;
+    }
+  }
+}
