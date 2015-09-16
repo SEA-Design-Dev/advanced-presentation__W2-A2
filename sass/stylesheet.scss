@@ -31,35 +31,26 @@
   color: #000;
   margin: auto;
 }
-.icon-paint-format:before {
-  content: "\e605";
+$icons: 
+  (google-plus '\e600' #dd4b39) 
+  (facebook '\e601' #3b5998) 
+  (twitter '\e602' #00aced) 
+  (dribbble '\e603' #ea4c89) 
+  (linkedin2 '\e604' #007bb6) 
+  (paint-format '\e605' #000000) 
+  (cog '\e606' #000000) 
+  (lab '\e607' #000000);
+
+@each $icon in $icons {
+  .icon-#{nth($icon, 1)} {
+      @extend %ico-font-base;
+      background-color: nth($icon, 3);    
+    &:before { 
+      content: nth($icon, 2);
+    }
+  }
 }
-.icon-cog:before {
-  content: "\e606";
-}
-.icon-lab:before {
-  content: "\e607";
-}
-.icon-google-plus:before {
-  content: "\e600";
-  background-color: #dd4b39;
-}
-.icon-facebook:before {
-  content: "\e601";
-  background-color: #3b5998;
-}
-.icon-twitter:before {
-  content: "\e602";
-  background-color: #00aced;
-}
-.icon-dribbble:before {
-  content: "\e603";
-  background-color: #ea4c89;
-}
-.icon-linkedin2:before {
-  content: "\e604";
-  background-color: #007bb6;
-}
+
 .icons {
   margin: auto;
   margin-bottom: 10%;

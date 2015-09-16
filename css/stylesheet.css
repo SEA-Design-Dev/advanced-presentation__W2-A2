@@ -646,34 +646,45 @@ body {
   color: #000;
   margin: auto; }
 
-.icon-paint-format:before {
-  content: "\e605"; }
-
-.icon-cog:before {
-  content: "\e606"; }
-
-.icon-lab:before {
-  content: "\e607"; }
-
-.icon-google-plus:before {
-  content: "\e600";
+.icon-google-plus {
   background-color: #dd4b39; }
+  .icon-google-plus:before {
+    content: ""; }
 
-.icon-facebook:before {
-  content: "\e601";
+.icon-facebook {
   background-color: #3b5998; }
+  .icon-facebook:before {
+    content: ""; }
 
-.icon-twitter:before {
-  content: "\e602";
+.icon-twitter {
   background-color: #00aced; }
+  .icon-twitter:before {
+    content: ""; }
 
-.icon-dribbble:before {
-  content: "\e603";
+.icon-dribbble {
   background-color: #ea4c89; }
+  .icon-dribbble:before {
+    content: ""; }
 
-.icon-linkedin2:before {
-  content: "\e604";
+.icon-linkedin2 {
   background-color: #007bb6; }
+  .icon-linkedin2:before {
+    content: ""; }
+
+.icon-paint-format {
+  background-color: #000000; }
+  .icon-paint-format:before {
+    content: ""; }
+
+.icon-cog {
+  background-color: #000000; }
+  .icon-cog:before {
+    content: ""; }
+
+.icon-lab {
+  background-color: #000000; }
+  .icon-lab:before {
+    content: ""; }
 
 .icons {
   margin: auto;
