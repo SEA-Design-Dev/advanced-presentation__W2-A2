@@ -9,6 +9,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+
 /*
 
 @font-face {
@@ -497,7 +501,8 @@ input, textarea {
   .hero-image {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    position: relative;
   }
 
   .s-hero-text {
