@@ -1,0 +1,17 @@
+%divot-body-style {
+  display: block;
+  height: 4em;
+  content: " ";
+  margin-top: -2.1em;
+  -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
+  clip-path: polygon(50% 60%, 40% 0, 60% 0);
+}
+
+$sections: ('collection=services' #fff) ('collection=portfolio' $primary-color) ('container=about'  #fff) ('collection=team' #252629) ('collection=contact' #fff) ('container=footer' $primary-color);
+
+@each $section in $sections {
+  &[data-#{nth($section, 1)}]::before {
+    @extend %divot-body-style;
+    background-color: nth($section, 2);
+  }
+}
