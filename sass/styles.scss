@@ -1,9 +1,6 @@
 @import "config";
-
 @import "reset";
+@import 'sass/typeography/_typeography.scss';
 @import "lib/utils/INDEX";
 @import "mainNavigation";
 @import "flexbox";
-
-$primary-color: #fd6632;
-
