@@ -11,7 +11,7 @@
 }
 
 /*=== FONTS ===*/
-@font-face {
+/*@font-face {
   font-family: 'Helvetica';
 }
 
@@ -25,10 +25,10 @@
        url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 /*=== DIVOTS ===*/
-.b-orange::before {
+/*.b-orange::before {
   display: block;
   height: 4em;
   content: " ";
@@ -67,7 +67,7 @@
   margin-top: -2.1em;
   -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
   clip-path: polygon(50% 60%, 40% 0, 60% 0);
-}
+}*/
 
 .l-flex-child {
   margin-bottom: 10%;
