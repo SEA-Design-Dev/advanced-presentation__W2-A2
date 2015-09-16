@@ -1,0 +1,248 @@
+$A-avengers-color: #fc6432;
+$B-avengers-color: #fff;
+$C-avengers-color: #a3a3a3;
+
+body {
+  font-family: "Droid sans", sans-serif;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.0em;
+}
+p {
+  font-size: 1em;
+}
+footer h1 {
+  margin: .9px;
+}
+
+// mobile nav bar
+.icon-menu {
+  width: 100%;
+  text-align: center;
+  &:before {
+     content: "\e608";
+  }
+} 
+.mobile-menu ul {
+  width: 95.5%;
+  background: $C-avengers-color;
+}
+.menu{
+  background: $C-avengers-color;
+}
+.mobile-menu li a {
+  font-family: Helvetica;
+  color: $B-avengers-color;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.mobile-menu input[type=checkbox] {
+  display: none;
+}
+.p-home {
+  background-image: url("https://i.imgur.com/oVRIX4Z.png");
+}
+.port-navbar a {
+  font-size: 1em;
+  color: $C-avengers-color;
+}
+.p-logo-1 {
+  border-radius: 50%;
+  background-color: $A-avengers-color;
+}
+.p-logo-2 {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+  z-index: 99;
+  background: $B-avengers-color;
+}
+.p-logo-3 {
+  position: absolute;
+  left: 2.5px;
+  top: 2px;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  z-index: 150;
+  background: $A-avengers-color;
+}
+.p-home-text {
+  font-weight: lighter;
+}
+.p-home-text span {
+  text-decoration: underline;
+  color: $A-avengers-color;
+}
+.p-divet {
+  width: 0;
+  height: 0;
+  border-top: 20px solid $A-avengers-color;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  margin: auto;
+}
+.p-services .p-divet {
+    border-top: 20px solid $B-avengers-color;
+}
+.p-about .p-divet {
+  border-top: 20px solid $B-avengers-color;
+}
+.p-title {
+  color: #000;
+  text-transform: uppercase;
+}
+.p-title-line {
+  border-bottom: 1px $B-avengers-color solid;
+  width: 15%;
+  .p-portfolio &, .p-team & {
+    border-bottom: 1px $C-avengers-color solid;
+  }
+}
+.p-subtitle-line {
+  border-bottom: 1px $B-avengers-color solid;
+  width: 10%;
+  .p-portfolio &, .p-team & {
+    border-bottom: 1px $C-avengers-color solid;
+  }
+}
+.p-team h4 {
+color: $A-avengers-color;
+}
+.p-client-carousel-button {
+  border-radius: 50%;
+  background-color: $A-avengers-color;
+}
+.p-client-link {
+  color: $B-avengers-color;
+}
+.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
+  background-color: #7f331b;
+  color: $A-avengers-color;
+}
+.p-services {
+  background-color: $A-avengers-color;
+  color: $B-avengers-color;
+  font-size: 1em;
+}
+.p-services figcaption {
+  font-size: 1em;
+}
+.p-service-logo {
+  background-color: $B-avengers-color;
+  border-radius: 50%;
+}
+.p-pricing-tables {
+  font-family: "Lato";
+  font-size: 2em;
+  background-color: $A-avengers-color;
+  color: #000;
+  border-bottom: 1px;
+}
+.p-pricing-tables li {
+  background-color: $B-avengers-color;
+  border-bottom: solid #7f331b 2px;
+}
+.p-pricing-tables li:nth-child(1) {
+  background-color: #7f331b;
+  font-weight: bolder;
+  color: $B-avengers-color;
+}
+.p-pricing-tables li:nth-child(2) {
+  color: $A-avengers-color;
+  font-weight: bolder;
+}
+.p-pricing-tables div:last-child {
+  height: 3em;
+  background-color: #be4c27;
+}
+.p-pricing-tables a {
+  background-color: $A-avengers-color;
+  color: $B-avengers-color;
+}
+.big-little-slider {
+  content: url("http://i.imgur.com/o7Przf2.png")
+}
+.p-about {
+  color: $B-avengers-color;
+  background-color: #000;
+}
+progress[value] {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px;
+}
+progress::-webkit-progress-bar {
+  background: gray;
+}
+progress::-webkit-progress-value {
+  background: $A-avengers-color;
+}
+.p-about-button {
+  background-color: $A-avengers-color;
+  color: $B-avengers-color;
+  border: 0;
+}
+.p-team {
+  color: #999f9f;
+}
+.p-contact {
+  background-color: $A-avengers-color;
+  color: $B-avengers-color;
+}
+.l-message-button {
+  font-size: .5em;
+}
+.p-contact-form {
+  background-color: #7f331b;
+}
+
+::-webkit-input-placeholder {
+  color: $B-avengers-color;
+}
+:-moz-placeholder {
+  color: $B-avengers-color;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color:  $B-avengers-color;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: $B-avengers-color;
+}
+.p-contact .p-button-holder {
+  background-color: $B-avengers-color;
+  color: $A-avengers-color;
+}
+.p-contact .p-button-holder:hover {
+  background-color: #7f331b;
+  color: $B-avengers-color;
+}
+.p-author {
+  color: $A-avengers-color;
+}
+
