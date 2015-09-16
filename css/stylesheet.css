@@ -99,12 +99,10 @@ footer h1 {
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
   margin: auto; }
-
-.p-services .p-divet {
-  border-top: 20px solid #fff; }
-
-.p-about .p-divet {
-  border-top: 20px solid #fff; }
+  .p-services .p-divet, .p-about .p-divet, .p-contact .p-divet {
+    border-top: 20px solid #fff; }
+  .p-team .p-divet {
+    border-top: 20px solid #000; }
 
 .p-title {
   color: #000;

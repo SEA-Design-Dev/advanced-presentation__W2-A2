@@ -97,20 +97,22 @@ footer h1 {
   text-decoration: underline;
   color: $A-avengers-color;
 }
+
 .p-divet {
-  width: 0;
-  height: 0;
-  border-top: 20px solid $A-avengers-color;
-  border-left: 80px solid transparent;
-  border-right: 80px solid transparent;
-  margin: auto;
+ width: 0;
+ height: 0;
+ border-top: 20px solid $A-avengers-color;
+ border-left: 80px solid transparent;
+ border-right: 80px solid transparent;
+ margin: auto;
+ .p-services &, .p-about &, .p-contact & {
+   border-top: 20px solid $B-avengers-color;
+ }
+ .p-team & {
+   border-top: 20px solid #000;
+ }
 }
-.p-services .p-divet {
-    border-top: 20px solid $B-avengers-color;
-}
-.p-about .p-divet {
-  border-top: 20px solid $B-avengers-color;
-}
+
 .p-title {
   color: #000;
   text-transform: uppercase;
