@@ -23,6 +23,8 @@
   align-content: center;
   -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
 }
 
 %flex-item {
@@ -38,6 +40,11 @@
 
   @media only screen and (min-width: $break) {
     @extend %flex-container-media;
+
+    &[data-flex-container="services-one"] {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+    }
 
     &[data-flex-container="portfolio"] {
       -webkit-flex-flow: row wrap;
@@ -71,7 +78,7 @@
 
     [data-flex-container="services-one"] & {
       max-width: 40%;
-      &:first-child  {
+      &.svcs-intro {
         max-width: 85%;
       }
     }

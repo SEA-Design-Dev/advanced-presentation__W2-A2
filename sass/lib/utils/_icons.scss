@@ -40,12 +40,16 @@
 @each $social in $iconSocial {
   .icon-#{nth($social, 1)} {
     @extend %ico-font-base;
+    font-size: 2em;
     color: nth($social, 2);
     &:before {
       content: nth($social, 3);
-      }
+    }
+    @media only screen and (min-width: $break) {
+      font-size: 1em;
     }
   }
+}
 
 @each $arrow in $arrows {
   .icon-#{nth($arrow, 1)} {
