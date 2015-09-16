@@ -1,0 +1,12 @@
+$primary-color: #fd6632;
+
+$icons: (cog ‘\e600’) (lab ‘\e601’) (brush '\e602') (pin '\e603') (mail '\e604') (mobile '\e605') (circle-right '\e606') (circle-left '\e607');
+
+@each $icon in $icons {
+     .icon-#{nth($icon, 1)}:before {
+     content: nth($icon, 2);
+     }
+}
+
+
+

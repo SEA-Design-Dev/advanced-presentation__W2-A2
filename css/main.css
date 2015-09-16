@@ -42,7 +42,7 @@ html {
   padding: 1.25rem 1.25rem;;
 }
 
-.icon-cog:before {
+/*.icon-cog:before {
   content: "\e600";
 }
 
@@ -64,7 +64,7 @@ html {
 
 .icon-mobile:before {
   content: "\e605";
-}
+}*/
 
 .s-icon-circle {
   text-decoration: none;
@@ -82,17 +82,17 @@ html {
   order: 3;
 }
 
-.icon-circle-right:before {
+/*.icon-circle-right:before {
   content: "\e606";
-}
+}*/
 
 .icon-circle-left {
   order: 1;
 }
 
-.icon-circle-left:before {
+/*.icon-circle-left:before {
   content: "\e607";
-}
+}*/
 
 .icon-social {
   text-decoration: none;
