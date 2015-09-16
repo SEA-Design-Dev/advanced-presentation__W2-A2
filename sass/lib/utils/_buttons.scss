@@ -1,0 +1,24 @@
+%button-styles {
+  font-size: .65em;
+  box-shadow: none;
+  border: none;
+  padding: .3em 1em;
+  margin: .3em auto;
+}
+
+.btn {
+  @extend %button-styles;
+  background-color: $primary-color;
+  color: #ffffff;
+  &:hover {
+  background-color: $secondary-color;
+  }
+  [data-container="about"] & {
+    height: 3em;
+  }
+  [data-flex-container="contact"] & {
+    height: 3em;
+    background-color: #ffffff;
+    color: #7e3218;
+  }
+}

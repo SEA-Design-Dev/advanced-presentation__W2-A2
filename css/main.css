@@ -9,8 +9,8 @@
   font-weight: normal;
   font-style: normal;
 }
+/*
 
-/*=== FONTS ===*/
 @font-face {
   font-family: 'Helvetica';
 }
@@ -25,7 +25,7 @@
        url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 /*=== DIVOTS ===*/
 .b-orange::before {
@@ -303,15 +303,6 @@ h2 {
   font-size: 1.75rem;
 }
 
-.td-btn {
-  background-color: #be4c25;
-}
-
-.btn:hover {
-  background-color: #0b9ce0;
-  color: white;
-}
-
 .f-bold {
   font-weight: 700;
 }
@@ -359,16 +350,6 @@ h2 {
   border-bottom: solid 2px #fd6632;
 }
 
-.btn {
-  background-color: #fd6632;
-  color: white;
-  font-size: .65em;
-  box-shadow: none;
-  border: none;
-  padding: .3em 1em;
-  margin: .3em auto;
-}
-
 .slider {
   display: block;
 }
@@ -402,10 +383,6 @@ progress::-webkit-progress-value {
 
 .s-progress-question-text {
   margin-top: 5em;
-}
-
-.contact-btn {
-  height: 3em;
 }
 
 /*=== FORM ===*/
