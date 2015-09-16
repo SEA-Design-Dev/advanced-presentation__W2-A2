@@ -1,10 +1,9 @@
+@import "config";
+
 @import "reset";
-
-@import "_mainNavigation";
-
+@import "lib/utils/INDEX";
+@import "mainNavigation";
 @import "flexbox";
 
 $primary-color: #fd6632;
-
-
 

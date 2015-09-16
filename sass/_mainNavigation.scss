@@ -1,5 +1,3 @@
-$break: 667px;
-
 .nav-toggle {
   position: fixed;
   left: 0;
@@ -54,7 +52,7 @@ $break: 667px;
 .mobileNavToggle {
   display: none;
   &:checked {
-    ~ .l-nav {
+    ~ [data-container="navigation"] {
     left: 0;
     }
     ~ .icon-menu {
