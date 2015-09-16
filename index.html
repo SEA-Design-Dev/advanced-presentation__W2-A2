@@ -11,7 +11,7 @@
   </head>
   <body>
     <input type="checkbox" id="mobileNavToggle" class="mobileNavToggle">
-    <header class="l-nav">
+    <header data-container="navigation">
       <nav class="mainNav">
         <ul role="navigation">
           <li role="menuitem" class="nav-link"><a href="#home">Home.</a></li>
@@ -54,22 +54,22 @@
       <article class="b-orange" id="services">
         <h2 class="f-bold f-large">SERVICES</h2>
         <section data-flex-container="services-one" class="l-flex-container">
-          <p class="f-font-paragraph l-flex-item l-svcs-txt-a">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-          <p class="f-font-paragraph l-flex-item l-svcs-txt-b">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
-          <p class="f-font-paragraph l-flex-item l-svcs-txt-c">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+          <p class="f-font-paragraph l-flex-item">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+          <p class="f-font-paragraph l-flex-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+          <p class="f-font-paragraph l-flex-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
         </section>
         <section data-flex-container="services-two" class="l-flex-container">
-          <div class="l-flex-item l-svcs">
+          <div class="l-flex-item">
             <h3 class="f-bold l-flex-child">UI & UX DESIGN</h3>
             <span class="icon-brush icon-big"></span>
             <p class="l-flex-child-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
-          <div class="l-flex-item l-svcs">
+          <div class="l-flex-item">
             <h3 class="f-bold l-flex-child">LABORATORY</h3>
             <span class="icon-lab icon-big"></span>
             <p class="l-flex-child-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
-          <div class="l-flex-item l-svcs">
+          <div class="l-flex-item">
             <h3 class="f-bold l-flex-child">DEVELOPMENT</h3>
             <span class="icon-cog icon-big"></span>
             <p class="l-flex-child-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
@@ -78,7 +78,7 @@
         <section>
           <h3 class="f-bold h3-lines">Pricing Tables</h3>
           <div data-flex-container="prices" class="l-flex-container">
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
                   <th class="f-light th-title">BASIC</th>
@@ -106,7 +106,7 @@
                 </tr>
               </tfoot>
             </table>
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
                   <th class="f-light th-title">STANDART</th>
@@ -134,7 +134,7 @@
                 </tr>
               </tfoot>
             </table>
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
                   <th class="f-light th-title">PROFESSIONAL</th>
@@ -162,7 +162,7 @@
                 </tr>
               </tfoot>
             </table>
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
                   <th class="f-light th-title">PREMIUM</th>
@@ -204,7 +204,7 @@
           <li class="s-portfolio-filter-links l-subnav-link">Icons design</li>
           <li class="s-portfolio-filter-links l-subnav-link">Brand & Logotypes</li>
         </ul>
-        <div class="l-flex-container">
+        <div data-flex-container="portfolio" class="l-flex-container">
           <figure class="l-flex-item f-small-line-height">
             <div class="first-level-hover-wrapper">
              <div class="item-wrapper">
@@ -374,11 +374,11 @@
               <figure>
                 <img src="/img/jonathan.png" alt="Jonathan Doe Photo" class="l-flex-child l-child-m">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
@@ -389,11 +389,11 @@
               <figure>
                 <img src="/img/jannete.png" alt="Jannete Doe Photo" class="l-flex-child l-child-m">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
@@ -404,11 +404,11 @@
               <figure>
                 <img src="/img/jane.png" alt="Jane Ella Doe Photo" class="l-flex-child l-child-m">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
@@ -419,11 +419,11 @@
               <figure>
                 <img src="/img/jessie.png" alt="Jessie Doe Photo" class="l-flex-child l-child-m">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
@@ -440,8 +440,8 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard my text ever since the 1500s, when lorem upsum is the best text for you.</p>
               </figcaption>
             </figure>
-            <a href="" class="icon-circle-left s-icon-circle" role="button"></a>
-            <a href="" class="icon-circle-right s-icon-circle" role="button"></a>
+            <a href="" class="icon-arrowLeft" role="button"></a>
+            <a href="" class="icon-arrowRight" role="button"></a>
           </section>
         </section>
       </article>
@@ -472,11 +472,11 @@
       </article>
       <footer class="b-white l-footer">
         <p>Theme by <a href="" class="s-theme-author">Pierre Borodin</a href=""> &copy; copyright 2012</p>
-        <a href="" class="icon-facebook2 icon-social"></a>
-        <a href="" class="icon-twitter2 icon-social"></a>
-        <a href="" class="icon-dribbble2 icon-social"></a>
-        <a href="" class="icon-linkedin icon-social"></a>
-        <a href="" class="icon-google-plus2 icon-social"></a>
+        <a href="" class="icon-facebook"></a>
+        <a href="" class="icon-twitter"></a>
+        <a href="" class="icon-dribbble"></a>
+        <a href="" class="icon-linkedin"></a>
+        <a href="" class="icon-google-plus"></a>
       </footer>
     </main>
   </body>
