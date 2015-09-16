@@ -7,10 +7,10 @@
   clip-path: polygon(50% 60%, 40% 0, 60% 0);
 }
 
-$sections: ("services" #fff) ("portfolio" $primary-color) ("about"  #fff) ("team" #252629) ("contact" #fff);
+$sections: ('collection=services' #fff) ('collection=portfolio' $primary-color) ('container=about'  #fff) ('collection=team' #252629) ('collection=contact' #fff) ('container=footer' $primary-color);
 
 @each $section in $sections {
-  &[data-collection=#{nth($section, 1)}]::before {
+  &[data-#{nth($section, 1)}]::before {
     @extend %divot-body-style;
     background-color: nth($section, 2);
   }
