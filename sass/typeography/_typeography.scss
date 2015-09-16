@@ -1,3 +1,4 @@
+$break: 667px;
 $primary-color: #fd6632;
 
 %heading-lines {
@@ -55,12 +56,40 @@ body {
   font-weight: 400;
 }
 
+nav {
+  font-family: 'Open Sans', 'Helvetica', Sans-serif;
+  font-weight: 600;
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 2%;
+
+    @media only screen and (min-width: $break) {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-size: .85em;
+      padding: 1%;
+    }
+  }
+
+  li a:hover, li a:active {
+    color: $primary-color;
+  }
+}
+
+
 h2 {
   width: 100%;
   display: inline-block;
 
   &:before, &:after {
     @extend %heading-lines;
+
+    @media only screen and (min-width: $break) {
+      width: 30%;
+    }
   }
 
   .b-white &:before, .b-white &:after  {
@@ -74,12 +103,18 @@ h3 {
 
   &:before, &:after {
     @extend %heading-lines;
+
+    @media only screen and (min-width: $break) {
+      width: 20%;
+    }
   }
 
   .b-white &:before, .b-white &:after {
      border-top: solid 1px black;
   }
 }
+
+
 
 
 
