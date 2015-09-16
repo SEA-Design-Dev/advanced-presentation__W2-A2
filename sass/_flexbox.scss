@@ -13,7 +13,7 @@
   display: -webkit-flex;
   display: flex;
   -moz-flex-direction: row;
-  -webkit-flex-direction: row;
+  -webkit-flex-direction: column;
   flex-direction: row;
   -moz-flex-flow: row wrap;
   -webkit-flex-wrap: nowrap;
@@ -26,25 +26,25 @@
   align-items: center;
 }
 
-%flex-container-media {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -o-flex;
-  display: -webkit-flex;
-  display: flex;
-  -moz-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -moz-flex-flow: row wrap;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  align-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
+// %flex-container-media {
+//   display: -webkit-box;
+//   display: -moz-box;
+//   display: -o-flex;
+//   display: -webkit-flex;
+//   display: flex;
+//   -moz-flex-direction: row;
+//   -webkit-flex-direction: row;
+//   flex-direction: row;
+//   -moz-flex-flow: row wrap;
+//   -webkit-flex-wrap: nowrap;
+//   flex-wrap: wrap;
+//   -webkit-justify-content: center;
+//   justify-content: center;
+//   -webkit-align-content: center;
+//   align-content: center;
+//   -webkit-align-items: center;
+//   align-items: center;
+// }
 
 %flex-item {
   text-align: center;
@@ -54,18 +54,17 @@
   flex-basis: 85%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
 .l-flex-container {
   @extend %flex-container;
 
   @media only screen and (min-width: $break) {
-    //@extend %flex-container-media;
-
+    // @extend %flex-container-media;
+    -webkit-flex-direction: row;
     &[data-flex-container="services-one"] {
       -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
@@ -94,8 +93,8 @@
 
     [data-flex-container="about"] & {
       max-width: 40%;
-        -webkit-flex-basis: 40%;
-  flex-basis: 40%;
+      -webkit-flex-basis: 40%;
+      flex-basis: 40%;
 
       padding-bottom: 5%;
     }
