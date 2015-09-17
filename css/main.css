@@ -75,6 +75,10 @@ em {
   color: #0b9ce0;
 }
 
+.hidden {
+  display: none;
+}
+
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
 
