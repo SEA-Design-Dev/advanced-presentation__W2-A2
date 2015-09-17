@@ -45,8 +45,8 @@ article {
   }
 }
 
-@media only screen and (min-width: $break) {
-  .s-contact-info ul {
+.s-contact-info ul  {
+   @media only screen and (min-width: $break) {
     position: relative;
     padding-bottom: 200px;
     &:before, &:after {
@@ -68,6 +68,7 @@ article {
     }
   }
 }
+
 
 [data-collection="team"] {
   &:before, &:after {
