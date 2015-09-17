@@ -1,21 +1,10 @@
-
-/*=== STYLES ===*/
-body {
-  font-family: 'Helvetica', 'Arial', Sans-serif;
-  font-weight: 400;
-}
-
-em {
-  font-style: none;
-}
-
 .s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
   font-size: .85em;
   text-decoration: none;
   color: white;
 }
 
-.b-orange,
+/*.b-orange,
 .b-orange-first {
   background-color: #fd6632;
   color: white;
@@ -24,7 +13,7 @@ em {
 .b-black {
   background-color: #252629;
   color: white;
-}
+}*/
 
 .f-light {
   font-weight: 300;

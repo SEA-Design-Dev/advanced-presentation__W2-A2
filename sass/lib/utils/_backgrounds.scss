@@ -1,0 +1,26 @@
+article {
+  background-color: $primary-color;
+}
+
+[data-collection="portfolio"],
+[data-collection="team"] {
+  background-color: #fff;
+}
+
+[data-container="about"] {
+  background-color: $alt-background-color;
+  color: white;
+}
+
+
+
+// b-orange,
+//  {
+//   background-color: #fd6632;
+//   color: white;
+// }
+
+// .b-black {
+//   background-color: #252629;
+//   color: white;
+// }

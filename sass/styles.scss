@@ -36,6 +36,11 @@
   }
 }
 
+.active {
+  color: #fff;
+  background-color: $primary-color;
+}
+
 @media only screen and (min-width: $break) {
   .s-contact-info {
     display: inline-block;
@@ -50,6 +55,7 @@
       padding: .75em 1em .5em .25em;
       margin-top: 0;
       text-align: left;
+      height: 125px;
     }
 
     li {
