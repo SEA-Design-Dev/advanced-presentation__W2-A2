@@ -30,6 +30,17 @@ $alt-background-color: #252629;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'avengers_creative_icons';
+  src:url('/fonts/avengers_creative_icons.eot?nvpozf');
+  src:url('/fonts/avengers_creative_icons.eot?#iefixnvpozf') format('embedded-opentype'),
+    url('/fonts/avengers_creative_icons.ttf?nvpozf') format('truetype'),
+    url('/fonts/avengers_creative_icons.woff?nvpozf') format('woff'),
+    url('/fonts/avengers_creative_icons.svg?nvpozf#avengers_creative_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Helvetica', 'Arial', Sans-serif;
   font-weight: 400;
