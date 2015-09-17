@@ -118,8 +118,6 @@ h2 {
   display: inline-block;
 }
 
-<<<<<<< HEAD
-=======
 /*h2:before, h2:after {
   content: " ";
   display: inline-block;
@@ -157,8 +155,8 @@ h2 {
   border-top: solid 1px black;
 }*/
 
->>>>>>> f570bfb54d94824b146947d7afe4c49d82dcecb6
 .s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
+  font-size: .85em;
   text-decoration: none;
   color: white;
 }
