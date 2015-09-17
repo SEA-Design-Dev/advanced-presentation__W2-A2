@@ -31,16 +31,6 @@ h2 {
   color: white;
 }
 
-.portfolio-filter-links {
-  width: 60%;
-  margin: .3em auto;
-}
-
-.portfolio-filter-links:hover {
-  background-color: #fd6632;
-  color: white;
-}
-
 .f-light {
   font-weight: 300;
 }
@@ -77,22 +67,9 @@ h2 {
   color: #fd6632;
 }
 
-/*.logo {
-  background-color: #fd6632;
-  padding: 1rem 1.5rem;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.logo:hover {
-  background-color: #0b9ce0;
-}*/
-
 .underline {
   border-bottom: solid 2px #fd6632;
 }
-
-
 
 .s-theme-author {
   text-decoration: none;
@@ -109,18 +86,6 @@ h2 {
   h1 {
     font-size: 2.4em;
   }
-
-  .portfolio-filter-links {
-    display: inline-block;
-    width: auto;
-    padding: 1%;
-
-  }
-
- .portfolio-filter-links:hover {
-   background-color: #fd6632;
-   color: white;
- }
 
   .f-team {
     font-size: 1.5em;

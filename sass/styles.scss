@@ -9,7 +9,7 @@
 .hero-image {
   padding: 11em 8% 15em 8%;
 
-  @media only screen and (min-width: 667px) {
+  @media only screen and (min-width: $break) {
     padding: 16% 8%;
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
   display: block;
   max-width: 100%;
 
-  @media only screen and (min-width: 667px) {
+  @media only screen and (min-width: $break) {
     display: none;
   }
 }
@@ -30,11 +30,29 @@
 .slider-break {
   display: none;
 
-  @media only screen and (min-width: 667px) {
+  @media only screen and (min-width: $break) {
     display: block;
     max-width: 100%;
   }
 }
+
+
+
+.subnav-link {
+  width: 60%;
+  margin: .3em auto;
+  &:hover {
+    background-color: #fd6632;
+    color: white;
+  }
+
+  @media only screen and (min-width: 667px) {
+    display: inline-block;
+    width: auto;
+    padding: 1%;
+  }
+}
+
 
 @media only screen and (min-width: $break) {
   .s-contact-info {
