@@ -192,22 +192,22 @@ color: $A-avengers-color;
   color: $B-avengers-color;
   background-color: #000;
 }
-progress[value] {
-  -webkit-appearance: none;
-  width: 250px;
-  height: 20px;
-}
-progress::-webkit-progress-bar {
-  background: gray;
-}
-progress::-webkit-progress-value {
-  background: $A-avengers-color;
-}
-.p-about-button {
-  background-color: $A-avengers-color;
-  color: $B-avengers-color;
-  border: 0;
-}
+// progress[value] {
+//   -webkit-appearance: none;
+//   width: 250px;
+//   height: 20px;
+// }
+// progress::-webkit-progress-bar {
+//   background: gray;
+// }
+// progress::-webkit-progress-value {
+//   background: $A-avengers-color;
+// }
+// .p-about-button {
+//   background-color: $A-avengers-color;
+//   color: $B-avengers-color;
+//   border: 0;
+// }
 .p-team {
   color: #999f9f;
 }

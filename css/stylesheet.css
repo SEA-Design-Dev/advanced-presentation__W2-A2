@@ -181,22 +181,6 @@ footer h1 {
   color: #fff;
   background-color: #000; }
 
-progress[value] {
-  -webkit-appearance: none;
-  width: 250px;
-  height: 20px; }
-
-progress::-webkit-progress-bar {
-  background: gray; }
-
-progress::-webkit-progress-value {
-  background: #fc6432; }
-
-.p-about-button {
-  background-color: #fc6432;
-  color: #fff;
-  border: 0; }
-
 .p-team {
   color: #999f9f; }
 
@@ -345,25 +329,7 @@ body {
   margin: auto; }
 
 .protfolio_pieces {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
   margin-bottom: 4em; }
-
-.l-about-bars {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start; }
-
-.l-about-bars li {
-  padding-top: .5em; }
-
-.l-about-button {
-  display: block;
-  padding-bottom: 3em; }
 
 .p-about-button {
   padding: 10px 40px 10px 40px; }
@@ -487,14 +453,6 @@ body {
   .l-about-columns p {
     margin-left: 2%;
     margin-right: 2%; }
-  progress[value] {
-    -webkit-appearance: none;
-    width: 550px;
-    height: 20px; }
-  progress: -webkit-progress-bar;
-    progress-background: gray;
-  progress: -webkit-progress-value;
-    progress-background: #fd6632;
   .p-logo-2 {
     position: absolute;
     left: 20px;
@@ -621,6 +579,29 @@ body {
     display: inline-block; }
   .l-client {
     display: inline-block; } }
+
+.l-about-bars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.l-about-bars li {
+  text-align: left;
+  padding-top: .5em; }
+
+progress[value] {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px; }
+  progress[value]::-webkit-progress-value {
+    background: #fc6432; }
+
+@media only screen and (min-width: 568px) {
+  progress[value] {
+    -webkit-appearance: none;
+    width: 550px;
+    height: 20px; } }
 
 @font-face {
   font-family: 'avengers-icons';
