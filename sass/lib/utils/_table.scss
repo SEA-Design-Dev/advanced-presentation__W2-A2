@@ -1,0 +1,17 @@
+%table-cells {
+  padding: .25em 1em;
+  margin: .8em auto;
+}
+
+th, td {
+  @extend %table-cells;
+  @media only screen and (min-width: $break) {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: $break) {
+  tr {
+    height: 2.5em;
+  }
+}

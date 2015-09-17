@@ -14,10 +14,10 @@ td {
   font-size: 1.5em;
 }
 
-th, td {
+/*th, td {
   padding: .25em 1em;
   margin: .8em auto;
-}
+}*/
 
 em {
   font-style: none;
@@ -188,7 +188,7 @@ h2 {
     color: #2e2e2e;
     font-size: 1em;
   }
-
+/*
   th, td {
     padding: .25em 1em;
     margin: 1em auto;
@@ -196,7 +196,7 @@ h2 {
 
   tr {
     height: 2.5em;
-  }
+  }*/
 
   .th-title {
     font-size: 1.25em;
