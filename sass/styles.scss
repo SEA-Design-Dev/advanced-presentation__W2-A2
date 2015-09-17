@@ -4,18 +4,13 @@
 @import "lib/utils/INDEX";
 @import "mainNavigation";
 @import "flexboxContainer";
-@import "_flexboxes";
+@import "flexboxes";
 
 
 tfoot {
   td {
     background-color: #be4c25;
   }
-}
-
-
-th {
-  font-size: 1.25em;
 }
 
 @media only screen and (min-width: $break) {
