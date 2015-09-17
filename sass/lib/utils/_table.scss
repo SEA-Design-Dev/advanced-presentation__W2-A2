@@ -3,10 +3,29 @@
   margin: .8em auto;
 }
 
-th, td {
+th {
   @extend %table-cells;
+  background-color: #7e3319;
+  font-size: 1.75rem;
+
   @media only screen and (min-width: $break) {
     margin: 1em auto;
+    font-size: 1.25em;
+  }
+}
+
+td {
+  @extend %table-cells;
+  background-color: #ffffff;
+  color: #2e2e2e;
+  font-size: 1.5em;
+
+  tfoot & {
+    background-color: #be4c25;
+  }
+
+  @media only screen and (min-width: $break) {
+    font-size: 1em;
   }
 }
 

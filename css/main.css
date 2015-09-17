@@ -8,17 +8,6 @@ body {
   font-weight: 400;
 }
 
-td {
-  background-color: #ffffff;
-  color: #2e2e2e;
-  font-size: 1.5em;
-}
-
-/*th, td {
-  padding: .25em 1em;
-  margin: .8em auto;
-}*/
-
 em {
   font-style: none;
 }
@@ -61,11 +50,6 @@ h2 {
 
 .f-light {
   font-weight: 300;
-}
-
-.th-title {
-  background-color: #7e3319;
-  font-size: 1.75rem;
 }
 
 .f-bold {
@@ -181,25 +165,6 @@ h2 {
     display: inline-block;
     width: auto;
     padding: 1%;
-  }
-
-  td {
-    background-color: #ffffff;
-    color: #2e2e2e;
-    font-size: 1em;
-  }
-/*
-  th, td {
-    padding: .25em 1em;
-    margin: 1em auto;
-  }
-
-  tr {
-    height: 2.5em;
-  }*/
-
-  .th-title {
-    font-size: 1.25em;
   }
 
   .f-team {
