@@ -130,10 +130,6 @@ footer h1 {
 .p-client-link {
   color: #fff; }
 
-.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
-  background-color: #7f331b;
-  color: #fc6432; }
-
 .p-services {
   background-color: #fc6432;
   color: #fff;
@@ -188,9 +184,6 @@ footer h1 {
   background-color: #fc6432;
   color: #fff; }
 
-.l-message-button {
-  font-size: .5em; }
-
 .p-contact-form {
   background-color: #7f331b; }
 
@@ -206,14 +199,6 @@ footer h1 {
   opacity: 1; }
 
 ::-ms-input-placeholder {
-  color: #fff; }
-
-.p-contact .p-button-holder {
-  background-color: #fff;
-  color: #fc6432; }
-
-.p-contact .p-button-holder:hover {
-  background-color: #7f331b;
   color: #fff; }
 
 .p-author {
@@ -329,10 +314,12 @@ body {
   margin: auto; }
 
 .protfolio_pieces {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
   margin-bottom: 4em; }
-
-.p-about-button {
-  padding: 10px 40px 10px 40px; }
 
 .l-contact-blurb {
   margin: auto;
@@ -360,11 +347,6 @@ body {
 .l-contact-input-message {
   height: 150px; }
 
-.l-message-button {
-  position: absolute;
-  width: 25%;
-  margin: auto; }
-
 .l-contact-map {
   position: relative;
   display: inline-block;
@@ -374,9 +356,6 @@ body {
 .l-contact-map img {
   width: 100%;
   margin: 15% 5% 10% 5%; }
-
-.p-contact .p-button-holder {
-  padding: 2.5%; }
 
 .mobile-menu input[type=checkbox]:checked ~ .menu {
   display: block; }
@@ -585,23 +564,53 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start; }
-
-.l-about-bars li {
-  text-align: left;
-  padding-top: .5em; }
+  .l-about-bars li {
+    text-align: left;
+    padding-top: .5em; }
 
 progress[value] {
   -webkit-appearance: none;
   width: 250px;
   height: 20px; }
+  progress[value]::-webkit-progress-bar {
+    background: #3a3a3a; }
   progress[value]::-webkit-progress-value {
     background: #fc6432; }
+  @media only screen and (min-width: 568px) {
+    progress[value] {
+      -webkit-appearance: none;
+      width: 550px;
+      height: 20px; } }
 
-@media only screen and (min-width: 568px) {
-  progress[value] {
-    -webkit-appearance: none;
-    width: 550px;
-    height: 20px; } }
+.p-about-button {
+  background-color: #fc6432;
+  color: #fff; }
+  .p-about-button .l-message-button {
+    font-size: .5em; }
+
+.l-message-button {
+  position: absolute;
+  width: 25%;
+  margin: auto; }
+
+.p-button-holder {
+  border: 0;
+  background-color: #fff;
+  color: #fc6432; }
+  .p-button-holder:hover {
+    background-color: #3a3a3a;
+    color: #fff; }
+
+.p-button-holder {
+  padding: 2.5%; }
+
+.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
+  background-color: #7f331b;
+  color: #fc6432; }
+
+.l-about-button {
+  border: 0;
+  padding: 10px 40px 10px 40px; }
 
 @font-face {
   font-family: 'avengers-icons';

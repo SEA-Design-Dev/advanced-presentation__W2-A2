@@ -1,32 +1,30 @@
 // Progress bar
-
 // Layout
 .l-about-bars {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
+  & li {
+    text-align: left;
+    padding-top: .5em;
+  }
 }
-.l-about-bars li {
-  text-align: left;
-  padding-top: .5em;
-}
-
 // Mobile presentation
 progress[value] {
   -webkit-appearance: none;
   width: 250px;
   height: 20px;
+  &::-webkit-progress-bar {
+    background: $E-avengers-color;
+  }
   &::-webkit-progress-value {
     background: $A-avengers-color;
   }
-}
-
 // Desktop presentation
-@media only screen and (min-width: 568px) {
-  progress[value] {
-    -webkit-appearance: none;
-    width: 550px;
-    height: 20px;
+  @media only screen and (min-width: 568px) {
+      -webkit-appearance: none;
+      width: 550px;
+      height: 20px;
   }
 }

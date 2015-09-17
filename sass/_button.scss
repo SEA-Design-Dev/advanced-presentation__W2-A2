@@ -1,0 +1,34 @@
+// Button
+.p-about-button {
+  background-color: $A-avengers-color;
+  color: $B-avengers-color;
+  & .l-message-button {
+    font-size: .5em;
+  }
+}
+.l-message-button {
+  position: absolute;
+  width: 25%;
+  margin: auto;
+}
+.p-button-holder {
+  border: 0;
+  background-color: $B-avengers-color;
+  color: $A-avengers-color;
+  &:hover {
+    background-color: $E-avengers-color;
+    color: $B-avengers-color;
+  }
+}
+.p-button-holder {
+  padding: 2.5%;
+}
+
+.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
+  background-color: $D-avengers-color;
+  color: $A-avengers-color;
+}
+  .l-about-button {
+    border: 0;
+    padding: 10px 40px 10px 40px;
+}

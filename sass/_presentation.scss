@@ -1,6 +1,8 @@
 $A-avengers-color: #fc6432;
 $B-avengers-color: #fff;
 $C-avengers-color: #a3a3a3;
+$D-avengers-color: #7f331b;
+$E-avengers-color: #3a3a3a;
 
 body {
   font-family: "Droid sans", sans-serif;
@@ -141,10 +143,10 @@ color: $A-avengers-color;
 .p-client-link {
   color: $B-avengers-color;
 }
-.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
-  background-color: #7f331b;
-  color: $A-avengers-color;
-}
+// .l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
+//   background-color: $D-avengers-color;
+//   color: $A-avengers-color;
+// }
 .p-services {
   background-color: $A-avengers-color;
   color: $B-avengers-color;
@@ -215,9 +217,9 @@ color: $A-avengers-color;
   background-color: $A-avengers-color;
   color: $B-avengers-color;
 }
-.l-message-button {
-  font-size: .5em;
-}
+// .l-message-button {
+//   font-size: .5em;
+// }
 .p-contact-form {
   background-color: #7f331b;
 }
@@ -236,14 +238,14 @@ color: $A-avengers-color;
 ::-ms-input-placeholder {
   color: $B-avengers-color;
 }
-.p-contact .p-button-holder {
-  background-color: $B-avengers-color;
-  color: $A-avengers-color;
-}
-.p-contact .p-button-holder:hover {
-  background-color: #7f331b;
-  color: $B-avengers-color;
-}
+// .p-button-holder {
+//   background-color: $B-avengers-color;
+//   color: $A-avengers-color;
+// }
+// .p-button-holder:hover {
+//   background-color: #7f331b;
+//   color: $B-avengers-color;
+// }
 .p-author {
   color: $A-avengers-color;
 }

@@ -113,11 +113,11 @@ body {
   margin: auto;
 }
 .protfolio_pieces {
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
   margin-bottom: 4em;
 }
 // .l-about-bars {
@@ -133,9 +133,9 @@ body {
 //   display: block;
 //   padding-bottom: 3em;
 // }
-.p-about-button {
-  padding: 10px 40px 10px 40px;
-}
+// .p-about-button {
+//   padding: 10px 40px 10px 40px;
+// }
 .l-contact-blurb {
   margin: auto;
   padding-left: 10%;
@@ -162,11 +162,11 @@ body {
 .l-contact-input-message {
   height: 150px;
 }
-.l-message-button {
-  position: absolute;
-  width: 25%;
-  margin: auto;
-}
+// .l-message-button {
+//   position: absolute;
+//   width: 25%;
+//   margin: auto;
+// }
 .l-contact-map {
   position: relative;
   display: inline-block;
@@ -177,6 +177,6 @@ body {
   width: 100%;
   margin: 15% 5% 10% 5%;
 }
-.p-contact .p-button-holder {
-  padding: 2.5%;
-}
+// .p-button-holder {
+//   padding: 2.5%;
+// }
