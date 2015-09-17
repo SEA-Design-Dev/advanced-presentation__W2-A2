@@ -591,20 +591,16 @@ progress[value] {
   .button:hover {
     background-color: #7f331b;
     color: #fc6432; }
-
-.contact-button {
-  padding: 10%;
-  border: 0;
-  background-color: #fff;
-  color: #fc6432; }
-  .contact-button:hover {
-    background-color: #3a3a3a;
-    color: #fff; }
+  .button.contact-button {
+    background-color: #fff;
+    color: #fc6432;
+    padding: 10px 60px 10px 60px; }
+    .button.contact-button:hover {
+      background-color: #7f331b;
+      color: #fff; }
 
 .l-message-button {
-  position: absolute;
-  width: 25%;
-  margin: auto; }
+  margin-right: 9%; }
 
 @font-face {
   font-family: 'avengers-icons';

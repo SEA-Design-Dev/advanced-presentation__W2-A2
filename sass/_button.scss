@@ -9,19 +9,16 @@
     background-color: $D-avengers-color;
     color: $A-avengers-color;
   }
-}
-.contact-button{
-  padding: 10%;
-  border: 0;
-  background-color: $B-avengers-color;
-  color: $A-avengers-color;
-  &:hover {
-    background-color: $E-avengers-color;
-    color: $B-avengers-color;
+  &.contact-button {
+    background-color: $B-avengers-color;
+    color: $A-avengers-color;
+    padding: 10px 60px 10px 60px;
+    &:hover {
+      background-color: $D-avengers-color;
+      color: $B-avengers-color;
+    }
   }
 }
-.l-message-button {
-  position: absolute;
-  width: 25%;
-  margin: auto;
+.l-message-button{
+  margin-right: 9%;
 }
