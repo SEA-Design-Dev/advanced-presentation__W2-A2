@@ -1,22 +1,4 @@
-// %divot-body-style {
-//   display: block;
-//   height: 4em;
-//   content: " ";
-//   -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
-//   -moz-clip-path: none;
-//   clip-path: polygon(50% 60%, 40% 0, 60% 0);
-// }
-
-// $sections: ('collection=portfolio' $primary-color -2.6em) ('container=about'  #fff -2.1em) ('collection=team' #252629 -4.6em) ('collection=contact' #fff -2.1em) ('container=footer' $primary-color -2em);
-
-// @each $section in $sections {
-//   &[data-#{nth($section, 1)}]::before {
-//     @extend %divot-body-style;
-//     background-color: nth($section, 2);
-//     margin-top: nth($section, 3)
-//   }
-// }
-  article {
+  article, {
     background: transparent;
     position: relative;
     padding-bottom: 100px;
@@ -43,26 +25,12 @@
 
  [data-collection="portfolio"] {
     &:before, &:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 50%;
     border-bottom: 50px solid $alt-background-color;
-  }
-
-  &:before {
-    left: 0;
-    border-right: 100px solid transparent;
-  }
-
-  &:after {
-    right: 0;
-    border-left: 100px solid transparent;
   }
 }
 
  [data-collection="team"] {
+  section.hero-image {
     &:before, &:after {
     content: ' ';
     display: block;
