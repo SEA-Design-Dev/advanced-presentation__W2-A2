@@ -65,7 +65,7 @@ h2 {
 }
 
 /*=== PORTFOLIO HOVER ===*/
-.s-portfolio-image {
+/*.s-portfolio-image {
   background-color: black;
   position: relative;
   top: 0;
@@ -130,7 +130,7 @@ h2 {
 .first-level-hover-wrapper .item-wrapper:hover .portfolio-overlay-button {
   top: 40%;
 }
-
+*/
 .b-orange,
 .b-orange-first {
   background-color: #fd6632;
