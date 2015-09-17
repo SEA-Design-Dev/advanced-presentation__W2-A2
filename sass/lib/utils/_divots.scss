@@ -8,7 +8,7 @@ article {
     position: absolute;
     bottom: 0;
     width: 50%;
-    border-bottom: 50px solid #fff;
+    border-bottom: 50px solid $iceman;
   }
   &:before {
     left: 0;
@@ -28,7 +28,7 @@ article {
   position: absolute;
   bottom: 0;
   width: 50%;
-  border-bottom: 50px solid $primary-color;
+  border-bottom: 50px solid $maverick;
   }
   &:before {
     left: 0;
@@ -41,12 +41,11 @@ article {
 }
 [data-collection="portfolio"] {
   &:before, &:after {
-    border-bottom: 50px solid $alt-background-color;
+    border-bottom: 50px solid $viper;
   }
 }
 
 .s-contact-info ul  {
-
    @media only screen and (min-width: $break) {
     position: relative;
     padding-bottom: 200px;
@@ -78,7 +77,7 @@ article {
   position: absolute;
   bottom: 0;
   width: 50%;
-  border-bottom: 50px solid $primary-color;
+  border-bottom: 50px solid $maverick;
   }
   &:before {
     left: 0;

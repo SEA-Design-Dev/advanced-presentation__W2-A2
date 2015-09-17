@@ -1,26 +1,18 @@
-article {
-  background-color: $primary-color;
-}
+// article {
+//   background-color: $primary-color;
+// }
 
 [data-collection="portfolio"],
 [data-collection="team"] {
-  background-color: #fff;
+  background-color: $iceman;
 }
 
 [data-container="about"] {
-  background-color: $alt-background-color;
-  color: white;
+  background-color: $viper;
+  color: $iceman;
 }
 
-
-
-// b-orange,
-//  {
-//   background-color: #fd6632;
-//   color: white;
-// }
-
-// .b-black {
-//   background-color: #252629;
-//   color: white;
-// }
+[data-collection="services"], [data-collection="contact"] {
+  background-color: $maverick;
+  color: $iceman;
+}
