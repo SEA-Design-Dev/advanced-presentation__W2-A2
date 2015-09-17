@@ -1,9 +1,7 @@
 $(document).ready(function() {
-  $('.subnav-link').on('click', function (){
-
+  $('.subnav-link').on('click', function () {
 
   var temp = $(this).text().toLowerCase();
-
 
   if (temp === "brand & logotypes") {
     $('.subnav-link').removeClass('active')
@@ -48,6 +46,3 @@ $(document).ready(function() {
 
   });
 });
-
-
-

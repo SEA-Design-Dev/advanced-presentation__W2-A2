@@ -45,28 +45,30 @@ article {
   }
 }
 
-.s-contact-info ul {
-  position: relative;
-  padding-bottom: 200px;
-  &:before, &:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-  top: 125px;
-  border-bottom: 50px solid transparent;
-  }
-  &:before {
-    left: 0;
-    border-right: 100px solid rgba(37, 38, 41, .8);
-  }
-  &:after {
-    right: 0;
-    border-left: 100px solid rgba(37, 38, 41, .8);
+.s-contact-info ul  {
+
+   @media only screen and (min-width: $break) {
+    position: relative;
+    padding-bottom: 200px;
+    &:before, &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    top: 125px;
+    border-bottom: 50px solid transparent;
+    }
+    &:before {
+      left: 0;
+      border-right: 100px solid rgba(37, 38, 41, .8);
+    }
+    &:after {
+      right: 0;
+      border-left: 100px solid rgba(37, 38, 41, .8);
+    }
   }
 }
-
 
 
 [data-collection="team"] {
