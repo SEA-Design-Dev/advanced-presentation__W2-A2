@@ -8,17 +8,17 @@
 
 .btn {
   @extend %button-styles;
-  background-color: $primary-color;
-  color: #ffffff;
+  background-color: $maverick;
+  color: $iceman;
   &:hover {
-  background-color: $secondary-color;
+  background-color: $goose;
   }
   [data-container="about"] & {
     height: 3em;
   }
   [data-flex-container="contact"] & {
     height: 3em;
-    background-color: #ffffff;
-    color: #7e3218;
+    background-color: $iceman;
+    color: $hollywood;
   }
 }

@@ -1,19 +1,8 @@
 .s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
   font-size: .85em;
   text-decoration: none;
-  color: white;
+  color: $iceman;
 }
-
-/*.b-orange,
-.b-orange-first {
-  background-color: #fd6632;
-  color: white;
-}
-
-.b-black {
-  background-color: #252629;
-  color: white;
-}*/
 
 .f-light {
   font-weight: 300;

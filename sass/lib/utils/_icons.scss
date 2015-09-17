@@ -16,7 +16,7 @@
   .icon-#{nth($iconL, 1)} {
     @extend %ico-font-base;
     font-size: 3em;
-    background-color: #ffffff;
+    background-color: $iceman;
     color: #000000;
     width: 100%;
     border-radius: 50%;
@@ -54,7 +54,7 @@
 @each $arrow in $arrows {
   .icon-#{nth($arrow, 1)} {
     @extend %ico-font-base;
-    color: #fd6632;
+    color: $maverick;
     font-size: 2rem;
     padding-#{nth($arrow, 2)}: 10%;
     margin: 0 auto;
@@ -62,7 +62,7 @@
       content: nth($arrow, 4);
       }
     &:hover {
-      color: #0b9ce0;
+      color: $goose;
     }
     @media only screen and (min-width: $break) {
       font-size: 1.5em;
