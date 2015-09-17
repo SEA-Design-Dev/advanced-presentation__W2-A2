@@ -1,0 +1,56 @@
+// 160-187
+
+.p-pricing-tables {
+  font-family: "Lato";
+  font-size: 1em;
+  background-color: $A-avengers-color;
+  color: #000;
+  border-bottom: 1px;
+  & li {
+    background-color: $B-avengers-color;
+    border-bottom: solid $D-avengers-color 2px;
+  }
+  & li:nth-child(1) {
+    background-color: $D-avengers-color;
+    font-weight: bolder;
+    color: $B-avengers-color;
+  }
+  & li:nth-child(2) {
+    color: $A-avengers-color;
+    font-weight: bolder;
+  }
+  & div:last-child {
+    height: 3em;
+    background-color: $F-avengers-color;
+  }
+  & a {
+    background-color: $A-avengers-color;
+    color: $B-avengers-color;
+  }
+}
+
+
+.p-pricing-tables {
+  margin-top: 0;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  // padding-bottom: 10%;
+  padding-left: 0;
+}
+.p-pricing-tables div:last-child {
+  padding-top: .75em;
+}
+.p-pricing-tables a {
+  padding: .4em 10% .4em 10%;
+}
+.l-pricing-tables {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 568px) {
+  .p-pricing-tables {
+    margin: 2.5% 5% 2.5% 2.5%;
+    width: 15%;
+    display: inline-block;
+  }
+}
