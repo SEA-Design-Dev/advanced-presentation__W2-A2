@@ -9,6 +9,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+
 /*
 
 @font-face {
@@ -156,7 +160,7 @@ h2 {
   white-space: nowrap;
 }*/
 
-/*.b-white h2:before, .b-white h2:after {
+/*.b-white h2:before, .` h2:after {
   border-top: solid 1px black;
 }
 */
@@ -203,7 +207,6 @@ h2 {
 
 .hero-text-padding {
   padding: 11em 5% 15em 5%;
-  margin-bottom: -5%;
 }
 
 /*=== PORTFOLIO HOVER ===*/
@@ -497,7 +500,8 @@ input, textarea {
   .hero-image {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    position: relative;
   }
 
   .s-hero-text {
