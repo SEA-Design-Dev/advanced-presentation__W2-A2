@@ -30,23 +30,24 @@
 }
 
  [data-collection="team"] {
-  section.hero-image {
-    &:before, &:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    border-bottom: 50px solid $primary-color;
-  }
+    section.hero-image {
+      &:before, &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      border-bottom: 50px solid $primary-color;
+    }
 
-  &:before {
-    left: 0;
-    border-right: 100px solid transparent;
-  }
+    &:before {
+      left: 0;
+      border-right: 100px solid transparent;
+    }
 
-  &:after {
-    right: 0;
-    border-left: 100px solid transparent;
+    &:after {
+      right: 0;
+      border-left: 100px solid transparent;
+    }
   }
 }
