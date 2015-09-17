@@ -40,6 +40,14 @@
     }
   }
 
+  [data-flex-container="team"] & {
+    .l-team-img {
+      max-width: 100%;
+      padding-bottom: 0%;
+      margin-bottom: 5%;
+    }
+  }
+
   @media only screen and (min-width: $break) {
 
     [data-flex-container="about"] & {
@@ -51,6 +59,9 @@
 
     [data-flex-container="team"] & {
       max-width: 25%;
+        .l-team-img {
+          margin-bottom: 10%;
+        }
     }
 
     [data-flex-container="services-one"] & {

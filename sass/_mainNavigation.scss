@@ -6,6 +6,7 @@
   font-size: 2em;
   margin: .5em;
   transition: left 0.3s ease;
+  z-index: 2;
   &:before {
     content: '☰';
   }

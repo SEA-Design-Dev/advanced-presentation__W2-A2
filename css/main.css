@@ -2,20 +2,10 @@
   max-width: 100%;
 }
 
-/*footer {
-  margin-bottom: 5%;
-  margin-top: 2%;
-}*/
-
 /*=== STYLES ===*/
 body {
   font-family: 'Helvetica', 'Arial', Sans-serif;
   font-weight: 400;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }
 
 td {
@@ -42,10 +32,6 @@ h2 {
   font-size: .85em;
   text-decoration: none;
   color: white;
-}
-
-.nav-link {
-  padding-top: 10%;
 }
 
 .hero-text-padding {
@@ -137,51 +123,6 @@ h2 {
   display: none;
 }
 
-/*=== FORM ===*/
-label {
-  display: inline-block;
-}
-
-input, textarea {
-  height: 3em;
-  width: 80%;
-  font-size: .80rem;
-  color: #fff;
-  border: 1px solid #7e3218;
-  margin-bottom: 5%;
-  background-color: #7e3218;
-  padding: 0 .7em;
-  display: inline;
-}
-
-.s-form-message-field {
-  height: 15em;
-  padding-top: 1em;
-  color: #fff;
-}
-
-::-webkit-input-placeholder {
-  color: #fff;
-}
-
-:-moz-placeholder {
-  color: #fff;
-}
-
-::-moz-placeholder {
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
-}
-
-.s-form-btn {
-  background-color: #fff;
-  color: #7e3218;
-  height: 3em;
-}
-
 .s-theme-author {
   text-decoration: none;
   color: #fd6632;
@@ -211,7 +152,7 @@ input, textarea {
     color: #2e2e2e;
     font-size: .85em;
     padding: 1%;
-  }*/
+  }
 
   .slider-break {
     display: block;
@@ -259,20 +200,6 @@ input, textarea {
 
   .th-title {
     font-size: 1.25em;
-  }
-
-  .l-child-m {
-    max-width: 100%;
-    padding-bottom: 0%;
-    margin-bottom: 5%;
-  }
-
-  .s-form-map-width {
-    width: 45%;
-  }
-
-  input, textarea {
-    width: 100%;
   }
 
   .f-team {
