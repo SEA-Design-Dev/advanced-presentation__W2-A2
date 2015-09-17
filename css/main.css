@@ -1,6 +1,3 @@
-.l-slider {
-  max-width: 100%;
-}
 
 /*=== STYLES ===*/
 body {
@@ -80,7 +77,7 @@ h2 {
   color: #fd6632;
 }
 
-.logo {
+/*.logo {
   background-color: #fd6632;
   padding: 1rem 1.5rem;
   border-radius: 50%;
@@ -89,19 +86,13 @@ h2 {
 
 .logo:hover {
   background-color: #0b9ce0;
-}
+}*/
 
 .underline {
   border-bottom: solid 2px #fd6632;
 }
 
-.slider {
-  display: block;
-}
 
-.slider-break {
-  display: none;
-}
 
 .s-theme-author {
   text-decoration: none;
@@ -117,15 +108,6 @@ h2 {
 
   h1 {
     font-size: 2.4em;
-  }
-
-  .slider-break {
-    display: block;
-    width: 100%;
-  }
-
-  .slider {
-    display: none;
   }
 
   .portfolio-filter-links {
