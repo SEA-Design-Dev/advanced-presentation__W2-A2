@@ -588,6 +588,18 @@ progress[value] {
     .grid .grid-sub p {
       margin: .5em; }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center; }
+  .flex a {
+    padding: 10px;
+    font-size: 1em;
+    color: #a3a3a3; }
+
 @font-face {
   font-family: 'avengers-icons';
   src: url("fonts/icomoon.eot?-lo05z1");
