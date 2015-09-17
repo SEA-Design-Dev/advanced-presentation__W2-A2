@@ -48,10 +48,6 @@ footer h1 {
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png"); }
 
-.port-navbar a {
-  font-size: 1em;
-  color: #a3a3a3; }
-
 .p-logo-1 {
   border-radius: 50%;
   background-color: #fc6432; }
@@ -207,6 +203,10 @@ footer h1 {
 body {
   box-sizing: border-box;
   margin: 0 2% 2% 0; }
+
+.l-portfolio {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
 
 .icon-menu {
   display: inline-block; }
@@ -573,19 +573,19 @@ progress[value] {
 
 .grid {
   margin-top: 2em; }
-  .grid .flex {
+  .grid .grid-sub {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
     align-items: center; }
-    .grid .flex li {
+    .grid .grid-sub li {
       justify-content: center;
       margin-bottom: 1.5em; }
-    .grid .flex h4 {
+    .grid .grid-sub h4 {
       margin: .5em; }
-    .grid .flex p {
+    .grid .grid-sub p {
       margin: .5em; }
 
 @font-face {
