@@ -1,0 +1,13 @@
+.subnav-link {
+  width: 60%;
+  margin: .3em auto;
+  &:hover {
+    background-color: #fd6632;
+    color: white;
+  }
+  @media only screen and (min-width: 667px) {
+    display: inline-block;
+    width: auto;
+    padding: 1%;
+  }
+}

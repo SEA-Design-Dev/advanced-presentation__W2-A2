@@ -26,7 +26,7 @@
     <main class="page-wrapper" id="home">
       <label for="mobileNavToggle" class="nav-toggle"></label>
       <label for="mobileNavToggle" class="trigger"></label>
-      <section class="hero-text-padding hero-image hero-test">
+      <section class="hero-image">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="82" height="82" viewBox="0 0 82 82">
           <defs>
             <style>
@@ -49,7 +49,7 @@
             <path d="M42.587,23.028 C42.625,23.044 56.680,36.919 56.680,48.673 C56.680,56.228 50.555,62.353 43.000,62.353 C39.242,62.353 35.839,60.838 33.366,58.385 C30.868,55.906 29.320,52.470 29.320,48.673 C29.320,36.919 42.639,23.051 42.587,23.028 Z" class="cls-2"/>
           </g>
         </svg>
-        <h1 class="f-light">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong><span class="underline">awesome</span></strong> mobile and websites</h1>
+        <h1 class="f-light">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong class="underline">awesome</strong> mobile and websites</h1>
       </section>
       <article data-collection="services" class="b-orange" id="services">
         <h2 class="f-bold f-large">SERVICES</h2>
@@ -61,17 +61,17 @@
         <section data-flex-container="services-two" class="l-flex-container">
           <div class="l-flex-item">
             <h3 class="f-bold">UI & UX DESIGN</h3>
-            <span class="icon-brush icon-big"></span>
+            <span class="icon-brush"></span>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
           <div class="l-flex-item">
             <h3 class="f-bold">LABORATORY</h3>
-            <span class="icon-lab icon-big"></span>
+            <span class="icon-lab"></span>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
           <div class="l-flex-item">
             <h3 class="f-bold">DEVELOPMENT</h3>
-            <span class="icon-cog icon-big"></span>
+            <span class="icon-cog"></span>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
         </section>
@@ -81,7 +81,7 @@
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">BASIC</th>
+                  <th class="f-light">BASIC</th>
                 </tr></thead>
               <tbody>
                 <tr>
@@ -109,7 +109,7 @@
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">STANDART</th>
+                  <th class="f-light">STANDART</th>
                 </tr></thead>
               <tbody>
                 <tr>
@@ -137,7 +137,7 @@
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">PROFESSIONAL</th>
+                  <th class="f-light">PROFESSIONAL</th>
                 </tr></thead>
               <tbody>
                 <tr>
@@ -165,7 +165,7 @@
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">PREMIUM</th>
+                  <th class="f-light">PREMIUM</th>
                 </tr></thead>
               <tbody>
                 <tr>
@@ -195,14 +195,14 @@
       </article>
       <article data-collection="portfolio" class="b-white" id="portfolio">
         <h2 class="f-bold f-large">PORTFOLIO</h2>
-        <img src="/img/Slider.png" alt="Crispers - Nice, crispy and creative landing page" class="l-slider slider-break">
-        <img src="/img/Slider_mini.png" alt="Crispers - Nice, crispy and creative landing page" class="l-slider slider">
-        <ul class="f-bold l-subnav">
-          <li class="s-portfolio-filter-links l-subnav-link">All Works</li>
-          <li class="s-portfolio-filter-links l-subnav-link">Webdesign</li>
-          <li class="s-portfolio-filter-links l-subnav-link">UI design</li>
-          <li class="s-portfolio-filter-links l-subnav-link">Icons design</li>
-          <li class="s-portfolio-filter-links l-subnav-link">Brand & Logotypes</li>
+        <img src="/img/Slider.png" alt="Crispers - Nice, crispy and creative landing page" class="slider-break">
+        <img src="/img/Slider_mini.png" alt="Crispers - Nice, crispy and creative landing page" class="slider">
+        <ul class="f-bold">
+          <li class="subnav-link">All Works</li>
+          <li class="subnav-link">Webdesign</li>
+          <li class="subnav-link">UI design</li>
+          <li class="subnav-link">Icons design</li>
+          <li class="subnav-link">Brand & Logotypes</li>
         </ul>
         <div data-flex-container="portfolio" class="l-flex-container">
           <figure class="l-flex-item f-small-line-height">
@@ -354,7 +354,7 @@
               <p class="f-bold f-team"><strong>JONATHAN DOE</strong></p>
               <p class="f-team-b">CEO, UI&UX designer</p>
               <figure>
-                <img src="/img/jonathan.png" alt="Jonathan Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jonathan.png" alt="Jonathan Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
                   <a href="" class="icon-facebook"></a>
                   <a href="" class="icon-twitter"></a>
@@ -369,7 +369,7 @@
               <p class="f-bold f-team"><strong>JANNETE DOE</strong></p>
               <p class="f-team-b">Bussines & marketing</p>
               <figure>
-                <img src="/img/jannete.png" alt="Jannete Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jannete.png" alt="Jannete Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
                   <a href="" class="icon-facebook"></a>
                   <a href="" class="icon-twitter"></a>
@@ -384,7 +384,7 @@
               <p class="f-bold f-team"><strong>JANE ELLA DOE</strong></p>
               <p class="f-team-b">UX specialist</p>
               <figure>
-                <img src="/img/jane.png" alt="Jane Ella Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jane.png" alt="Jane Ella Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
                   <a href="" class="icon-facebook"></a>
                   <a href="" class="icon-twitter"></a>
@@ -399,7 +399,7 @@
               <p class="f-bold f-team"><strong>JESSIE DOE</strong></p>
               <p class="f-team-b">Bussines and legacy</p>
               <figure>
-                <img src="/img/jessie.png" alt="Jessie Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jessie.png" alt="Jessie Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
                   <a href="" class="icon-facebook"></a>
                   <a href="" class="icon-twitter"></a>
@@ -429,7 +429,7 @@
       </article>
       <article data-collection="contact" data-flex-container="contact" class="b-orange" id="contact">
         <h2 class="f-bold f-large">CONTACT</h2>
-        <section class="l-contact-txt">
+        <section>
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
         </section>
         <section class="l-flex-container">
@@ -452,7 +452,7 @@
           </div>
         </section>
       </article>
-      <footer data-container="footer"class="b-white l-footer">
+      <footer data-container="footer"class="b-white">
         <p>Theme by <a href="" class="s-theme-author">Pierre Borodin</a href=""> &copy; copyright 2012</p>
         <a href="" class="icon-facebook"></a>
         <a href="" class="icon-twitter"></a>

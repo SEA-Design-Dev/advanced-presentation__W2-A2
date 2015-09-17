@@ -1,5 +1,3 @@
-$break: 667px;
-
 html {
   box-sizing: border-box;
 }
@@ -14,6 +12,11 @@ body {
   text-align: center;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 article {
   padding: 2em 1em;
 
@@ -25,4 +28,17 @@ article {
 .page-wrapper {
   position: relative;
   right: 0;
+}
+
+[data-collection="contact"] {
+  p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+footer {
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
