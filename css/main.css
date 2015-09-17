@@ -301,6 +301,7 @@ input, textarea {
     display: none;
   }
 
+
   .hero-image {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
@@ -327,32 +328,6 @@ input, textarea {
     padding: 1%;
   }
 
-  .s-contact-info {
-    display: inline-block;
-    background-image: url("/img/map_base.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0;
-    height: 20em;
-  }
-
-  .s-contact-info ul {
-    background-color: rgba(37, 38, 41, .8);
-    padding: .75em 1em .5em .25em;
-    margin-top: 0;
-    text-align: left;
-  }
-
-  .s-contact-info li {
-    display: inline-block;
-    padding: 0 1em 1em 0;
-    line-height: 2;
-  }
-
-  .s-contact-info li:last-child {
-    padding: 0;
-  }
-
   td {
     background-color: #ffffff;
     color: #2e2e2e;
@@ -368,9 +343,9 @@ input, textarea {
     height: 2.5em;
   }
 
-  .th-title {
+ /* .th-title {
     font-size: 1.25em;
-  }
+  }*/
 
   .l-child-m {
     max-width: 100%;
