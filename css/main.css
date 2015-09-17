@@ -130,13 +130,6 @@ h2 {
     padding: 0%;
   }
 
-  .nav-link a {
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: .85em;
-    padding: 1%;
-  }
-
   .slider-break {
     display: block;
     width: 100%;
@@ -164,7 +157,13 @@ h2 {
     display: inline-block;
     width: auto;
     padding: 1%;
+
   }
+
+ .portfolio-filter-links:hover {
+   background-color: #fd6632;
+   color: white;
+ }
 
   .f-team {
     font-size: 1.5em;
