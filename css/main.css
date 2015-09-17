@@ -10,32 +10,8 @@
   font-style: normal;
 }
 
-.l-flex-child {
-  margin-bottom: 10%;
-}
-
-.l-flex-child-p {
-  margin-top: 10%;
-}
-
 .l-slider {
   max-width: 100%;
-}
-
-.l-client {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: space-between;
-  align-items: center;
-}
-
-.l-client-item {
-  max-width: 85%;
-  order: 2;
-  text-align: center;
-  margin: auto;
 }
 
 .l-footer {
@@ -444,22 +420,6 @@ input, textarea {
     margin-bottom: 1%;
   }
 
-  .l-client-img {
-    display: flex;
-    float: left;
-    clear: right;
-    margin: 5% auto;
-    padding: 2%;
-  }
-
-  .l-client-txt {
-    display: flex;
-    flex-flow: column;
-    text-align: left;
-    margin: 5% auto;
-    padding-left: 3%;
-  }
-
   .l-contact-txt {
     margin-left: 5%;
     margin-right: 5%;
@@ -474,15 +434,5 @@ input, textarea {
     margin-top: -1em;
     -webkit-clip-path: polygon(50% 60%, 40% 0, 60% 0);
     clip-path: polygon(50% 60%, 40% 0, 60% 0);
-  }
-
-  .icon-circle-left {
-    font-size: 1.5em;
-    padding: 0;
-  }
-
-  .icon-circle-right {
-    font-size: 1.5em;
-    padding: 0;
   }
 }

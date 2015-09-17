@@ -57,8 +57,7 @@
     color: #fd6632;
     font-size: 2rem;
     padding-#{nth($arrow, 2)}: 10%;
-    margin: auto;
-    order: nth($arrow, 3);
+    margin: 0 auto;
     &:before {
       content: nth($arrow, 4);
       }
@@ -67,7 +66,9 @@
     }
     @media only screen and (min-width: $break) {
       font-size: 1.5em;
-      padding: 0;
+      padding-#{nth($arrow, 2)}: 0%;
+      -webkit-order: nth($arrow, 3);
+      order: nth($arrow, 3);
     }
   }
 }
