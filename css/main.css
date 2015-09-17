@@ -9,11 +9,6 @@ em {
   font-style: none;
 }
 
-h2 {
-  width: 100%;
-  display: inline-block;
-}
-
 .s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
   font-size: .85em;
   text-decoration: none;
@@ -82,10 +77,6 @@ h2 {
 
 /*=== BREAKPOINTS ===*/
 @media only screen and (min-width: 667px) {
-
-  h1 {
-    font-size: 2.4em;
-  }
 
   .f-team {
     font-size: 1.5em;
