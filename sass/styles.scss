@@ -6,7 +6,16 @@
 @import "flexboxContainer";
 @import "flexboxes";
 
+.hero-image {
+  padding: 11em 5% 15em 5%;
 
+  @media only screen and (min-width: 667px) {
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+}
 
 @media only screen and (min-width: $break) {
   .s-contact-info {
