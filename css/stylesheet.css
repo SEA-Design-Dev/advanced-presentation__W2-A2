@@ -130,10 +130,6 @@ footer h1 {
 .p-client-link {
   color: #fff; }
 
-.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
-  background-color: #7f331b;
-  color: #fc6432; }
-
 .p-services {
   background-color: #fc6432;
   color: #fff;
@@ -153,31 +149,12 @@ footer h1 {
   color: #fff;
   background-color: #000; }
 
-progress[value] {
-  -webkit-appearance: none;
-  width: 250px;
-  height: 20px; }
-
-progress::-webkit-progress-bar {
-  background: gray; }
-
-progress::-webkit-progress-value {
-  background: #fc6432; }
-
-.p-about-button {
-  background-color: #fc6432;
-  color: #fff;
-  border: 0; }
-
 .p-team {
   color: #999f9f; }
 
 .p-contact {
   background-color: #fc6432;
   color: #fff; }
-
-.l-message-button {
-  font-size: .5em; }
 
 .p-contact-form {
   background-color: #7f331b; }
@@ -194,14 +171,6 @@ progress::-webkit-progress-value {
   opacity: 1; }
 
 ::-ms-input-placeholder {
-  color: #fff; }
-
-.p-contact .p-button-holder {
-  background-color: #fff;
-  color: #fc6432; }
-
-.p-contact .p-button-holder:hover {
-  background-color: #7f331b;
   color: #fff; }
 
 .p-author {
@@ -307,22 +276,6 @@ body {
   align-content: flex-start;
   margin-bottom: 4em; }
 
-.l-about-bars {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start; }
-
-.l-about-bars li {
-  padding-top: .5em; }
-
-.l-about-button {
-  display: block;
-  padding-bottom: 3em; }
-
-.p-about-button {
-  padding: 10px 40px 10px 40px; }
-
 .l-contact-blurb {
   margin: auto;
   padding-left: 10%;
@@ -349,11 +302,6 @@ body {
 .l-contact-input-message {
   height: 150px; }
 
-.l-message-button {
-  position: absolute;
-  width: 25%;
-  margin: auto; }
-
 .l-contact-map {
   position: relative;
   display: inline-block;
@@ -363,9 +311,6 @@ body {
 .l-contact-map img {
   width: 100%;
   margin: 15% 5% 10% 5%; }
-
-.p-contact .p-button-holder {
-  padding: 2.5%; }
 
 .mobile-menu input[type=checkbox]:checked ~ .menu {
   display: block; }
@@ -442,14 +387,6 @@ body {
   .l-about-columns p {
     margin-left: 2%;
     margin-right: 2%; }
-  progress[value] {
-    -webkit-appearance: none;
-    width: 550px;
-    height: 20px; }
-  progress: -webkit-progress-bar;
-    progress-background: gray;
-  progress: -webkit-progress-value;
-    progress-background: #fd6632;
   .p-logo-2 {
     position: absolute;
     left: 20px;
@@ -617,6 +554,49 @@ body {
     margin: 2.5% 5% 2.5% 2.5%;
     width: 15%;
     display: inline-block; } }
+
+.l-about-bars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+  .l-about-bars li {
+    text-align: left;
+    padding-top: .5em; }
+
+progress[value] {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px; }
+  progress[value]::-webkit-progress-bar {
+    background: #3a3a3a; }
+  progress[value]::-webkit-progress-value {
+    background: #fc6432; }
+  @media only screen and (min-width: 568px) {
+    progress[value] {
+      -webkit-appearance: none;
+      width: 550px;
+      height: 20px; } }
+
+.button {
+  background-color: #fc6432;
+  color: #fff;
+  border: 0;
+  padding: 10px 40px 10px 40px;
+  font-size: .5em; }
+  .button:hover {
+    background-color: #7f331b;
+    color: #fc6432; }
+  .button.contact-button {
+    background-color: #fff;
+    color: #fc6432;
+    padding: 10px 60px 10px 60px; }
+    .button.contact-button:hover {
+      background-color: #7f331b;
+      color: #fff; }
+
+.l-message-button {
+  margin-right: 9%; }
 
 @font-face {
   font-family: 'avengers-icons';

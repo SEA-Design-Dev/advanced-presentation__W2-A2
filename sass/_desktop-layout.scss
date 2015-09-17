@@ -47,17 +47,17 @@
  margin-left: 2%;
  margin-right: 2%;
 }
-progress[value] {
-  -webkit-appearance: none;
-  width: 550px;
-  height: 20px;
-}
-progress:: -webkit-progress-bar {
-  background: gray;
-}
-progress:: -webkit-progress-value {
-  background: #fd6632;
-}
+// progress[value] {
+//   -webkit-appearance: none;
+//   width: 550px;
+//   height: 20px;
+// }
+// progress:: -webkit-progress-bar {
+//   background: gray;
+// }
+// progress:: -webkit-progress-value {
+//   background: #fd6632;
+// }
 .p-logo-2 {
   position: absolute;
   left: 20px;

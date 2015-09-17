@@ -144,10 +144,10 @@ color: $A-avengers-color;
 .p-client-link {
   color: $B-avengers-color;
 }
-.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
-  background-color: #7f331b;
-  color: $A-avengers-color;
-}
+// .l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
+//   background-color: $D-avengers-color;
+//   color: $A-avengers-color;
+// }
 .p-services {
   background-color: $A-avengers-color;
   color: $B-avengers-color;
@@ -196,22 +196,22 @@ color: $A-avengers-color;
   color: $B-avengers-color;
   background-color: #000;
 }
-progress[value] {
-  -webkit-appearance: none;
-  width: 250px;
-  height: 20px;
-}
-progress::-webkit-progress-bar {
-  background: gray;
-}
-progress::-webkit-progress-value {
-  background: $A-avengers-color;
-}
-.p-about-button {
-  background-color: $A-avengers-color;
-  color: $B-avengers-color;
-  border: 0;
-}
+// progress[value] {
+//   -webkit-appearance: none;
+//   width: 250px;
+//   height: 20px;
+// }
+// progress::-webkit-progress-bar {
+//   background: gray;
+// }
+// progress::-webkit-progress-value {
+//   background: $A-avengers-color;
+// }
+// .p-about-button {
+//   background-color: $A-avengers-color;
+//   color: $B-avengers-color;
+//   border: 0;
+// }
 .p-team {
   color: #999f9f;
 }
@@ -219,9 +219,9 @@ progress::-webkit-progress-value {
   background-color: $A-avengers-color;
   color: $B-avengers-color;
 }
-.l-message-button {
-  font-size: .5em;
-}
+// .l-message-button {
+//   font-size: .5em;
+// }
 .p-contact-form {
   background-color: #7f331b;
 }
@@ -240,14 +240,14 @@ progress::-webkit-progress-value {
 ::-ms-input-placeholder {
   color: $B-avengers-color;
 }
-.p-contact .p-button-holder {
-  background-color: $B-avengers-color;
-  color: $A-avengers-color;
-}
-.p-contact .p-button-holder:hover {
-  background-color: #7f331b;
-  color: $B-avengers-color;
-}
+// .p-button-holder {
+//   background-color: $B-avengers-color;
+//   color: $A-avengers-color;
+// }
+// .p-button-holder:hover {
+//   background-color: #7f331b;
+//   color: $B-avengers-color;
+// }
 .p-author {
   color: $A-avengers-color;
 }

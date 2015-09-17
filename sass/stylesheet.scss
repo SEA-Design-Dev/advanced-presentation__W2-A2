@@ -4,6 +4,8 @@
 @import "desktop-presentation.scss";
 @import "desktop-layout.scss";
 @import "pricing-tables.scss";
+@import "progress-bar.scss";
+@import "button.scss";
 
 @font-face {
   font-family: 'avengers-icons';
@@ -32,21 +34,21 @@
   color: #000;
   margin: auto;
 }
-$icons: 
-  (google-plus '\e600' #dd4b39) 
-  (facebook '\e601' #3b5998) 
-  (twitter '\e602' #00aced) 
-  (dribbble '\e603' #ea4c89) 
-  (linkedin2 '\e604' #007bb6) 
-  (paint-format '\e605' #000000) 
-  (cog '\e606' #000000) 
+$icons:
+  (google-plus '\e600' #dd4b39)
+  (facebook '\e601' #3b5998)
+  (twitter '\e602' #00aced)
+  (dribbble '\e603' #ea4c89)
+  (linkedin2 '\e604' #007bb6)
+  (paint-format '\e605' #000000)
+  (cog '\e606' #000000)
   (lab '\e607' #000000);
 
 @each $icon in $icons {
   .icon-#{nth($icon, 1)} {
       @extend %ico-font-base;
-      background-color: nth($icon, 3);    
-    &:before { 
+      background-color: nth($icon, 3);
+    &:before {
       content: nth($icon, 2);
     }
   }
