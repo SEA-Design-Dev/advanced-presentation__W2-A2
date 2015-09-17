@@ -5,7 +5,7 @@
 
 th {
   @extend %table-cells;
-  background-color: #7e3319;
+  background-color: $hollywood;
   font-size: 1.75rem;
 
   @media only screen and (min-width: $break) {
@@ -16,7 +16,7 @@ th {
 
 td {
   @extend %table-cells;
-  background-color: #ffffff;
+  background-color: $iceman;
   color: #2e2e2e;
   font-size: 1.5em;
 
