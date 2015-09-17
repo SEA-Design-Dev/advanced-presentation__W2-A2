@@ -571,16 +571,22 @@ progress[value] {
 .l-message-button {
   margin-right: 9%; }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center; }
-  .flex li {
-    justify-content: center;
-    margin-bottom: 4em; }
+.grid {
+  margin-top: 2em; }
+  .grid .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center; }
+    .grid .flex li {
+      justify-content: center;
+      margin-bottom: 1.5em; }
+    .grid .flex h4 {
+      margin: .5em; }
+    .grid .flex p {
+      margin: .5em; }
 
 @font-face {
   font-family: 'avengers-icons';
