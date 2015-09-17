@@ -36,6 +36,11 @@
   }
 }
 
+.active {
+  color: #fff;
+  background-color: $primary-color;
+}
+
 @media only screen and (min-width: $break) {
   .s-contact-info {
     display: inline-block;
