@@ -2,25 +2,30 @@ body {
   box-sizing: border-box;
   margin: 0 2% 2% 0;
 }
-.flex{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center;
-  &.portfolio_pieces{
-    justify-content: center;
-    margin-bottom: 4em;
-  };
-  &.port-navbar {
-    margin-left: 30%;
-    margin-right: 30%;
-    a {
-      display: inline-block;
-    }
-  };
+
+.l-portfolio {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
+// .flex{
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   align-content: flex-start;
+//   align-items: center;
+//   &.portfolio_pieces{
+//     justify-content: center;
+//     margin-bottom: 4em;
+//   };
+//  .flex, .port-navbar {
+//     margin-left: 30%;
+//     margin-right: 30%;
+//     a {
+//       display: inline-block;
+//     }
+//   };
+// }
 // mobile nav
 .icon-menu {
   display: inline-block;
@@ -112,14 +117,14 @@ body {
   display: block;
   margin: auto;
 }
-.protfolio_pieces {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  margin-bottom: 4em;
-}
+// .protfolio_pieces {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-content: flex-start;
+//   margin-bottom: 4em;
+// }
 // .l-about-bars {
 //   display: flex;
 //   flex-wrap: nowrap;

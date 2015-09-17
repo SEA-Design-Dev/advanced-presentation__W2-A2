@@ -48,10 +48,6 @@ footer h1 {
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png"); }
 
-.port-navbar a {
-  font-size: 1em;
-  color: #a3a3a3; }
-
 .p-logo-1 {
   border-radius: 50%;
   background-color: #fc6432; }
@@ -180,21 +176,9 @@ body {
   box-sizing: border-box;
   margin: 0 2% 2% 0; }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center; }
-  .flex.portfolio_pieces {
-    justify-content: center;
-    margin-bottom: 4em; }
-  .flex.port-navbar {
-    margin-left: 30%;
-    margin-right: 30%; }
-    .flex.port-navbar a {
-      display: inline-block; }
+.l-portfolio {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
 
 .icon-menu {
   display: inline-block; }
@@ -267,14 +251,6 @@ body {
 .big-little-slider {
   display: block;
   margin: auto; }
-
-.protfolio_pieces {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  margin-bottom: 4em; }
 
 .l-contact-blurb {
   margin: auto;
@@ -354,13 +330,6 @@ body {
     display: inline-block; }
   .mobile-menu li a {
     padding: 5px 50px 5px 50px; }
-  .protfolio-pieces {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    text-align: center; }
   .p-navbar {
     display: flex;
     flex-direction: row;
@@ -597,6 +566,35 @@ progress[value] {
 
 .l-message-button {
   margin-right: 9%; }
+
+.grid {
+  margin-top: 2em; }
+  .grid .grid-sub {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center; }
+    .grid .grid-sub li {
+      justify-content: center;
+      margin-bottom: 1.5em; }
+    .grid .grid-sub h4 {
+      margin: .5em; }
+    .grid .grid-sub p {
+      margin: .5em; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center; }
+  .flex a {
+    padding: 10px;
+    font-size: 1em;
+    color: #a3a3a3; }
 
 @font-face {
   font-family: 'avengers-icons';
