@@ -3,7 +3,8 @@
 @import 'sass/typeography/_typeography.scss';
 @import "lib/utils/INDEX";
 @import "mainNavigation";
-@import "flexbox";
+@import "flexboxContainer";
+@import "_flexboxes";
 
 
 tfoot {
@@ -11,3 +12,9 @@ tfoot {
     background-color: #be4c25;
   }
 }
+
+
+th {
+  font-size: 1.25em;
+}
+
