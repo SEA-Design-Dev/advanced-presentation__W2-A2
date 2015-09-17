@@ -582,35 +582,29 @@ progress[value] {
       width: 550px;
       height: 20px; } }
 
-.p-about-button {
+.button {
   background-color: #fc6432;
-  color: #fff; }
-  .p-about-button .l-message-button {
-    font-size: .5em; }
+  color: #fff;
+  border: 0;
+  padding: 10px 40px 10px 40px;
+  font-size: .5em; }
+  .button:hover {
+    background-color: #7f331b;
+    color: #fc6432; }
+
+.contact-button {
+  padding: 10%;
+  border: 0;
+  background-color: #fff;
+  color: #fc6432; }
+  .contact-button:hover {
+    background-color: #3a3a3a;
+    color: #fff; }
 
 .l-message-button {
   position: absolute;
   width: 25%;
   margin: auto; }
-
-.p-button-holder {
-  border: 0;
-  background-color: #fff;
-  color: #fc6432; }
-  .p-button-holder:hover {
-    background-color: #3a3a3a;
-    color: #fff; }
-
-.p-button-holder {
-  padding: 2.5%; }
-
-.l-client-link:hover, .p-about-button:hover, .p-pricing-tables a:hover {
-  background-color: #7f331b;
-  color: #fc6432; }
-
-.l-about-button {
-  border: 0;
-  padding: 10px 40px 10px 40px; }
 
 @font-face {
   font-family: 'avengers-icons';
