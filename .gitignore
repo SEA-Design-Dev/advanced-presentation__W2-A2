@@ -24,3 +24,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+**/node_modules/
+**/node_modules/
+
+# Generated CSS
+public/css/**/*.css
+node_modules/
