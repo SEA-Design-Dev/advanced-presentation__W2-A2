@@ -6,10 +6,10 @@
     appearance: none;
     height: .75em;
     &::-webkit-progress-bar {
-    background-color: #3a3a3a;
+      background-color: #3a3a3a;
     }
     &::-webkit-progress-value {
-    background-color: #fd6632;
+      background-color: #fd6632;
     }
   }
   .s-progress-paragraph {
