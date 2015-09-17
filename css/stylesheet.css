@@ -208,22 +208,6 @@ body {
   box-sizing: border-box;
   margin: 0 2% 2% 0; }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center; }
-  .flex.portfolio_pieces {
-    justify-content: center;
-    margin-bottom: 4em; }
-  .flex.port-navbar {
-    margin-left: 30%;
-    margin-right: 30%; }
-    .flex.port-navbar a {
-      display: inline-block; }
-
 .icon-menu {
   display: inline-block; }
 
@@ -313,14 +297,6 @@ body {
   display: block;
   margin: auto; }
 
-.protfolio_pieces {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  margin-bottom: 4em; }
-
 .l-contact-blurb {
   margin: auto;
   padding-left: 10%;
@@ -399,13 +375,6 @@ body {
     display: inline-block; }
   .mobile-menu li a {
     padding: 5px 50px 5px 50px; }
-  .protfolio-pieces {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    text-align: center; }
   .p-navbar {
     display: flex;
     flex-direction: row;
@@ -601,6 +570,17 @@ progress[value] {
 
 .l-message-button {
   margin-right: 9%; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center; }
+  .flex li {
+    justify-content: center;
+    margin-bottom: 4em; }
 
 @font-face {
   font-family: 'avengers-icons';

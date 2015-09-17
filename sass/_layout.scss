@@ -13,7 +13,7 @@ body {
 //     justify-content: center;
 //     margin-bottom: 4em;
 //   };
-//   &.port-navbar {
+//  .flex, .port-navbar {
 //     margin-left: 30%;
 //     margin-right: 30%;
 //     a {
@@ -112,14 +112,14 @@ body {
   display: block;
   margin: auto;
 }
-.protfolio_pieces {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  margin-bottom: 4em;
-}
+// .protfolio_pieces {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-content: flex-start;
+//   margin-bottom: 4em;
+// }
 // .l-about-bars {
 //   display: flex;
 //   flex-wrap: nowrap;

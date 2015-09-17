@@ -1,28 +1,13 @@
-// // Grid display
-// .flex{
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-//   align-content: flex-start;
-//   align-items: center;
-//   &.portfolio_pieces{
-//     justify-content: center;
-//     margin-bottom: 4em;
-//   };
-//   &.port-navbar {
-//     margin-left: 30%;
-//     margin-right: 30%;
-//     a {
-//       display: inline-block;
-//     }
-//   };
-// }
-// .protfolio-pieces {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-content: flex-start;
-//   text-align: center;
-// }
+// Grid display
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
+  li {
+    justify-content: center;
+    margin-bottom: 4em;
+  };
+}
