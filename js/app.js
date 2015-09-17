@@ -1,47 +1,21 @@
 $(document).ready(function() {
   $('.subnav-link').on('click', function () {
 
-  var temp = $(this).text().toLowerCase();
+  var selector = $(this).data('show-tags');
 
-  if (temp === "brand & logotypes") {
-    $('.subnav-link').removeClass('active')
-    $('.uidesign').addClass('hidden');
-    $('.iconsdesign').addClass('hidden');
-    $('.webdesign').addClass('hidden');
-    $('.brandsandlogotypes').removeClass('hidden')
-    $(this).addClass('active');
+  if (selector === "all") {
+    $('.subnav-link').removeClass('active');
+    $('[data-tags]').removeClass('hidden');
+
   }
+  else {
+    $('.subnav-link').removeClass('active');
+    $('[data-tags]').addClass('hidden')
 
-  if (temp === "webdesign") {
-    $('.subnav-link').removeClass('active')
-    $('.uidesign').addClass('hidden');
-    $('.iconsdesign').addClass('hidden');
-    $('.brandsandlogotypes').addClass('hidden');
-    $('.webdesign').removeClass('hidden');
+    var filter = $('[data-tags*="' + selector + '"]');
+
+    filter.removeClass('hidden');
     $(this).addClass('active');
-  }
-
-  if (temp === "ui design") {
-    $('.subnav-link').removeClass('active')
-    $('.brandsandlogotypes').addClass('hidden');
-    $('.iconsdesign').addClass('hidden');
-    $('.webdesign').addClass('hidden');
-    $('.uidesign').removeClass('hidden');
-    $(this).addClass('active');
-  }
-
-  if (temp === "icons design") {
-    $('.subnav-link').removeClass('active')
-    $('.uidesign').addClass('hidden');
-    $('.brandsandlogotypes').addClass('hidden');
-    $('.webdesign').addClass('hidden');
-    $('.iconsdesign').removeClass('hidden');
-    $(this).addClass('active');
-  }
-
-  if (temp === "all works") {
-    $('.subnav-link').removeClass('active')
-    $('.hidden').removeClass('hidden');
   }
 
   });
