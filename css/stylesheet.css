@@ -531,7 +531,9 @@ body {
     background-color: #be4c27; }
   .p-pricing-tables a {
     background-color: #fc6432;
-    color: #fff; }
+    color: #fff;
+    width: 50%;
+    height: 25%; }
 
 .p-pricing-tables {
   margin-top: 0;
