@@ -6,6 +6,8 @@
 @import "pricing-tables.scss";
 @import "progress-bar.scss";
 @import "button.scss";
+@import "logo.scss";
+@import "team-members";
 
 @font-face {
   font-family: 'avengers-icons';
@@ -17,6 +19,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'avengers-icons';
   speak: none;
