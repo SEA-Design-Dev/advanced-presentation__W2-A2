@@ -1,9 +1,7 @@
-article,
-.hero-image {
-  background: transparent;
-  position: relative;
-  padding-bottom: 100px;
-
+article, {
+    background: transparent;
+    position: relative;
+    padding-bottom: 100px;
   &:before, &:after {
     content: ' ';
     display: block;
@@ -12,30 +10,40 @@ article,
     width: 50%;
     border-bottom: 50px solid #fff;
   }
-
   &:before {
     left: 0;
     border-right: 100px solid transparent;
   }
-
   &:after {
     right: 0;
     border-left: 100px solid transparent;
   }
 }
-
 .hero-image {
+  position: relative;
+  padding-bottom: 100px;
   &:before, &:after {
-    border-bottom: 50px solid $primary-color;
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  border-bottom: 50px solid $primary-color;
+  }
+  &:before {
+    left: 0;
+    border-right: 100px solid transparent;
+  }
+  &:after {
+    right: 0;
+    border-left: 100px solid transparent;
   }
 }
-
 [data-collection="portfolio"] {
   &:before, &:after {
     border-bottom: 50px solid $alt-background-color;
   }
 }
-
 [data-collection="team"] {
   &:before, &:after {
   content: ' ';
@@ -45,12 +53,10 @@ article,
   width: 50%;
   border-bottom: 50px solid $primary-color;
   }
-
   &:before {
     left: 0;
     border-right: 100px solid transparent;
   }
-
   &:after {
     right: 0;
     border-left: 100px solid transparent;
