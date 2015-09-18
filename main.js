@@ -4,7 +4,7 @@ $(".graph").click(function() {
   $( 'progress' ).toggleClass("graphShow graphHide")
 })
 
-
+// Sorry! My code is not very DRY. It was getting late.g
    $('.all').click(function (e){
       e.preventDefault();
      if ($(".allAll").is(":hidden")){
