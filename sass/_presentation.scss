@@ -56,43 +56,46 @@ footer h1 {
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png");
 }
+
 // .port-navbar a {
 //   font-size: 1em;
 //   color: $C-avengers-color;
 // }
-.p-logo-1 {
-  border-radius: 50%;
-  background-color: $A-avengers-color;
-}
-.p-logo-2 {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  margin: auto;
-  width: 25px;
-  height: 25px;
-  overflow: hidden;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  -webkit-transform: rotate(-45deg);
-  z-index: 99;
-  background: $B-avengers-color;
-}
-.p-logo-3 {
-  position: absolute;
-  left: 2.5px;
-  top: 2px;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  overflow: hidden;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  z-index: 150;
-  background: $A-avengers-color;
-}
+
+// .p-logo-1 {
+//   border-radius: 50%;
+//   background-color: $A-avengers-color;
+// }
+// .p-logo-2 {
+//   position: absolute;
+//   left: 25px;
+//   top: 25px;
+//   margin: auto;
+//   width: 25px;
+//   height: 25px;
+//   overflow: hidden;
+//   border-bottom-right-radius: 50%;
+//   border-bottom-left-radius: 50%;
+//   border-top-left-radius: 50%;
+//   -webkit-transform: rotate(-45deg);
+//   z-index: 99;
+//   background: $B-avengers-color;
+// }
+// .p-logo-3 {
+//   position: absolute;
+//   left: 2.5px;
+//   top: 2px;
+//   margin: auto;
+//   width: 20px;
+//   height: 20px;
+//   overflow: hidden;
+//   border-bottom-right-radius: 50%;
+//   border-bottom-left-radius: 50%;
+//   border-top-left-radius: 50%;
+//   z-index: 150;
+//   background: $A-avengers-color;
+// }
+
 .p-home-text {
   font-weight: lighter;
 }

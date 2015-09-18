@@ -48,39 +48,6 @@ footer h1 {
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png"); }
 
-.p-logo-1 {
-  border-radius: 50%;
-  background-color: #fc6432; }
-
-.p-logo-2 {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  margin: auto;
-  width: 25px;
-  height: 25px;
-  overflow: hidden;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  -webkit-transform: rotate(-45deg);
-  z-index: 99;
-  background: #fff; }
-
-.p-logo-3 {
-  position: absolute;
-  left: 2.5px;
-  top: 2px;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  overflow: hidden;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  z-index: 150;
-  background: #fc6432; }
-
 .p-home-text {
   font-weight: lighter; }
 
@@ -174,7 +141,7 @@ footer h1 {
 
 body {
   box-sizing: border-box;
-  margin: 0 2% 2% 0; }
+  margin-top: 0; }
 
 .l-portfolio {
   padding-top: 2.5em;
@@ -198,12 +165,8 @@ body {
   padding-top: 10em;
   padding-bottom: 10em; }
 
-.l-logo {
-  position: relative;
-  margin: auto;
-  margin-bottom: 10%;
-  height: 75px;
-  width: 75px; }
+.p-home {
+  position: relative; }
 
 .l-home-spacer {
   height: 4em; }
@@ -211,6 +174,9 @@ body {
 .p-home-text {
   margin: auto;
   width: auto; }
+
+.l-pricing-tables {
+  margin-bottom: 0; }
 
 .p-title {
   padding-left: 4%;
@@ -221,9 +187,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-
-.l-team-member {
-  margin-bottom: 10%; }
 
 .l-client-carousel-button {
   position: relative;
@@ -264,7 +227,7 @@ body {
   margin: 5%; }
 
 .l-contact-form input, .l-contact-form textarea {
-  border: 0px;
+  border: 0;
   margin-bottom: 5px;
   margin-right: 0;
   width: 100%; }
@@ -329,7 +292,7 @@ body {
   .mobile-menu li {
     display: inline-block; }
   .mobile-menu li a {
-    padding: 5px 50px 5px 50px; }
+    padding: 10px 50px 5px 50px; }
   .p-navbar {
     display: flex;
     flex-direction: row;
@@ -356,31 +319,6 @@ body {
   .l-about-columns p {
     margin-left: 2%;
     margin-right: 2%; }
-  .p-logo-2 {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    margin: auto;
-    width: 35px;
-    height: 35px;
-    overflow: hidden;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    -webkit-transform: rotate(-45deg);
-    z-index: 99; }
-  .p-logo-3 {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    margin: auto;
-    width: 25px;
-    height: 25px;
-    overflow: hidden;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    z-index: 150; }
   .l-title {
     display: flex;
     flex-direction: row;
@@ -393,19 +331,6 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     display: inline-block; }
-  .l-team {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0; }
-  .l-team-member {
-    display: inline-block;
-    width: 20%;
-    margin-left: 1.5%;
-    margin-right: 1.5%; }
-  .l-team-member img {
-    margin-top: 10%;
-    margin-bottom: 10%; }
   .l-client-inline {
     display: inline-block;
     margin: 0; }
@@ -497,10 +422,14 @@ body {
     font-weight: bolder; }
   .p-pricing-tables div:last-child {
     height: 3em;
-    background-color: #be4c27; }
+    background-color: #be4c27;
+    padding-top: .75em; }
   .p-pricing-tables a {
     background-color: #fc6432;
-    color: #fff; }
+    color: #fff;
+    padding: 0.4em 10% 0.4em 10%;
+    width: 50%;
+    height: 25%; }
 
 .p-pricing-tables {
   margin-top: 0;
@@ -508,21 +437,11 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   padding-left: 0; }
-
-.p-pricing-tables div:last-child {
-  padding-top: .75em; }
-
-.p-pricing-tables a {
-  padding: 0.4em 10% 0.4em 10%; }
-
-.l-pricing-tables {
-  margin-bottom: 0; }
-
-@media only screen and (min-width: 568px) {
-  .p-pricing-tables {
-    margin: 2.5% 5% 2.5% 2.5%;
-    width: 15%;
-    display: inline-block; } }
+  @media only screen and (min-width: 568px) {
+    .p-pricing-tables {
+      margin: 2.5% 5% 2.5% 2.5%;
+      width: 15%;
+      display: inline-block; } }
 
 .l-about-bars {
   display: flex;
@@ -595,6 +514,64 @@ progress[value] {
     padding: 10px;
     font-size: 1em;
     color: #a3a3a3; }
+
+.l-logo {
+  position: relative;
+  margin: auto;
+  margin-bottom: 10%;
+  height: 75px;
+  width: 75px; }
+
+.p-logo-1 {
+  border-radius: 50%;
+  background-color: #fc6432; }
+
+.p-logo-2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+  z-index: 99;
+  background: #fff; }
+
+.p-logo-3 {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  z-index: 150;
+  background: #fc6432; }
+
+.l-team-member {
+  margin-bottom: 10%; }
+
+@media only screen and (min-width: 568px) {
+  .l-team {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0; }
+  .l-team-member {
+    display: inline-block;
+    width: 20%;
+    margin-left: 1.5%;
+    margin-right: 1.5%; }
+  .l-team-member img {
+    margin-top: 10%;
+    margin-bottom: 10%; } }
 
 @font-face {
   font-family: 'avengers-icons';

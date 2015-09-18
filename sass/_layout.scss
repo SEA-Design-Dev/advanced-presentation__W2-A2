@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  margin: 0 2% 2% 0;
+  margin-top: 0;
 }
 
 .l-portfolio {
@@ -45,13 +45,16 @@ body {
   padding-top: 10em;
   padding-bottom: 10em;
 }
-.l-logo {
+.p-home {
   position: relative;
-  margin: auto;
-  margin-bottom: 10%;
-  height: 75px;
-  width: 75px;
 }
+// .l-logo {
+//   position: relative;
+//   margin: auto;
+//   margin-bottom: 10%;
+//   height: 75px;
+//   width: 75px;
+// }
 .l-home-spacer {
   height: 4em;
 }
@@ -59,9 +62,9 @@ body {
   margin: auto;
   width: auto;
 }
-// .l-pricing-tables {
-//   margin-bottom: 0;
-// }
+.l-pricing-tables {
+  margin-bottom: 0;
+}
 .p-title {
   padding-left: 4%;
   padding-right: 4%;
@@ -73,9 +76,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-.l-team-member {
-  margin-bottom: 10%;
-}
+// .l-team-member {
+//   margin-bottom: 10%;
+// }
 .l-client-carousel-button {
   position: relative;
   height: 40px;
@@ -153,7 +156,7 @@ body {
   margin: 5%;
 }
 .l-contact-form input, .l-contact-form textarea {
-  border: 0px;
+  border: 0;
   margin-bottom: 5px;
   margin-right: 0;
   width: 100%;
