@@ -10,7 +10,7 @@ ul {
   list-style: none;
   padding: 0; }
 
-footer h1 {
+footer {
   margin: .9px; }
 
 .p-home {
@@ -227,30 +227,11 @@ header {
     font-size: 1em; } }
 
 @media only screen and (min-width: 568px) {
-  .p-navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: center;
-    margin-left: 30%;
-    margin-right: 30%; }
   .l-upper-columns {
     width: 30%;
     margin-left: 5%;
     margin-right: 5%;
     display: inline-block; }
-  .l-about-columns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 5%;
-    margin-right: 5%; }
-    .l-about-columns p {
-      margin-left: 2%;
-      margin-right: 2%; }
   .l-title {
     display: flex;
     flex-direction: row;
@@ -404,7 +385,7 @@ header {
 @media only screen and (min-width: 568px) {
   .graphShow, .graphHide {
     -webkit-appearance: none;
-    width: 550px;
+    width: 850px;
     height: 20px; } }
 
 .button {
