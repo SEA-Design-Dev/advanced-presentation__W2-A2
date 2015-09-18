@@ -70,6 +70,9 @@ h3 {
     [data-collection="portfolio"] & {
       background-color: $alternate-color;
     }
+    [data-flex-container="services-two"] & {
+      display: none;
+    }
   }
   &:before {
     right: 0.5em;
