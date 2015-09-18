@@ -1,14 +1,14 @@
 [data-collection="portfolio"],
 [data-collection="team"] {
-  background-color: $iceman;
+  background-color: $secondary-color;
 }
 
 [data-container="about"] {
-  background-color: $viper;
-  color: $iceman;
+  background-color: $alternate-color;
+  color: $secondary-color;
 }
 
 [data-collection="services"], [data-collection="contact"] {
-  background-color: $maverick;
-  color: $iceman;
+  background-color: $primary-color;
+  color: $secondary-color;
 }

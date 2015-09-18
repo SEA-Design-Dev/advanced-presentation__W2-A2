@@ -7,18 +7,18 @@
   padding: .3em 1em;
   margin: .3em auto;
   &:hover {
-  background-color: $goose;
+  background-color: $primary-accent-color;
   }
 }
 
 .btn-small {
   @include heavy(.65em);
-  @include button($maverick, $iceman);
+  @include button($primary-color, $secondary-color);
 }
 
 .btn-med {
   @include heavy(.65em);
-  @include button($maverick, $iceman);
+  @include button($primary-color, $secondary-color);
   padding: 1em;
   font-size: .65em;
   height: 3em;
@@ -26,7 +26,10 @@
 
 .btn-large {
   @include heavy(.65em);
-  @include button($iceman, $hollywood);
+  @include button($secondary-color, $secondary-accent-color);
   font-weight: 300;
   height: 3em;
+  &:hover {
+    color: $secondary-color;
+  }
 }

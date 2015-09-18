@@ -18,7 +18,7 @@ nav {
 
   li a {
     text-decoration: none;
-    color: $iceman;
+    color: $secondary-color;
     font-size: 1.5em;
 
     @media only screen and (min-width: $break) {
@@ -29,7 +29,7 @@ nav {
   }
 
   li a:hover, li a:active, {
-    color: $maverick;
+    color: $primary-color;
   }
 }
 
@@ -39,12 +39,12 @@ h2 {
   overflow: hidden;
   text-align: center;
   &:before, &:after {
-    @include horizontal-rule($iceman);
+    @include horizontal-rule($secondary-color);
     [data-collection="team"] & {
-      background-color: $viper;
+      background-color: $alternate-color;
     }
     [data-collection="portfolio"] & {
-      background-color: $viper;
+      background-color: $alternate-color;
     }
   }
   &:before {
@@ -63,12 +63,12 @@ h3 {
   overflow: hidden;
   text-align: center;
   &:before, &:after {
-    @include horizontal-rule($iceman);
+    @include horizontal-rule($secondary-color);
     [data-collection="team"] & {
-      background-color: $viper;
+      background-color: $alternate-color;
     }
     [data-collection="portfolio"] & {
-      background-color: $viper;
+      background-color: $alternate-color;
     }
   }
   &:before {
@@ -102,7 +102,7 @@ p {
 }
 
 .underline {
-  border-bottom: solid 2px $maverick;
+  border-bottom: solid 2px $primary-color;
 }
 
 .f-light {
@@ -118,8 +118,8 @@ p {
 .subnav-link {
   @include heavy(1em);
   &:hover {
-  background-color: $maverick;
-  color: $iceman;
+  background-color: $primary-color;
+  color: $secondary-color;
   }
 }
 
@@ -151,14 +151,14 @@ p {
 
 .f-strong-highlight {
   @include heavy(1em);
-  color: $maverick;
+  color: $primary-color;
 }
 
 .s-theme-author {
   text-decoration: none;
-  color: $maverick;
+  color: $primary-color;
   &:hover {
-    color: $goose;
+    color: $primary-accent-color;
   }
 }
 
