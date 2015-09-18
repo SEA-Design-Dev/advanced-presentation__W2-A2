@@ -7,6 +7,7 @@ $(function() {
       if (!($("#table" + this[0]).hasClass("ordered"))) {
         $("#table" + this[0]).remove();
         $(".l-pricing-tables").css("width","100%")
+        $(".l-order-form").slideDown("slow");
         $(".ordered").css("display","block")
         $(".l-order-form").css("display","block")
     }});
