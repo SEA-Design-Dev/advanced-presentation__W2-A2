@@ -1,10 +1,10 @@
 $break: 667px;
 
-$maverick: #fd6632;
-$goose: #0b9ce0;
-$iceman: #ffffff;
-$viper: #252629;
-$hollywood: #7e3218;
+$maverick: #fd6632;  //orange     //$primary-color
+$goose: #0b9ce0;     //blue       //$primary-accent-color
+$iceman: #ffffff;     // white    //$secondary-color
+$viper: #252629;      //blackish  //$alternative-color
+$hollywood: #7e3218;   //maroon   //$secondary-accent-color
 
 $iconLarge: (cog  "\e600") (lab  "\e601") (brush  "\e602");
 $iconSmall: (pin  "\e603") (mail  "\e604") (mobile  "\e605");
