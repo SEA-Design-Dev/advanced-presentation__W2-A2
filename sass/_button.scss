@@ -1,0 +1,23 @@
+.button {
+  background-color: $A-avengers-color;
+  color: $B-avengers-color;
+  border: 0;
+  padding: 10px 40px 10px 40px;
+  font-size: 1em;
+  &:hover {
+    background-color: $D-avengers-color;
+    color: $A-avengers-color;
+  }
+  &.contact-button {
+    background-color: $B-avengers-color;
+    color: $A-avengers-color;
+    padding: 10px 60px 10px 60px;
+    &:hover {
+      background-color: $D-avengers-color;
+      color: $B-avengers-color;
+    }
+  }
+}
+.l-message-button {
+  margin-right: 9%;
+}

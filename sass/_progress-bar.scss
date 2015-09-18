@@ -1,0 +1,39 @@
+.l-about-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & li {
+    padding-top: .5em;
+  }
+}
+.graphHide {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px;
+  &::-webkit-progress-bar {
+    background: $E-avengers-color;
+  }
+  &::-webkit-progress-value {
+    background: $E-avengers-color;
+  }
+}
+.graphShow {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px;
+  &::-webkit-progress-bar {
+    background: $E-avengers-color;
+  }
+  &::-webkit-progress-value {
+    background: $A-avengers-color;
+  }
+}
+@media only screen and (min-width: 568px) {
+ .graphShow, .graphHide{
+    -webkit-appearance: none;
+    width: 850px;
+    height: 20px;
+  }
+}
+

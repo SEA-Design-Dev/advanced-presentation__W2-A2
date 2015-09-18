@@ -1,0 +1,21 @@
+.l-team-member {
+  margin-bottom: 10%;
+  @media only screen and (min-width: 568px) {
+    display: inline-block;
+    width: 20%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+@media only screen and (min-width: 568px) {
+  .l-team {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .l-team-member img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}

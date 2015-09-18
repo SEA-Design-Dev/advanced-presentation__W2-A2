@@ -1,0 +1,97 @@
+@media only screen and (min-width: 568px) {
+  .l-upper-columns {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+  }
+  .l-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .l-services-list {
+      display: inline-block;
+  }
+  .l-services-item {
+    width: 23%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+  }
+  .l-client-inline {
+    margin: 0;
+  }
+  .l-client-carousel-button {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    .l-client-figure {
+      width: 70%;
+      margin: 3%;
+    }
+  }
+  .l-client-figure img {
+    display: inline-block;
+    .l-client-figure-txt {
+      width: 70%;
+    }
+  }
+  .l-client-caption {
+    display: block;
+  }
+  .l-client-headline, .l-client-subheading, .l-client {
+    display: inline-block;
+  }
+  .l-contact-blurb {
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .l-contact-form {
+    width: 460px;
+    height: 293px;
+    margin: 40px 0 40px 126px;
+  }
+  .l-contact-form input, .l-contact-form textarea {
+    border: 0px;
+    margin: 5px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .l-message-button {
+    position: absolute;
+    width: 25%;
+    font-size: .5em;
+    right: 0;
+  }
+  .l-contact-map {
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 60px;
+    width: auto;
+  }
+  .l-contact-map img {
+    width: 460px;
+    height: 268px;
+    margin: 0;
+  }
+  .l-client-link {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .l-client-figure {
+    display: inline-block;
+    width: 70%;
+    margin: 3%;
+    & img {
+      display: inline-block;
+    }
+  }
+  .l-client-figure-txt {
+    width: 70%;
+    display: inline-block;
+  }
+}
