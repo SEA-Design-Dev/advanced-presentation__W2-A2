@@ -13,29 +13,6 @@ ul {
 footer h1 {
   margin: .9px; }
 
-.icon-menu {
-  width: 100%;
-  text-align: center; }
-  .icon-menu:before {
-    content: "\e608"; }
-
- 
-.mobile-menu ul {
-  width: 95.5%;
-  background: #a3a3a3; }
-
-.menu {
-  background: #a3a3a3; }
-
-.mobile-menu li a {
-  font-family: Helvetica;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 20px; }
-
-.mobile-menu input[type=checkbox] {
-  display: none; }
-
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png"); }
 
@@ -144,20 +121,6 @@ header {
   padding-top: 2.5em;
   padding-bottom: 2.5em; }
 
-.icon-menu {
-  display: inline-block; }
-
-.mobile-menu {
-  position: absolute; }
-
-.mobile-menu li a {
-  display: block;
-  padding-bottom: 2em; }
-
-.mobile-menu ul {
-  display: none;
-  z-index: 100; }
-
 .l-home {
   padding-top: 10em;
   padding-bottom: 10em; }
@@ -251,30 +214,7 @@ header {
   width: 100%;
   margin: 15% 5% 10% 5%; }
 
-.mobile-menu input[type=checkbox]:checked ~ .menu {
-  display: block; }
-
 @media only screen and (min-width: 568px) {
-  .mobile-menu ul {
-    margin-top: 0;
-    padding-top: 1%;
-    width: 100%;
-    /*padding-left: 18%;*/
-    padding-bottom: .5%;
-    display: inline-block;
-    border-bottom: 2px solid #999f9f;
-    left: 0; }
-  .menu {
-    /*padding-left: 15%;*/
-    /*padding-right: 15%;*/
-    position: fixed; }
-  .moblie-mebue li:hover {
-    background-color: #fc6432; }
-  .mobile-menu li a {
-    color: #999f9f;
-    font-size: 16px; }
-  .icon-menu {
-    display: none; }
   .big-little-slider {
     content: url("https://i.imgur.com/5Js2v9g.png"); }
   .l-navbar a {
@@ -287,12 +227,15 @@ header {
     font-size: 1em; } }
 
 @media only screen and (min-width: 568px) {
+<<<<<<< HEAD
   .mobile-menu ul {
     background-color: #fff; }
   .mobile-menu li {
     display: inline-block; }
   .mobile-menu li a {
     padding: 10px 50px 5px 50px; }
+=======
+>>>>>>> 5eb8e3d09d8bba21f2cb2fa7127bbe57a3466a2a
   .p-navbar {
     display: flex;
     flex-direction: row;
@@ -443,33 +386,42 @@ header {
 
 .l-about-bars {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: center; }
   .l-about-bars li {
-    text-align: left;
     padding-top: .5em; }
 
-progress[value] {
+.graphHide {
   -webkit-appearance: none;
   width: 250px;
   height: 20px; }
-  progress[value]::-webkit-progress-bar {
+  .graphHide::-webkit-progress-bar {
     background: #3a3a3a; }
-  progress[value]::-webkit-progress-value {
+  .graphHide::-webkit-progress-value {
+    background: #3a3a3a; }
+
+.graphShow {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px; }
+  .graphShow::-webkit-progress-bar {
+    background: #3a3a3a; }
+  .graphShow::-webkit-progress-value {
     background: #fc6432; }
-  @media only screen and (min-width: 568px) {
-    progress[value] {
-      -webkit-appearance: none;
-      width: 550px;
-      height: 20px; } }
+
+@media only screen and (min-width: 568px) {
+  .graphShow, .graphHide {
+    -webkit-appearance: none;
+    width: 550px;
+    height: 20px; } }
 
 .button {
   background-color: #fc6432;
   color: #fff;
   border: 0;
   padding: 10px 40px 10px 40px;
-  font-size: .5em; }
+  font-size: 1em; }
   .button:hover {
     background-color: #7f331b;
     color: #fc6432; }
@@ -513,6 +465,7 @@ progress[value] {
     font-size: 1em;
     color: #a3a3a3; }
 
+<<<<<<< HEAD
 .l-logo {
   position: relative;
   margin: auto;
@@ -599,6 +552,60 @@ progress[value] {
     .l-order-button {
       width: 25%;
       margin-left: 2.5%; } }
+=======
+.icon-menu:before {
+  content: "\e608"; }
+
+ 
+.mobile-menu {
+  background: #a3a3a3; }
+
+.mobile-menu ul {
+  display: none;
+  z-index: 100; }
+
+.mobile-menu li a {
+  font-family: Helvetica;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+.menu {
+  background: #a3a3a3; }
+
+.mobile-menu input[type=checkbox] {
+  display: none; }
+
+.mobile-menu input[type=checkbox]:checked ~ .menu {
+  display: block; }
+
+.icon-menu {
+  display: inline-block; }
+
+@media only screen and (min-width: 568px) {
+  .mobile-menu ul {
+    margin-top: 0;
+    padding-top: 1%;
+    width: 100%;
+    padding-bottom: .5%;
+    display: inline-block;
+    border-bottom: 2px solid #999f9f;
+    left: 0; }
+  .menu {
+    position: fixed; }
+  .moblie-mebue li:hover {
+    background-color: #fc6432; }
+  .icon-menu {
+    display: none; }
+  .mobile-menu ul {
+    background-color: #fff; }
+  .mobile-menu li {
+    display: inline-block; }
+  .mobile-menu li a {
+    padding: 5px 50px 5px 50px;
+    color: #999f9f;
+    font-size: 16px; } }
+>>>>>>> 5eb8e3d09d8bba21f2cb2fa7127bbe57a3466a2a
 
 @font-face {
   font-family: 'avengers-icons';
