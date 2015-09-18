@@ -96,7 +96,12 @@ p {
 }
 
 .underline {
-  border-bottom: solid 2px $primary-color;
+  border-style: solid;
+  border-width: 0px 0px 6px;
+  -moz-border-image: url('/img/underline.png') 0 0 6 stretch repeat;
+  -webkit-border-image: url('/img/underline.png') 0 0 6 stretch repeat;
+  -o-border-image: url('/img/underline.png') 0 0 6 stretch repeat;
+  border-image: url('/img/underline.png') 0 0 6 fill stretch repeat;
 }
 
 .f-light {
@@ -155,7 +160,3 @@ p {
     color: $primary-accent-color;
   }
 }
-
-
-
-
