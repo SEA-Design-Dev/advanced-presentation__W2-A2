@@ -5,7 +5,10 @@ $(function() {
     $(this).parents("ul").addClass("ordered");
     $.each(tables, function() {
       if (!($("#table" + this[0]).hasClass("ordered"))) {
-        $("#table" + this[0]).css("display","none");
+        $("#table" + this[0]).remove();
+        $(".l-pricing-tables").css("width","100%")
+        $(".ordered").css("display","block")
+        $(".l-order-form").css("display","block")
     }});
   });
 });

@@ -573,6 +573,25 @@ progress[value] {
     margin-top: 10%;
     margin-bottom: 10%; } }
 
+.l-order-form {
+  display: none;
+  margin-left: 2.5%; }
+
+.l-order-form input {
+  border: 0;
+  display: block;
+  width: 25%;
+  height: 40px;
+  margin-bottom: 5px; }
+
+.l-order-button {
+  position: relative;
+  height: 3em;
+  width: 25%;
+  background-color: #be4c27;
+  padding-top: .75em;
+  border: 2px solid #3a3a3a; }
+
 @font-face {
   font-family: 'avengers-icons';
   src: url("fonts/icomoon.eot?-lo05z1");
