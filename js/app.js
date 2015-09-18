@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('.subnav-link').on('click', function () {
 
   var selector = $(this).data('show-tags');
@@ -16,7 +17,6 @@ $(document).ready(function() {
 
     filter.removeClass('hidden');
     $(this).addClass('active');
-  }
-
+    }
   });
 });
