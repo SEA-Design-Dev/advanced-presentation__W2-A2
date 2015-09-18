@@ -4,6 +4,15 @@ $(".graph").click(function() {
   $( 'progress' ).toggleClass("graphShow graphHide")
 })
 
+
+   $('.all').click(function (e){
+      e.preventDefault();
+     if ($(".allAll").is(":hidden")){
+       $(".allAll").slideDown("slow");
+     } else{
+      $(".allAll").hide('slow');
+     }
+   });
    $('.web').click(function (e){
       e.preventDefault();
      if ($(".notWeb").is(":hidden")){
