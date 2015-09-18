@@ -12,7 +12,7 @@ body {
 a {
   text-decoration: none;
 }
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
@@ -30,18 +30,18 @@ footer {
   color: $A-avengers-color;
 }
 .p-divet {
- width: 0;
- height: 0;
- border-top: 20px solid $A-avengers-color;
- border-left: 80px solid transparent;
- border-right: 80px solid transparent;
- margin: auto;
- .p-services &, .p-about &, .p-contact & {
+  width: 0;
+  height: 0;
+  border-top: 20px solid $A-avengers-color;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  margin: auto;
+  .p-services &, .p-about &, .p-contact & {
    border-top: 20px solid $B-avengers-color;
- }
- .p-team & {
+  }
+  .p-team & {
    border-top: 20px solid #000;
- }
+  }
 }
 .p-title {
   color: #000;
@@ -61,8 +61,8 @@ footer {
     border-bottom: 1px $C-avengers-color solid;
   }
 }
-.p-team h4 {
-color: $A-avengers-color;
+.p-client-caption h1 {
+  color: $A-avengers-color;
 }
 .p-client-carousel-button {
   border-radius: 50%;
@@ -77,24 +77,31 @@ color: $A-avengers-color;
 .p-services {
   background-color: $A-avengers-color;
   color: $B-avengers-color;
-  // font-size: 1em;
   padding-bottom: 10%;
+  & h1 {
+    color: $B-avengers-color;
+  }
 }
-.p-services figcaption {
+.p-services {
   font-size: 1em;
 }
 .p-service-logo {
   background-color: $B-avengers-color;
   border-radius: 50%;
 }
-
 .big-little-slider {
-  content: url("http://i.imgur.com/lRzimnO.png")
+  content: url("http://i.imgur.com/lRzimnO.png");
+  @media only screen and (min-width: 568px) {
+    content: url("https://i.imgur.com/5Js2v9g.png");
+  }
 }
 .p-about {
   padding-bottom: 10em;
   color: $B-avengers-color;
   background-color: #000;
+  & h1, & h2 {
+    color: $B-avengers-color;
+  }
 }
 .p-team {
   color: #999f9f;

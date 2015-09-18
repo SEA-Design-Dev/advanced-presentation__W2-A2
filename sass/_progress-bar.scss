@@ -1,5 +1,3 @@
-// Progress bar
-// Layout
 .l-about-bars {
   display: flex;
   flex-direction: column;
@@ -9,7 +7,6 @@
     padding-top: .5em;
   }
 }
-// Mobile presentation
 .graphHide {
   -webkit-appearance: none;
   width: 250px;
@@ -21,7 +18,6 @@
     background: $E-avengers-color;
   }
 }
-
 .graphShow {
   -webkit-appearance: none;
   width: 250px;
@@ -33,7 +29,6 @@
     background: $A-avengers-color;
   }
 }
-// Desktop presentation
 @media only screen and (min-width: 568px) {
  .graphShow, .graphHide{
     -webkit-appearance: none;

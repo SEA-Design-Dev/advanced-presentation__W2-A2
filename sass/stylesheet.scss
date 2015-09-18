@@ -22,8 +22,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'avengers-icons';
   speak: none;
@@ -50,7 +48,6 @@ $icons:
   (paint-format '\e605' #000000)
   (cog '\e606' #000000)
   (lab '\e607' #000000);
-
 @each $icon in $icons {
   .icon-#{nth($icon, 1)} {
       @extend %ico-font-base;
@@ -60,7 +57,6 @@ $icons:
     }
   }
 }
-
 .icons {
   margin: auto;
   margin-bottom: 10%;

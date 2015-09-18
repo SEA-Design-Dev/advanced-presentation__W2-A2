@@ -1,10 +1,14 @@
-// Responsive nav bar
-// Presentaion
 .icon-menu:before {
   content: "\e608";
 } 
 .mobile-menu {
   background: $C-avengers-color;
+}
+.mobile-menu input[type=checkbox] {
+  display: none;
+}
+.mobile-menu input[type=checkbox]:checked ~ .menu {
+  display: block;
 }
 .mobile-menu ul {
   display: none;
@@ -19,46 +23,38 @@
 .menu{
   background: $C-avengers-color;
 }
-.mobile-menu input[type=checkbox] {
-  display: none;
-}
-.mobile-menu input[type=checkbox]:checked ~ .menu {
-  display: block;
-}
-// Layout
 .icon-menu {
   display: inline-block;
 }
-
 @media only screen and (min-width: 568px) {
-.mobile-menu ul {
-  margin-top: 0;
-  padding-top: 1%;
-  width: 100%;
-  padding-bottom: .5%;
-  display: inline-block;
-  border-bottom: 2px solid #999f9f;
-  left: 0;
-}
-.menu {
-  position: fixed;
-}
-.icon-menu {
-  display: none;
-}
-.mobile-menu ul {
-  background-color: #fff;
-}
-.mobile-menu li {
-  display: inline-block;
-}
-.mobile-menu li a {
-  padding: 5px 50px 5px 50px;
-  color:  #999f9f;
-  font-size: 16px;
-}
-.mobile-menu li:hover {
-  background-color: $D-avengers-color;
-  color: $B-avengers-color;
+  .mobile-menu ul {
+    margin-top: 0;
+    padding-top: 1%;
+    width: 100%;
+    padding-bottom: .5%;
+    display: inline-block;
+    border-bottom: 2px solid #999f9f;
+    left: 0;
+  }
+  .menu {
+    position: fixed;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .mobile-menu ul {
+    background-color: #fff;
+  }
+  .mobile-menu li {
+    display: inline-block;
+  }
+  .mobile-menu li a {
+    padding: 5px 50px 5px 50px;
+    color:  #999f9f;
+    font-size: 16px;
+  }
+  .mobile-menu li:hover {
+    background-color: $D-avengers-color;
+    color: $B-avengers-color;
 }
 }
