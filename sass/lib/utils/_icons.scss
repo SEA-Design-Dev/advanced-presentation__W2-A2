@@ -16,7 +16,7 @@
   .icon-#{nth($iconL, 1)} {
     @extend %ico-font-base;
     font-size: 3em;
-    background-color: $iceman;
+    background-color: $secondary-color;
     color: #000000;
     width: 100%;
     border-radius: 50%;
@@ -32,7 +32,7 @@
     @extend %ico-font-base;
     font-weight: 700;
     margin-right: .25em;
-    color: white;
+    color: $secondary-color;
     &:before {
       content: nth($iconS, 2);
     }
@@ -56,15 +56,16 @@
 @each $arrow in $arrows {
   .icon-#{nth($arrow, 1)} {
     @extend %ico-font-base;
-    color: $maverick;
+    color: $primary-color;
     font-size: 2rem;
     padding-#{nth($arrow, 2)}: 10%;
     margin: 0 auto;
+    text-decoration: none;
     &:before {
       content: nth($arrow, 4);
       }
     &:hover {
-      color: $goose;
+      color: $primary-accent-color;
     }
     @media only screen and (min-width: $break) {
       font-size: 1.5em;

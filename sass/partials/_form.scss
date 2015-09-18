@@ -2,7 +2,7 @@
   height: 3em;
   width: 100%;
   font-size: .80rem;
-  color: #fff;
+  color: $secondary-color;
   border: 1px solid #7e3218;
   margin-bottom: 5%;
   background-color: #7e3218;
@@ -23,12 +23,12 @@ input, textarea {
 .s-form-message-field {
   height: 15.75em;
   padding-top: 1em;
-  color: #fff;
+  color: $secondary-color;
 }
 
 ::-webkit-input-placeholder {
-  color: #ffffff;
+  color: $secondary-color;
 }
 :input-placeholder {
-  color: #ffffff;
+  color: $secondary-color;
 }
