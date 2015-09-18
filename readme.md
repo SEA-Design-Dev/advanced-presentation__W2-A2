@@ -64,7 +64,5 @@ In the last assignment we covered the concepts behind semantic and modular HTML.
     - Semantic help from Zurb (http://foundation.zurb.com/docs/components/sidenav.html)
     - Building help from Trevan Hetzel (http://codepen.io/trevanhetzel/pen/Lrbjf)
     - Silky hover effects adapted from  Marcin Merchel (https://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for-images-using-css3-and-html)
-    -Section Divots adapted from davidpauljunior (http://stackoverflow.com/questions/22314322/cutting-a-triangle-out-of-div-but-have-it-horizontally-centered)
-    - Figured out how to get responsive horizontal rules in our project next to H2's with the help of google and this handy JSFiddle (http://jsfiddle.net/vLwDf/268/);
 
 
