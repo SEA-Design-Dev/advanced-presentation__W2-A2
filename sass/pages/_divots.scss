@@ -41,14 +41,20 @@ article {
 [data-collection="services"] {
     &:before {
       @extend %triangle-divot;
-      background-image: url('/img/arrow_down_transparent.png');
+      background-image: url('/img/arrow_down_white.png');
   }
-}
 
+  @media only screen and (min-width: $break) {
+      &:before {
+      background-image: none;
+      }
+    }
+}
 footer {
     &:before {
       @extend %triangle-divot;
       background-image: url('/img/arrow_down_orange.png');
   }
 }
+
 
