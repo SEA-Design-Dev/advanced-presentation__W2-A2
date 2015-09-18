@@ -3,7 +3,7 @@
   margin: .8em auto;
 }
 
-.f-table-head {
+th {
   @extend %table-cells;
   @include light(1.75rem);
   background-color: $hollywood;
