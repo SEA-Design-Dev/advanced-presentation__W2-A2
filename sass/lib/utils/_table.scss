@@ -3,14 +3,15 @@
   margin: .8em auto;
 }
 
-th {
+.f-table-head {
   @extend %table-cells;
+  @include light(1.75rem);
   background-color: $hollywood;
   font-size: 1.75rem;
 
   @media only screen and (min-width: $break) {
-    margin: 1em auto;
     font-size: 1.25em;
+    margin: 1em auto;
   }
 }
 

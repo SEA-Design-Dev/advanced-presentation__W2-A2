@@ -63,12 +63,6 @@ nav {
   }
 }
 
-h1 {
-  @media only screen and (min-width: $break) {
-    font-size: 2.4em;
-  }
-}
-
 h2 {
   width: 100%;
   display: inline-block;
@@ -100,6 +94,10 @@ h3 {
 
   [data-collection="team"] &:before, [data-collection="team"] &:after, [data-collection="portfolio"] &:before, [data-collection="portfolio"] &:after  {
    border-top: solid 1px $viper;
+  }
+
+  [data-flex-container="services-two"] &:before, [data-flex-container="services-two"] &:after {
+    border-top: none;
   }
 }
 
