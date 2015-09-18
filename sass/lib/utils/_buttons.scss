@@ -1,16 +1,3 @@
-@mixin button($background, $color) {
-  box-shadow: none;
-  border: none;
-  text-decoration: none;
-  background-color: $background;
-  color: $color;
-  padding: .3em 1em;
-  margin: .3em auto;
-  &:hover {
-  background-color: $goose;
-  }
-}
-
 .btn-small {
   @include heavy(.65em);
   @include button($maverick, $iceman);

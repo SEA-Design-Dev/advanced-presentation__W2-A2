@@ -28,3 +28,16 @@ $arrows: (arrowRight left 3 "\e606") (arrowLeft right 1 "\e607");
   font-size: $size;
   font-weight: 300;
 }
+
+@mixin button($background, $color) {
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  background-color: $background;
+  color: $color;
+  padding: .3em 1em;
+  margin: .3em auto;
+  &:hover {
+  background-color: $goose;
+  }
+}
