@@ -2,11 +2,9 @@ body {
   box-sizing: border-box;
   margin-top: 0;
 }
-
 header {
   margin-top: 3em;
 }
-
 .l-portfolio {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
@@ -17,9 +15,6 @@ header {
 }
 .p-home {
   position: relative;
-}
-.l-home-spacer {
-  height: 4em;
 }
 .p-home-text {
   margin: auto;
@@ -32,7 +27,6 @@ header {
   padding-left: 4%;
   padding-right: 4%;
 }
-
 .l-title {
   display: flex;
   flex-direction: row;
@@ -53,7 +47,7 @@ header {
 .l-client {
   margin-bottom: 3em;
 }
-.p-services figcaption {
+.p-services {
   margin: auto;
   width: 100%;
 }
@@ -79,17 +73,14 @@ header {
   display: inline-block;
   width: 90%;
   margin: 5%;
+  & input, & textarea {
+    border: 0;
+    margin-bottom: 5px;
+    margin-right: 0;
+    width: 100%;
+  }
 }
-.l-contact-form input, .l-contact-form textarea {
-  border: 0;
-  margin-bottom: 5px;
-  margin-right: 0;
-  width: 100%;
-}
-.l-contact-input-company {
-  height: 40px;
-}
-.l-contact-input-email {
+.l-contact-input-company, .l-contact-input-email {
   height: 40px;
 }
 .l-contact-input-message {
@@ -100,9 +91,8 @@ header {
   display: inline-block;
   width: 90%;
   margin: auto;
+  & img {
+    width: 100%;
+    margin: 15% 5% 10% 5%;
+  }
 }
-.l-contact-map img {
-  width: 100%;
-  margin: 15% 5% 10% 5%;
-}
-
