@@ -15,6 +15,12 @@
   }
 }
 
+@media only screen and (min-width: $break) {
+  tr {
+    height: 2.5em;
+  }
+}
+
 td {
   @extend %table-cells;
   background-color: $iceman;
@@ -25,17 +31,9 @@ td {
     background-color: #be4c25;
   }
 
-  .btn {
-    font-size: .65em;
-  }
-
   @media only screen and (min-width: $break) {
     font-size: 1em;
   }
 }
 
-@media only screen and (min-width: $break) {
-  tr {
-    height: 2.5em;
-  }
-}
+

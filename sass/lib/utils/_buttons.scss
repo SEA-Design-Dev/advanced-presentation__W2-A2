@@ -1,27 +1,32 @@
-%button-styles {
-  @include heavy(.65);
+@mixin button($background, $color) {
   box-shadow: none;
   border: none;
   text-decoration: none;
+  background-color: $background;
+  color: $color;
   padding: .3em 1em;
   margin: .3em auto;
-}
-
-.btn {
-  @extend %button-styles;
-  background-color: $maverick;
-  color: $iceman;
   &:hover {
   background-color: $goose;
   }
-  [data-container="about"] & {
-    font-size: .65em;
-    height: 3em;
-  }
-  [data-flex-container="contact"] & {
-    font-weight: 300;
-    height: 3em;
-    background-color: $iceman;
-    color: $hollywood;
-  }
+}
+
+.btn-small {
+  @include heavy(.65em);
+  @include button($maverick, $iceman);
+}
+
+.btn-med {
+  @include heavy(.65em);
+  @include button($maverick, $iceman);
+  padding: 1em;
+  font-size: .65em;
+  height: 3em;
+}
+
+.btn-large {
+  @include heavy(.65em);
+  @include button($iceman, $hollywood);
+  font-weight: 300;
+  height: 3em;
 }
