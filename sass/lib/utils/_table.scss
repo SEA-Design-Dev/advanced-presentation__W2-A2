@@ -3,16 +3,31 @@
   margin: .8em auto;
 }
 
-th {
+.f-table-head {
   @extend %table-cells;
+  @include light(1.75rem);
+  background-color: $hollywood;
+  font-size: 1.75rem;
 
   @media only screen and (min-width: $break) {
+    font-size: 1.25em;
     margin: 1em auto;
   }
 }
 
 td {
   @extend %table-cells;
+  background-color: $iceman;
+  color: #2e2e2e;
+  font-size: 1.5em;
+
+  tfoot & {
+    background-color: #be4c25;
+  }
+
+  @media only screen and (min-width: $break) {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: $break) {
