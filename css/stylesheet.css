@@ -533,19 +533,23 @@ body {
     text-align: left;
     padding-top: .5em; }
 
-progress[value] {
+.graphHide {
   -webkit-appearance: none;
   width: 250px;
   height: 20px; }
-  progress[value]::-webkit-progress-bar {
+  .graphHide::-webkit-progress-bar {
     background: #3a3a3a; }
-  progress[value]::-webkit-progress-value {
+  .graphHide::-webkit-progress-value {
+    background: #3a3a3a; }
+
+.graphshow {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px; }
+  .graphshow::-webkit-progress-bar {
+    background: #3a3a3a; }
+  .graphshow::-webkit-progress-value {
     background: #fc6432; }
-  @media only screen and (min-width: 568px) {
-    progress[value] {
-      -webkit-appearance: none;
-      width: 550px;
-      height: 20px; } }
 
 .button {
   background-color: #fc6432;

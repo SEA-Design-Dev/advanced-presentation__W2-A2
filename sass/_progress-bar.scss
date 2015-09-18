@@ -11,7 +11,19 @@
   }
 }
 // Mobile presentation
-progress[value] {
+.graphHide {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px;
+  &::-webkit-progress-bar {
+    background: $E-avengers-color;
+  }
+  &::-webkit-progress-value {
+    background: $E-avengers-color;
+  }
+}
+
+.graphshow {
   -webkit-appearance: none;
   width: 250px;
   height: 20px;
@@ -21,10 +33,11 @@ progress[value] {
   &::-webkit-progress-value {
     background: $A-avengers-color;
   }
-// Desktop presentation
-  @media only screen and (min-width: 568px) {
-      -webkit-appearance: none;
-      width: 550px;
-      height: 20px;
-  }
 }
+// // Desktop presentation
+//   @media only screen and (min-width: 568px) {
+//       -webkit-appearance: none;
+//       width: 550px;
+//       height: 20px;
+//   }
+  // }
