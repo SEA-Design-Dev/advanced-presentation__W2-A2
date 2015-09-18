@@ -1,30 +1,12 @@
 $break: 667px;
 
-$maverick: #fd6632;  //orange     //$primary-color
-$goose: #0b9ce0;     //blue       //$primary-accent-color
-$iceman: #ffffff;     // white    //$secondary-color
-$viper: #252629;      //blackish  //$alternative-color
-$hollywood: #7e3218;   //maroon   //$secondary-accent-color
+$primary-color: #fd6632;
+$primary-accent-color: #0b9ce0;
+$secondary-color: #ffffff;
+$alternate-color: #252629;
+$secondary-accent-color: #7e3218;
 
 $iconLarge: (cog  "\e600") (lab  "\e601") (brush  "\e602");
 $iconSmall: (pin  "\e603") (mail  "\e604") (mobile  "\e605");
 $iconSocial: (google-plus #fabc00 "\e608") (facebook #3b5998 "\e609") (twitter #00aced "\e60a") (dribbble #dd2667 "\e60b") (linkedin #007bb5 "\e60c");
 $arrows: (arrowRight left 3 "\e606") (arrowLeft right 1 "\e607");
-
-
-
-@mixin headings($size) {
-  font-size: $size;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-@mixin heavy($size) {
-  font-size: $size;
-  font-weight: 700;
-}
-
-@mixin light($size) {
-  font-size: $size;
-  font-weight: 300;
-}

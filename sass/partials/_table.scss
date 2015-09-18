@@ -3,10 +3,10 @@
   margin: .8em auto;
 }
 
-.f-table-head {
+th {
   @extend %table-cells;
   @include light(1.75rem);
-  background-color: $hollywood;
+  background-color: $secondary-accent-color;
   font-size: 1.75rem;
 
   @media only screen and (min-width: $break) {
@@ -15,9 +15,15 @@
   }
 }
 
+@media only screen and (min-width: $break) {
+  tr {
+    height: 2.5em;
+  }
+}
+
 td {
   @extend %table-cells;
-  background-color: $iceman;
+  background-color: $secondary-color;
   color: #2e2e2e;
   font-size: 1.5em;
 
@@ -30,8 +36,4 @@ td {
   }
 }
 
-@media only screen and (min-width: $break) {
-  tr {
-    height: 2.5em;
-  }
-}
+

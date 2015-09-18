@@ -9,10 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <input type="checkbox" id="mobileNavToggle" class="mobileNavToggle">
+    <input type="checkbox" id="mobileNavToggle" class="mobile-nav-toggle">
     <header data-container="navigation">
       <nav class="mainNav">
-        <ul role="navigation">
+        <ul role="menubar">
           <li role="menuitem" class="nav-link"><a href="#home">Home.</a></li>
           <li role="menuitem" class="nav-link"><a href="#services">Services.</a></li>
           <li role="menuitem" class="nav-link"><a href="#portfolio">Portfolio.</a></li>
@@ -59,17 +59,17 @@
         </section>
         <section data-flex-container="services-two" class="l-flex-container">
           <div class="l-flex-item">
-            <h3 class="f-sub-heading">Ui &amp; Ux Design</h3>
+            <p class="f-sub-heading">Ui &amp; Ux Design</p>
             <span class="icon-brush"></span>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
           <div class="l-flex-item">
-            <h3 class="f-sub-heading">Laboratory</h3>
+            <p class="f-sub-heading">Laboratory</p>
             <span class="icon-lab"></span>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
           <div class="l-flex-item">
-            <h3 class="f-sub-heading">Development</h3>
+            <p class="f-sub-heading">Development</p>
             <span class="icon-cog"></span>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
@@ -80,11 +80,12 @@
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-table-head">BASIC</th>
-                </tr></thead>
+                  <th>BASIC</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold-highlight">$5.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$5.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>3 Projects</td>
@@ -101,18 +102,19 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td><a href=""><button class="btn">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-table-head">STANDART</th>
-                </tr></thead>
+                  <th>STANDART</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold-highlight">$10.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$10.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>7 Projects</td>
@@ -129,18 +131,19 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td><a href=""><button class="btn">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-table-head">PROFESSIONAL</th>
-                </tr></thead>
+                  <th>PROFESSIONAL</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold-highlight">$25.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$25.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>15 Projects</td>
@@ -157,18 +160,19 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td><a href=""><button class="btn">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
             <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-table-head">PREMIUM</th>
-                </tr></thead>
+                  <th>PREMIUM</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold-highlight">$49.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$49.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>UNLIMITED Projects</td>
@@ -185,25 +189,23 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td><a href=""><button class="btn">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
           </div>
         </section>
       </article>
-      <article data-collection="portfolio" class="b-white" id="portfolio">
-        <h2 class="f-bold f-large">PORTFOLIO</h2>
-        <div class="owl-carousel">
-          <img src="/img/Slider.png" alt="Crispers - Nice, crispy and creative landing page" class="slider-break">
-          <img src="/img/Slider_mini.png" alt="Crispers - Nice, crispy and creative landing page" class="slider">
-        </div>
-        <ul class="f-bold">
+      <article data-collection="portfolio" id="portfolio">
+        <h2 class="f-article-heading">Portfolio</h2>
+        <img src="/img/slider.png" alt="Crispers - Nice, crispy and creative landing page" class="slider-break">
+        <img src="/img/slider_mini.png" alt="Crispers - Nice, crispy and creative landing page" class="slider">
+        <ul>
           <li class="subnav-link" data-show-tags="all">All Works</li>
           <li class="subnav-link" data-show-tags="webdesign">Webdesign</li>
           <li class="subnav-link" data-show-tags="uidesign">UI design</li>
-          <li class="subnav-link" data-show-tags="icondesign">Icons design</li>
-          <li class="subnav-link" data-show-tags="brandsandlogotypes">Brand & Logotypes</li>
+          <li class="subnav-link" data-show-tags="iconsdesign">Icons design</li>
+          <li class="subnav-link" data-show-tags="brandsandlogotypes">Brand &amp; Logotypes</li>
         </ul>
         <div data-flex-container="portfolio" class="l-flex-container">
           <figure class="l-flex-item f-small-line-height" data-tags="brandsandlogotypes uidesign">
@@ -333,15 +335,15 @@
         </section>
         <section data-container="progress">
           <h3 class="f-sub-heading">Skills</h3>
-          <p class="s-progress-paragraph">PHOTOSHOP</p><progress min="0" max="100" value="80"></progress></p>
-          <p class="s-progress-paragraph">HTML/CSS</p><progress min="0" max="100" value="90"></progress></p>
-          <p class="s-progress-paragraph">ILLUSTRATOR</p><progress min="0" max="100" value="70"></progress></p>
-          <p class="s-progress-paragraph">PHP</p><progress min="0" max="100" value="60"></progress></p>
-          <p class="s-progress-paragraph">WORDPRESS</p><progress min="0" max="100" value="95"></progress></p>
+          <p class="s-progress-paragraph">PHOTOSHOP</p><progress max="100" value="80"></progress>
+          <p class="s-progress-paragraph">HTML/CSS</p><progress max="100" value="90"></progress>
+          <p class="s-progress-paragraph">ILLUSTRATOR</p><progress max="100" value="70"></progress>
+          <p class="s-progress-paragraph">PHP</p><progress max="100" value="60"></progress>
+          <p class="s-progress-paragraph">WORDPRESS</p><progress max="100" value="95"></progress>
         </section>
         <section>
           <h4 class="f-light">Do you want be one of Avengers? Join us!</h4>
-          <a href=""><button class="btn">CONTACT US</button></a>
+          <a href="" class="btn-med">CONTACT US</a>
         </section>
       </article>
       <article data-collection="team" id="team">
@@ -419,7 +421,7 @@
             <figure class="l-flex-item">
               <img src="/img/matthew.png" alt="Client Matthew Broderic Photo" class="l-client-img">
               <figcaption class="l-client-txt">
-                <p><strong class="f-bold-highlight">Matthew Broderic</strong> <span class="f-light">(CEO Hopicola Inc.)</span></p>
+                <p><strong class="f-strong-highlight">Matthew Broderic</strong> <span class="f-light">(CEO Hopicola Inc.)</span></p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard my text ever since the 1500s, when lorem upsum is the best text for you.</p>
               </figcaption>
             </figure>
@@ -440,7 +442,7 @@
               <input type="email" placeholder="Your@email.com">
               <textarea class="s-form-message-field" placeholder="Message..."></textarea>
               <br>
-              <button type="submit" class="btn">SEND MESSAGE</button>
+              <button type="submit" class="btn-large">SEND MESSAGE</button>
             </form>
           </div>
           <div class="l-flex-item l-contact-info">
@@ -453,8 +455,8 @@
           </div>
         </section>
       </article>
-      <footer data-container="footer"class="b-white">
-        <p>Theme by <a href="" class="s-theme-author">Pierre Borodin</a href=""> &copy; copyright 2012</p>
+      <footer data-container="footer">
+        <p>Theme by <a href="" class="s-theme-author">Pierre Borodin</a> &copy; copyright 2012</p>
         <a href="" class="icon-facebook"></a>
         <a href="" class="icon-twitter"></a>
         <a href="" class="icon-dribbble"></a>
