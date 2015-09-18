@@ -1,0 +1,15 @@
+@mixin headings($size) {
+  font-size: $size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin heavy($size) {
+  font-size: $size;
+  font-weight: 700;
+}
+
+@mixin light($size) {
+  font-size: $size;
+  font-weight: 300;
+}

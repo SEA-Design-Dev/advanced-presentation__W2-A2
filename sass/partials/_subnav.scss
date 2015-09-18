@@ -7,3 +7,12 @@
     padding: 1%;
   }
 }
+
+.active {
+  color: $iceman;
+  background-color: $maverick;
+}
+
+.hidden {
+  display: none;
+}

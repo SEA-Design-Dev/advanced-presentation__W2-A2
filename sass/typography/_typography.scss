@@ -10,33 +10,6 @@
   white-space: nowrap;
 }
 
-@font-face {
-  font-family: 'Helvetica';
-}
-
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url('opensans-semibold-webfont.eot');
-  src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('opensans-semibold-webfont.woff2') format('woff2'),
-       url('opensans-semibold-webfont.woff') format('woff'),
-       url('opensans-semibold-webfont.ttf') format('truetype'),
-       url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'avengers_creative_icons';
-  src:url('/fonts/avengers_creative_icons.eot?nvpozf');
-  src:url('/fonts/avengers_creative_icons.eot?#iefixnvpozf') format('embedded-opentype'),
-    url('/fonts/avengers_creative_icons.ttf?nvpozf') format('truetype'),
-    url('/fonts/avengers_creative_icons.woff?nvpozf') format('woff'),
-    url('/fonts/avengers_creative_icons.svg?nvpozf#avengers_creative_icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-family: 'Helvetica', 'Arial', Sans-serif;
   font-weight: 400;
@@ -101,6 +74,86 @@ h3 {
   }
 }
 
+p {
+  font-size: 1em;
+}
+
+.f-article-heading {
+  @include headings(2em);
+}
+
+.f-sub-heading {
+  @include headings(1.2em);
+}
+
+.f-page-title {
+  @include light(1.75em);
+
+  @media only screen and (min-width: $break) {
+  font-size: 2.4em;
+  }
+}
+
+.underline {
+  border-bottom: solid 2px $maverick;
+}
+
+.f-light {
+  @include light(null);
+}
+
+.f-price {
+  font-weight: 400;
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
+.subnav-link {
+  @include heavy(1em);
+  &:hover {
+  background-color: $maverick;
+  color: $iceman;
+  }
+}
+
+.f-small-line-height {
+  line-height: .5;
+}
+
+.portfolio-heading {
+  @include heavy(1em);
+}
+
+.portfolio-description {
+  font-size: .95em;
+}
+
+.f-team {
+  @include heavy(1.5);
+  line-height: .1;
+  margin: .5em 0;
+
+  @media only screen and (min-width: 667px) {
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}
+
+.f-strong-highlight {
+  @include heavy(1em);
+  color: $maverick;
+}
+
+.s-theme-author {
+  text-decoration: none;
+  color: $maverick;
+  &:hover {
+    color: $goose;
+  }
+}
 
 
 

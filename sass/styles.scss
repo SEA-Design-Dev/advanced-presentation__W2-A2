@@ -1,110 +1,20 @@
 @import "config";
 @import "reset";
-@import 'sass/typeography/_typeography.scss';
+@import "pages/backgrounds";
+@import "pages/divots";
+@import "pages/hero";
+@import "typography/fonts";
+@import "typography/mixins";
+@import "typography/typography";
 @import "lib/utils/INDEX";
-@import "mainNavigation";
-@import "flexboxContainer";
-@import "flexboxes";
-
-.hero-image {
-  padding: 11em 8% 15em 8%;
-
-  @media only screen and (min-width: $break) {
-    padding: 16% 8%;
-    background: url("/img/Background.png") no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-  }
-}
-
-.active {
-  color: $iceman;
-  background-color: $maverick;
-}
-
-p {
-  font-size: 1em;
-}
-
-.f-article-heading {
-  @include headings(2em);
-}
-
-.f-sub-heading {
-  @include headings(1.2em);
-}
-
-.f-page-title {
-  @include light(1.75em);
-
-  @media only screen and (min-width: $break) {
-  font-size: 2.4em;
-  }
-}
-
-.underline {
-  border-bottom: solid 2px $maverick;
-}
-
-.f-light {
-  @include light(null);
-}
-
-.f-price {
-  font-weight: 400;
-  font-size: .75em;
-  text-transform: uppercase;
-}
-
-.subnav-link {
-  @include heavy(1em);
-  &:hover {
-  background-color: $maverick;
-  color: $iceman;
-  }
-}
-
-.f-small-line-height {
-  line-height: .5;
-}
-
-.portfolio-heading {
-  @include heavy(1em);
-}
-
-.portfolio-description {
-  font-size: .95em;
-}
-
-.f-team {
-  @include heavy(1.5);
-  line-height: .1;
-  margin: .5em 0;
-
-  @media only screen and (min-width: 667px) {
-    font-size: 1.5em;
-    line-height: 1;
-    padding: 0%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-}
-
-.f-strong-highlight {
-  @include heavy(1em);
-  color: $maverick;
-}
-
-.s-theme-author {
-  text-decoration: none;
-  color: $maverick;
-  &:hover {
-    color: $goose;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-
+@import "partials/mainNavigation";
+@import "partials/flexboxContainer";
+@import "partials/flexboxes";
+@import "partials/buttons";
+@import "partials/table";
+@import "partials/slider";
+@import "partials/subnav";
+@import "partials/hover";
+@import "partials/progressBar";
+@import "partials/form";
+@import "partials/map";
