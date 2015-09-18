@@ -43,9 +43,6 @@
 .menu{
   position: fixed;
 }
-.moblie-mebue li:hover {
-  background-color: $A-avengers-color;
-}
 .icon-menu {
   display: none;
 }
@@ -60,5 +57,8 @@
   color:  #999f9f;
   font-size: 16px;
 }
-
+.mobile-menu li:hover {
+  background-color: $D-avengers-color;
+  color: $B-avengers-color;
+}
 }
