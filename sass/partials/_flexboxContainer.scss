@@ -1,0 +1,42 @@
+%flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: column;
+  flex-direction: row;
+  -moz-flex-flow: row wrap;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.l-flex-container {
+  @extend %flex-container;
+
+  [data-flex-container="client"] & {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+  }
+
+  @media only screen and (min-width: $break) {
+    -webkit-flex-direction: row;
+    &[data-flex-container="services-one"] {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+    }
+
+    &[data-flex-container="portfolio"] {
+      -webkit-flex-flow: row wrap;
+    }
+  }
+}
