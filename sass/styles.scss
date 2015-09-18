@@ -47,10 +47,6 @@ p {
   border-bottom: solid 2px $maverick;
 }
 
-.f-bold {
-  @include heavy(null);
-}
-
 .f-light {
   @include light(null);
 }
@@ -95,7 +91,7 @@ p {
   }
 }
 
-.f-bold-highlight {
+.f-strong-highlight {
   @include heavy(1em);
   color: $maverick;
 }
