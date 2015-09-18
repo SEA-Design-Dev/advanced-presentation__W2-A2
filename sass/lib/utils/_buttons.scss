@@ -2,6 +2,7 @@
   @include heavy(.65);
   box-shadow: none;
   border: none;
+  text-decoration: none;
   padding: .3em 1em;
   margin: .3em auto;
 }
@@ -14,6 +15,7 @@
   background-color: $goose;
   }
   [data-container="about"] & {
+    font-size: .65em;
     height: 3em;
   }
   [data-flex-container="contact"] & {
