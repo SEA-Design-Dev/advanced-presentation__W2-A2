@@ -16,15 +16,15 @@ ul{
   list-style: none;
   padding: 0;
 }
-h2 {
-  font-size: 1.6em;
-}
-h3 {
-  font-size: 1.0em;
-}
-p {
-  font-size: 1em;
-}
+// h2 {
+//   font-size: 1.6em;
+// }
+// h3 {
+//   font-size: 1.0em;
+// }
+// p {
+//   font-size: 1em;
+// }
 footer h1 {
   margin: .9px;
 }
@@ -56,43 +56,46 @@ footer h1 {
 .p-home {
   background-image: url("https://i.imgur.com/oVRIX4Z.png");
 }
+
 // .port-navbar a {
 //   font-size: 1em;
 //   color: $C-avengers-color;
 // }
-.p-logo-1 {
-  border-radius: 50%;
-  background-color: $A-avengers-color;
-}
-.p-logo-2 {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  margin: auto;
-  width: 25px;
-  height: 25px;
-  overflow: hidden;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  -webkit-transform: rotate(-45deg);
-  z-index: 99;
-  background: $B-avengers-color;
-}
-.p-logo-3 {
-  position: absolute;
-  left: 2.5px;
-  top: 2px;
-  margin: auto;
-  width: 20px;
-  height: 20px;
-  overflow: hidden;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%;
-  z-index: 150;
-  background: $A-avengers-color;
-}
+
+// .p-logo-1 {
+//   border-radius: 50%;
+//   background-color: $A-avengers-color;
+// }
+// .p-logo-2 {
+//   position: absolute;
+//   left: 25px;
+//   top: 25px;
+//   margin: auto;
+//   width: 25px;
+//   height: 25px;
+//   overflow: hidden;
+//   border-bottom-right-radius: 50%;
+//   border-bottom-left-radius: 50%;
+//   border-top-left-radius: 50%;
+//   -webkit-transform: rotate(-45deg);
+//   z-index: 99;
+//   background: $B-avengers-color;
+// }
+// .p-logo-3 {
+//   position: absolute;
+//   left: 2.5px;
+//   top: 2px;
+//   margin: auto;
+//   width: 20px;
+//   height: 20px;
+//   overflow: hidden;
+//   border-bottom-right-radius: 50%;
+//   border-bottom-left-radius: 50%;
+//   border-top-left-radius: 50%;
+//   z-index: 150;
+//   background: $A-avengers-color;
+// }
+
 .p-home-text {
   font-weight: lighter;
 }
@@ -140,6 +143,9 @@ color: $A-avengers-color;
 .p-client-carousel-button {
   border-radius: 50%;
   background-color: $A-avengers-color;
+  &:hover {
+    background-color: $D-avengers-color;
+  }
 }
 .p-client-link {
   color: $B-avengers-color;
@@ -193,6 +199,7 @@ color: $A-avengers-color;
   content: url("http://i.imgur.com/lRzimnO.png")
 }
 .p-about {
+  padding-bottom: 10em;
   color: $B-avengers-color;
   background-color: #000;
 }
@@ -225,7 +232,6 @@ color: $A-avengers-color;
 .p-contact-form {
   background-color: #7f331b;
 }
-
 ::-webkit-input-placeholder {
   color: $B-avengers-color;
 }

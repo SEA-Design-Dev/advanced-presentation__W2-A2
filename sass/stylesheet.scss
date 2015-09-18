@@ -8,6 +8,9 @@
 @import "button.scss";
 @import "grid-display.scss";
 @import "basic-nav.scss";
+@import "logo.scss";
+@import "team-members";
+@import "order-form";
 @import "responsive-nav.scss";
 
 @font-face {
@@ -20,6 +23,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'avengers-icons';
   speak: none;

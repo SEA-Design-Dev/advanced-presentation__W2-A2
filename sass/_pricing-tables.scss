@@ -22,13 +22,16 @@
   & div:last-child {
     height: 3em;
     background-color: $F-avengers-color;
+    padding-top: .75em;
   }
   & a {
     background-color: $A-avengers-color;
     color: $B-avengers-color;
+    padding: .4em 10% .4em 10%;
+    width: 50%;
+    height: 25%;
   }
 }
-
 
 .p-pricing-tables {
   margin-top: 0;
@@ -37,18 +40,7 @@
   margin-right: 10%;
   // padding-bottom: 10%;
   padding-left: 0;
-}
-.p-pricing-tables div:last-child {
-  padding-top: .75em;
-}
-.p-pricing-tables a {
-  padding: .4em 10% .4em 10%;
-}
-.l-pricing-tables {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 568px) {
-  .p-pricing-tables {
+  @media only screen and (min-width: 568px) {
     margin: 2.5% 5% 2.5% 2.5%;
     width: 15%;
     display: inline-block;

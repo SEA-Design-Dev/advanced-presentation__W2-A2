@@ -1,0 +1,40 @@
+.l-logo {
+  position: relative;
+  margin: auto;
+  margin-bottom: 10%;
+  height: 75px;
+  width: 75px;
+}
+.p-logo-1 {
+  border-radius: 50%;
+  background-color: $A-avengers-color;
+}
+.p-logo-2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+  z-index: 99;
+  background: $B-avengers-color;
+}
+.p-logo-3 {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  z-index: 150;
+  background: $A-avengers-color;
+}
