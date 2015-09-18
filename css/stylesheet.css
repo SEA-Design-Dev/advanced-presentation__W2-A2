@@ -460,33 +460,42 @@ body {
 
 .l-about-bars {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: center; }
   .l-about-bars li {
-    text-align: left;
     padding-top: .5em; }
 
-progress[value] {
+.graphHide {
   -webkit-appearance: none;
   width: 250px;
   height: 20px; }
-  progress[value]::-webkit-progress-bar {
+  .graphHide::-webkit-progress-bar {
     background: #3a3a3a; }
-  progress[value]::-webkit-progress-value {
+  .graphHide::-webkit-progress-value {
+    background: #3a3a3a; }
+
+.graphShow {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 20px; }
+  .graphShow::-webkit-progress-bar {
+    background: #3a3a3a; }
+  .graphShow::-webkit-progress-value {
     background: #fc6432; }
-  @media only screen and (min-width: 568px) {
-    progress[value] {
-      -webkit-appearance: none;
-      width: 550px;
-      height: 20px; } }
+
+@media only screen and (min-width: 568px) {
+  .graphShow, .graphHide {
+    -webkit-appearance: none;
+    width: 550px;
+    height: 20px; } }
 
 .button {
   background-color: #fc6432;
   color: #fff;
   border: 0;
   padding: 10px 40px 10px 40px;
-  font-size: .5em; }
+  font-size: 1em; }
   .button:hover {
     background-color: #7f331b;
     color: #fc6432; }

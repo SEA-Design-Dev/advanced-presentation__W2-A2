@@ -148,19 +148,19 @@
         </header>
 
         <figure>
-          <div class="big-little-slider"></div>
+          <a href="https://itunes.com/app/culvers" class="big-little-slider"></a>
         </figure>
 
         <nav class="flex">
-          <a href="">All works</a>
-          <a href="">Webdesign</a>
-          <a href="">UI design</a>
-          <a href="">Icon design</a>
-          <a href="">Brand &amp Logotypes</a>
+          <a class="all" href="">All works</a>
+          <a class="web"href="">Webdesign</a>
+          <a class="ui" href="">UI design</a>
+          <a class="icon" href="">Icon design</a>
+          <a class="brand" href="">Brand &amp Logotypes</a>
         </nav>
         <div class="grid">
-          <ul class="grid-sub">
-            <li>
+          <ul id="all" class="grid-sub">
+            <li class="notWeb allAll notWeb notIcon notBrand">
               <figure>
                 <img src="https://i.imgur.com/JkeRcc8.png" alt="iphone web application">
               </figure>
@@ -174,7 +174,7 @@
               <h4>Youtube iphone app</h4>
               <p>webdesign, brand &amp logotypes</p>
             </li>
-            <li>
+            <li class="notWeb allAll notUi notBrand">
               <figure>
                 <img src="https://i.imgur.com/TghgIMz.png" alt="sketches" >
               </figure>
@@ -184,21 +184,21 @@
           </ul>
 
           <ul class="grid-sub">
-            <li>
+            <li class="notWeb allAll notIcon notBrand">
               <figure>
                 <img src="https://i.imgur.com/xwvS1zk.png" alt="logotypes webpage">
               </figure>
               <h4>Logotypes Volume</h4>
               <p>UI design, brand &amp logotypes</p>
             </li>
-            <li>
+            <li class="allAll notUi notIcon notBrand">
               <figure>
               <img src="https://i.imgur.com/uRAfijd.png" alt="flight webpage" >
               </figure>
               <h4>Flight control</h4>
               <p> Webdesign, brand &amp logotypes</p>
             </li>
-            <li>
+            <li class="notWeb allAll notUi notBrand">
               <figure>
                 <img src="https://i.imgur.com/V1tWTNA.png" alt="youtube app webapge">
               </figure>
@@ -208,21 +208,21 @@
           </ul>
 
           <ul class="grid-sub">
-            <li>
+            <li class="notWeb allAll notIcon notBrand">
               <figure>
                 <img src="https://i.imgur.com/ni8qOUP.png" alt="Managment Webpage">
               </figure>
               <h4> Management</h4>
               <p>UI design, brand &amp logotypes</p>
             </li>
-            <li>
+            <li class="allAll notUi notIcon notBrand">
               <figure>
                 <img src="https://i.imgur.com/PtjmCSu.png" alt="Korean Beef webpage">
               </figure>
               <h4>Korean beef</h4>
               <p> Webdesign, brand &amp logotypes</p>
             </li>
-            <li>
+            <li class="notWeb allAll notUi notBrand">
               <figure>
                 <img src="https://i.imgur.com/FfxHutV.png" alt="Facebook webpage">
               </figure>
@@ -251,20 +251,21 @@
           <div class="p-subtitle-line"></div>
         </section>
         <div class="l-about-bars">
+          <button class="graph button" type="button">See what we know!</button>
           <ul>
-            <li>Photoshop</li>
-            <li><progress value="75" max="100"></progress>
+            <li>PHOTOSHOP</li>
+            <li><progress  class="graphHide" value="75" max="100"></progress>
             </li>
             <li>HTML/CSS</li>
-            <li><progress value="80" max="100"></progress>
+            <li><progress class="graphHide" value="80" max="100"></progress>
             </li>
             <li>Illustrator</li>
-            <li><progress value="65" max="100"></progress></li>
+            <li><progress class="graphHide" value="65" max="100"></progress></li>
             <li>PHP</li>
-            <li><progress value="55" max="100"></progress>
+            <li><progress class="graphHide" value="55" max="100"></progress>
             </li>
             <li>WORDPRESS</li>
-            <li><progress value="95" max="100"></progress></li>
+            <li><progress class="graphHide" value="95" max="100"></progress></li>
           </ul>
         </div>
         <div >
@@ -417,5 +418,7 @@
           <a href="404.html"><span class="icon-google-plus"></span></a>
         </div>
       </footer>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script type="text/javascript" src="main.js"></script>
     </body>
   </html>
