@@ -1,0 +1,76 @@
+%ico-font-base {
+  font-family: "avengers_creative_icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@each $iconL in $iconLarge {
+  .icon-#{nth($iconL, 1)} {
+    @extend %ico-font-base;
+    font-size: 3em;
+    background-color: $secondary-color;
+    color: #000000;
+    width: 100%;
+    border-radius: 50%;
+    padding: 1.5rem;
+    &:before {
+      content: nth($iconL, 2);
+    }
+  }
+}
+
+@each $iconS in $iconSmall {
+  .icon-#{nth($iconS, 1)} {
+    @extend %ico-font-base;
+    font-weight: 700;
+    margin-right: .25em;
+    color: $secondary-color;
+    &:before {
+      content: nth($iconS, 2);
+    }
+  }
+}
+
+@each $social in $iconSocial {
+  .icon-#{nth($social, 1)} {
+    @extend %ico-font-base;
+    font-size: 2em;
+    color: nth($social, 2);
+    &:before {
+      content: nth($social, 3);
+    }
+    @media only screen and (min-width: $break) {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@each $arrow in $arrows {
+  .icon-#{nth($arrow, 1)} {
+    @extend %ico-font-base;
+    color: $primary-color;
+    font-size: 2rem;
+    padding-#{nth($arrow, 2)}: 10%;
+    margin: 0 auto;
+    text-decoration: none;
+    &:before {
+      content: nth($arrow, 4);
+      }
+    &:hover {
+      color: $primary-accent-color;
+    }
+    @media only screen and (min-width: $break) {
+      font-size: 1.5em;
+      padding-#{nth($arrow, 2)}: 0%;
+      -webkit-order: nth($arrow, 3);
+      order: nth($arrow, 3);
+    }
+  }
+}

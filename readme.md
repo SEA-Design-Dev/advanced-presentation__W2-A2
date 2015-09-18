@@ -1,6 +1,6 @@
 # Week Two - Advanced Presentation
 
-Last week we focussed on HTML semantics and document architecture with slight emphasis on presentation. The project assignment for the second week is going to assume that you have learned and mastered the basics of semantic HTML and we are going to focus on advanced presentation skills. 
+Last week we focussed on HTML semantics and document architecture with slight emphasis on presentation. The project assignment for the second week is going to assume that you have learned and mastered the basics of semantic HTML and we are going to focus on advanced presentation skills.
 
 We want this assignment to feel like a 'week on the job.' And by that we mean, we will provide a completed comp and an expected outcome specification. It is up to you to deliver on this project specification.
 
@@ -11,19 +11,19 @@ You can download the view that you are to complete [here](https://dl.dropboxuser
 
 ## The spec
 
-As a product owner, I need a responsive, clickable prototype of the design deliverable. The final prototype must be visible in a desktop browser, as well perform well on a mobile device. 
+As a product owner, I need a responsive, clickable prototype of the design deliverable. The final prototype must be visible in a desktop browser, as well perform well on a mobile device.
 
-Prototype is to use best practices in coding HTML/CSS as there is the potential that some or all of the code will made it into production. 
+Prototype is to use best practices in coding HTML/CSS as there is the potential that some or all of the code will made it into production.
 
-Aside from images as content, all visual assets should be produced via CSS or typography. The only background image asset allowed will be the main page header. 
+Aside from images as content, all visual assets should be produced via CSS or typography. The only background image asset allowed will be the main page header.
 
 ## The catch
 
-The expectation is a mobile first UI that will operate well on a handheld device. The provided comp is a desktop view, so you will need to apply your creative skills to address the mobile UI version. 
+The expectation is a mobile first UI that will operate well on a handheld device. The provided comp is a desktop view, so you will need to apply your creative skills to address the mobile UI version.
 
-Images in this project are provided as content, not part of the design. Keep this in mind as you will need to address RWD solution for images as content in the view. 
+Images in this project are provided as content, not part of the design. Keep this in mind as you will need to address RWD solution for images as content in the view.
 
-### Requirements 
+### Requirements
 
 1. Semantically correct HTML is required as this will be the model for prod app integration
 1. Thing in terms of '*components*'; if all parts of the UI were lego blocks, who would you code that?
@@ -39,7 +39,7 @@ Images in this project are provided as content, not part of the design. Keep thi
 		* [node-sass-boilerplate](https://github.com/anotheruiguy/node-sass-boilerplate)
 		* Ignore the stuff with Sass and Grunt, we will cover that later, but you can use the Express framework and the Node server script to serve up static content if you desire
 
-### Constraints 
+### Constraints
 
 1. Must work in all major browsers of latest versions;
 	* Desktop (IE Edge, Safari, Chrome and Firefox)
@@ -48,13 +48,24 @@ Images in this project are provided as content, not part of the design. Keep thi
 1. Links to other views need not be functional, but must look like links
 1. JavaScript is NOT to be used
 
-__DO NOT__ fence yourself in with invisible constraints. Unless it is specifically listed and/or we discussed it in lecture, there is not an expectation to meet an objective that has not been set. 
+__DO NOT__ fence yourself in with invisible constraints. Unless it is specifically listed and/or we discussed it in lecture, there is not an expectation to meet an objective that has not been set.
 
-## The expectation 
+## The expectation
 
-In the last assignment we covered the concepts behind semantic and modular HTML. This project assignment is engineered to build on top of those principals and work in more advanced presentation skills, to include RWD. 
+In the last assignment we covered the concepts behind semantic and modular HTML. This project assignment is engineered to build on top of those principals and work in more advanced presentation skills, to include RWD.
 
+## Resources Used
 
+1. Icon Fonts from icomoon. Details can be found in the AvengersCreative.json file. If you change anything in regards to the icons, please be sure to update this file and the main.css file!
 
+2. Fonts are Open Sans SemiBold and Helvetica
+
+3. Resources used to help create an off-canvas navigation menu for mobile:
+    - Semantic help from Zurb (http://foundation.zurb.com/docs/components/sidenav.html)
+    - Building help from Trevan Hetzel (http://codepen.io/trevanhetzel/pen/Lrbjf)
+    - Silky hover effects adapted from  Marcin Merchel (https://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for-images-using-css3-and-html)
+    -Section Divots adapted from davidpauljunior (http://stackoverflow.com/questions/22314322/cutting-a-triangle-out-of-div-but-have-it-horizontally-centered)
+    -Filter effect on portfolio sectoin inspired by Jed Foster (https://github.com/SEA-Design-Dev/FEDA-Week-3-jQuery-demo)
+    - Figured out how to get responsive horizontal rules in our project next to H2's with the help of google and this handy JSFiddle (http://jsfiddle.net/vLwDf/268/);
 
 

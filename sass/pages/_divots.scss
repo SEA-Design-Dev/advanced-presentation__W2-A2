@@ -1,0 +1,47 @@
+%triangle-divot {
+  content: '';
+  display: block;
+  position: relative;
+  top: -2.1em;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+article {
+  &:before {
+    @extend %triangle-divot;
+    background-image: url('/img/arrow_down_white.png');
+  }
+}
+
+[data-collection="team"] {
+  &:before {
+    @extend %triangle-divot;
+    background-image: url('/img/arrow_down_black.png');
+  }
+}
+
+[data-collection="about"],
+[data-collection="services"] {
+  &:before {
+    @extend %triangle-divot;
+    background-image: url('/img/arrow_down_white.png');
+}
+
+  @media only screen and (min-width: $break) {
+    &:before {
+    background-image: none;
+    }
+  }
+}
+
+footer,
+[data-collection="portfolio"] {
+    &:before {
+      @extend %triangle-divot;
+      background-image: url('/img/arrow_down_orange.png');
+  }
+}
