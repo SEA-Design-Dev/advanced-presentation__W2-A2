@@ -50,7 +50,7 @@
   transition: right .3s ease;
 }
 
-.mobile-nav-toggle {
+#mobileNavToggle {
   display: none;
   &:checked {
     ~ [data-container="navigation"] {
