@@ -3,12 +3,16 @@
   progress {
     width: 90%;
     -webkit-appearance: none;
+    border:none;
     appearance: none;
     height: .75em;
     &::-webkit-progress-bar {
       background-color: #3a3a3a;
     }
     &::-webkit-progress-value {
+      background-color: $primary-color;
+    }
+    &::-moz-progress-bar {
       background-color: $primary-color;
     }
   }
