@@ -60,6 +60,7 @@
     font-size: 2rem;
     padding-#{nth($arrow, 2)}: 10%;
     margin: 0 auto;
+    text-decoration: none;
     &:before {
       content: nth($arrow, 4);
       }

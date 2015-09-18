@@ -13,3 +13,13 @@
   font-size: $size;
   font-weight: 300;
 }
+
+@mixin horizontal-rule($background) {
+  background-color: $background;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
