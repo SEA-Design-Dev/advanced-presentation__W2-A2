@@ -69,26 +69,63 @@
   }
 }
 
-.s-contact-info a, .s-contact-info a:hover, .s-contact-info a:visited {
-  font-size: .85em;
-  text-decoration: none;
-  color: $iceman;
-}
 
-.f-light {
-  font-weight: 300;
-}
 
-.f-bold {
-  font-weight: 700;
-}
-
-.f-font-paragraph {
+p {
   font-size: 1em;
 }
 
-.f-large {
-  font-size: 2em;
+
+.f-article-heading {
+  @include headings(2em);
+}
+
+.f-sub-heading {
+  @include headings(1.2em);
+}
+
+.f-page-title {
+  @include light(1.75em);
+
+  @media only screen and (min-width: $break) {
+  font-size: 2.4em;
+  }
+}
+
+.underline {
+  border-bottom: solid 2px $maverick;
+}
+
+.f-table-head {
+  @include light(1.75rem);
+  background-color: $hollywood;
+  font-size: 1.75rem;
+
+  @media only screen and (min-width: $break) {
+    font-size: 1.25em;
+  }
+}
+
+td {
+  background-color: $iceman;
+  color: #2e2e2e;
+  font-size: 1.5em;
+
+  tfoot & {
+    background-color: #be4c25;
+  }
+
+  @media only screen and (min-width: $break) {
+    font-size: 1em;
+  }
+}
+
+.f-bold {
+  @include heavy(null);
+}
+
+.f-light {
+  @include light(null);
 }
 
 .f-small-line-height {
@@ -101,37 +138,28 @@
   text-transform: uppercase;
 }
 
+.subnav-link {
+  @include heavy(1em);
+  &:hover {
+  background-color: $maverick;
+  color: $iceman;
+  }
+}
+
+.portfolio-heading {
+  @include heavy(1em);
+}
+
+.portfolio-description {
+  font-size: .95em;
+}
+
 .f-team {
-  font-size: 1.5em;
+  @include heavy(1.5);
   line-height: .1;
   margin: .5em 0;
-}
 
-.f-client {
-  color: $maverick;
-}
-
-.underline {
-  border-bottom: solid 2px $maverick;
-}
-
-.s-theme-author {
-  text-decoration: none;
-  color: $maverick;
-}
-
-.s-theme-author:hover {
-  color: $goose;
-}
-
-.hidden {
-  display: none;
-}
-
-/*=== BREAKPOINTS ===*/
-@media only screen and (min-width: 667px) {
-
-  .f-team {
+  @media only screen and (min-width: 667px) {
     font-size: 1.5em;
     line-height: 1;
     padding: 0%;
@@ -139,4 +167,34 @@
     margin-bottom: 1%;
   }
 }
+
+.f-contact-info, .f-contact-info a, .f-contact-info a:hover, .f-contact-info a:visited {
+  font-size: .85em;
+  text-decoration: none;
+  color: $iceman;
+}
+
+.f-bold-highlight {
+  @include heavy(1em);
+  color: $maverick;
+}
+
+
+
+.f-contact-bold {
+  @include heavy(.85em);
+}
+
+.s-theme-author {
+  text-decoration: none;
+  color: $maverick;
+  &:hover {
+    color: $goose;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 

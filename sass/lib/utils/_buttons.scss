@@ -1,5 +1,5 @@
 %button-styles {
-  font-size: .65em;
+  @include heavy(.65);
   box-shadow: none;
   border: none;
   padding: .3em 1em;
@@ -17,6 +17,7 @@
     height: 3em;
   }
   [data-flex-container="contact"] & {
+    font-weight: 300;
     height: 3em;
     background-color: $iceman;
     color: $hollywood;

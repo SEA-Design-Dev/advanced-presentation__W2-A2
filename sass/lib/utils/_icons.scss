@@ -30,6 +30,8 @@
 @each $iconS in $iconSmall {
   .icon-#{nth($iconS, 1)} {
     @extend %ico-font-base;
+    font-weight: 700;
+    margin-right: .25em;
     color: white;
     &:before {
       content: nth($iconS, 2);
