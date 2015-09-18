@@ -11,8 +11,7 @@
 
   @media only screen and (min-width: $break) {
     padding: 16% 8%;
-    background-image: url("/img/Background.png");
-    background-repeat: no-repeat;
+    background: url("/img/Background.png") no-repeat;
     background-size: 100% 100%;
     position: relative;
   }
