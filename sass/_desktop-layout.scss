@@ -1,92 +1,10 @@
 @media only screen and (min-width: 568px) {
-
-// .mobile-menu ul {
-//   background-color: #fff;
-// }
-// .mobile-menu li {
-//   display: inline-block;
-// }
-// .mobile-menu li a {
-//   padding: 10px 50px 5px 50px;
-// }
-
-// .protfolio-pieces {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-content: flex-start;
-//   text-align: center;
-// }
-.p-navbar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-// .l-home-spacer {
-//   height: 12em;
-// }
 .l-upper-columns {
   width: 30%;
   margin-left: 5%;
   margin-right: 5%;
   display: inline-block;
 }
-.l-about-columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-left: 5%;
-  margin-right: 5%;
-  & p {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-}
-// progress[value] {
-//   -webkit-appearance: none;
-//   width: 550px;
-//   height: 20px;
-// }
-// progress:: -webkit-progress-bar {
-//   background: gray;
-// }
-// progress:: -webkit-progress-value {
-//   background: #fd6632;
-// }
-// .p-logo-2 {
-//   position: absolute;
-//   left: 20px;
-//   top: 20px;
-//   margin: auto;
-//   width: 35px;
-//   height: 35px;
-//   overflow: hidden;
-//   border-bottom-right-radius: 50%;
-//   border-bottom-left-radius: 50%;
-//   border-top-left-radius: 50%;
-//   -webkit-transform: rotate(-45deg);
-//   z-index: 99;
-// }
-// .p-logo-3 {
-//   position: absolute;
-//   left: 5px;
-//   top: 5px;
-//   margin: auto;
-//   width: 25px;
-//   height: 25px;
-//   overflow: hidden;
-//   border-bottom-right-radius: 50%;
-//   border-bottom-left-radius: 50%;
-//   border-top-left-radius: 50%;
-//   z-index: 150;
-// }
 .l-title {
   display: flex;
   flex-direction: row;
@@ -102,22 +20,6 @@
   margin-right: 2%;
   display: inline-block;
 }
-// .l-team {
-//   display: inline-block;
-//   margin-left: 0;
-//   margin-right: 0;
-//   margin-bottom: 0;
-// }
-// .l-team-member {
-//   display: inline-block;
-//   width: 20%;
-//   margin-left: 1.5%;
-//   margin-right: 1.5%;
-// }
-// .l-team-member img {
-//   margin-top: 10%;
-//   margin-bottom: 10%;
-// }
 .l-client-inline {
   display: inline-block;
   margin: 0;
@@ -153,11 +55,6 @@
 .l-client {
   display: inline-block;
 }
-// .p-pricing-tables {
-//   margin: 2.5% 5% 2.5% 2.5%;
-//   width: 15%;
-//   display: inline-block;
-// }
 .l-contact-blurb {
   margin: auto;
   padding-left: 10%;
