@@ -157,20 +157,6 @@ body {
   padding-top: 2.5em;
   padding-bottom: 2.5em; }
 
-.icon-menu {
-  display: inline-block; }
-
-.mobile-menu {
-  position: absolute; }
-
-.mobile-menu li a {
-  display: block;
-  padding-bottom: 2em; }
-
-.mobile-menu ul {
-  display: none;
-  z-index: 100; }
-
 .l-home {
   padding-top: 10em;
   padding-bottom: 10em; }
@@ -544,31 +530,25 @@ progress[value] {
     font-size: 1em;
     color: #a3a3a3; }
 
-.icon-menu {
-  width: 100%; }
-  .icon-menu:before {
-    content: "\e608"; }
+.icon-menu:before {
+  content: "\e608"; }
 
  
 .mobile-menu {
-  width: 100%;
-  margin: 100;
-  background: #a3a3a3;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center; }
-
-.menu {
   background: #a3a3a3; }
+
+.mobile-menu ul {
+  display: none;
+  z-index: 100; }
 
 .mobile-menu li a {
   font-family: Helvetica;
   color: #fff;
   text-transform: uppercase;
   font-size: 20px; }
+
+.menu {
+  background: #a3a3a3; }
 
 .mobile-menu input[type=checkbox] {
   display: none; }
@@ -579,33 +559,19 @@ progress[value] {
 .icon-menu {
   display: inline-block; }
 
-.mobile-menu li a {
-  display: block;
-  padding-bottom: 2em; }
-
-.mobile-menu ul {
-  display: none;
-  z-index: 100; }
-
 @media only screen and (min-width: 568px) {
   .mobile-menu ul {
     margin-top: 0;
     padding-top: 1%;
     width: 100%;
-    /*padding-left: 18%;*/
     padding-bottom: .5%;
     display: inline-block;
     border-bottom: 2px solid #999f9f;
     left: 0; }
   .menu {
-    /*padding-left: 15%;*/
-    /*padding-right: 15%;*/
     position: fixed; }
   .moblie-mebue li:hover {
     background-color: #fc6432; }
-  .mobile-menu li a {
-    color: #999f9f;
-    font-size: 16px; }
   .icon-menu {
     display: none; }
   .mobile-menu ul {
@@ -613,7 +579,9 @@ progress[value] {
   .mobile-menu li {
     display: inline-block; }
   .mobile-menu li a {
-    padding: 5px 50px 5px 50px; } }
+    padding: 5px 50px 5px 50px;
+    color: #999f9f;
+    font-size: 16px; } }
 
 @font-face {
   font-family: 'avengers-icons';
