@@ -1,0 +1,50 @@
+
+/*---portfolio section css---*/
+
+.portfolio-nav {
+  a {
+    text-decoration: none;
+    color: #989595;
+    font-weight: bold;
+    padding: 0 1em;
+  }
+}
+
+.portfolio-ul {
+  @include flexbox;
+  a:hover {
+    background-color: $serv-cont-background;
+    color: #ffffff;
+  }
+  li {
+    margin-right: 1em;
+    @media only screen and (max-width: 875px) {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.design-list-container {
+  @include flexbox;
+  width: 100%;
+  padding-left: 0;
+}
+
+.design-list {
+  height: 19em;
+  min-width: 20em;
+  text-align: center;
+  img {
+    max-width: 16em;
+    width: 100%;
+  }
+}
+
+.design {
+  margin-bottom: 0;
+  + p {
+    color: $secondary-text;
+    margin-top: 0;
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,99 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  overflow: auto;
+}
+
+body {
+  margin: auto;
+  font-family: $main-font;
+  font-weight: 300;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav, section {
+  text-align: center;
+ }
+
+section {
+  padding: 2em 5% 0;
+}
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.5em;
+  margin: auto 10%
+}
+
+/*---css for social media links/icon fonts ---*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../font/icomoon.eot?-dtcabo');
+  src:url('../font/icomoon.eot?#iefix-dtcabo') format('embedded-opentype'),
+    url('../font/icomoon.ttf?-dtcabo') format('truetype'),
+    url('../font/icomoon.woff?-dtcabo') format('woff'),
+    url('../font/icomoon.svg?-dtcabo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -- pseudo lines created on sections, sub-sections -- */
+
+%section-line {
+  background-color: $serv-cont-background;
+  color: #fff;
+  > h1:before, > h1:after {
+    background-color: #fff;
+  }
+  > .subheader:before, > .subheader:after {
+    background-color: #fff;
+  }
+}
+
+h1 {
+  @include pseudoline(3%, -35%);
+}
+
+.subheader {
+  @include pseudoline(2%, -34%);
+}
+
+.services-section {
+  padding-bottom: 2em;
+  @extend %section-line
+}
+
+.contact-section {
+  @extend .services-section;
+}
+
+.about-section {
+  background-color: $about-background;
+  color: #fff;
+  > h1:before, > h1:after {
+    background-color: #fff;
+  }
+}
+
+.subheader-skills:before, .subheader-skills:after {
+  background-color: #fff;
+}
+
+.portfolio-section > .subheader:before, .portfolio-section > .subheader:after,
+.team-section > .subheader:before, .team-section > .subheader:after {
+  background-color: #000;
+}
+
+

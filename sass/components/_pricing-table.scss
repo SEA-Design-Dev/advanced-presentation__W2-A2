@@ -1,0 +1,55 @@
+
+.table-section {
+  @include flexbox;
+  width: 100%;
+  padding: 0 5% 3em 5%;
+}
+
+.pricing-table {
+  font-size: .8em;
+  min-width: 16em;
+  margin: 1.5em 1.5em 2em 1.5em;
+  height: 23em;
+  width: 16em;
+}
+
+th {
+  background-color: $table-head;
+  color: #ffffff;
+  padding: .5em;
+  font-weight: 200;
+  font-size: 1.3em;
+}
+
+tr {
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: .1em solid $serv-cont-background;
+  &:last-child {
+    background-color: $table-foot;
+    color: #ffffff;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    height: 4em;
+  }
+}
+
+td {
+  padding: .5em 0;
+}
+
+.table-price {
+  color: $serv-cont-background;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.button-signup {
+  background-color: $serv-cont-background;
+  margin: 1em;
+  border: none;
+  padding: .3em 1em;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+

@@ -1,0 +1,24 @@
+@import "normalize";
+
+@import "slick";
+
+@import "lib/INDEX";
+// Definings
+@import "variables";
+@import "mixins";
+
+// Global Styles
+@import "globals";
+
+//Components
+@import "components/nav-bar";
+@import "components/primary-header";
+@import "components/services-section";
+@import "components/pricing-table";
+@import "components/portfolio-section";
+@import "components/social-media";
+@import "components/about-section";
+@import "components/team-section";
+@import "components/contact-section";
+@import "components/client-section";
+@import "components/footer";

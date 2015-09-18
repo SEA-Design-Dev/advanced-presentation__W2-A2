@@ -1,0 +1,41 @@
+
+/*---Team and clients CSS---*/
+
+.team-container {
+  @include flexbox;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.team-list {
+  text-align: center;
+  width: 17em;
+  min-width: 17em;
+  h2 {
+    font-size: 1.25em;
+  }
+  h3 {
+    font-size: .8em;
+    color: #989595;
+  }
+}
+
+.team-title {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: -1.2em;
+}
+
+.face-pic {
+  padding-bottom: 1em;
+}
+
+.team-para {
+  font-size: .85em;
+  margin: 1em 2em;
+  @media only screen and (max-width: 1200px) {
+    max-width: 18em;
+    display: inline-flex;
+  }
+}

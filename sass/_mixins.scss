@@ -1,0 +1,47 @@
+
+@mixin flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+@mixin navArrows{
+  color: $alpha;
+  text-decoration: none;
+  font-size: 2em;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+@mixin pseudoline ($margin-left, $before-margin-left) {
+  position: relative;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  &:after, &:before {
+    top: 51%;
+    width: 32%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $about-background;
+    margin-left: $margin-left;
+  }
+  &:before {
+    margin-left: $before-margin-left;
+    text-align: right;
+  }
+}
