@@ -1,9 +1,7 @@
 $(function () {
 
-$(".graph1").click(function() {
-  console.log("poo")
+$(".graph").click(function() {
   $( 'progress' ).toggleClass("graphShow graphHide")
-  console.log("Yay")
 })
 
 });

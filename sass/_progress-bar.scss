@@ -2,11 +2,10 @@
 // Layout
 .l-about-bars {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   & li {
-    text-align: left;
     padding-top: .5em;
   }
 }
@@ -23,7 +22,7 @@
   }
 }
 
-.graphshow {
+.graphShow {
   -webkit-appearance: none;
   width: 250px;
   height: 20px;
@@ -34,10 +33,12 @@
     background: $A-avengers-color;
   }
 }
-// // Desktop presentation
-//   @media only screen and (min-width: 568px) {
-//       -webkit-appearance: none;
-//       width: 550px;
-//       height: 20px;
-//   }
-  // }
+// Desktop presentation
+@media only screen and (min-width: 568px) {
+ .graphShow, .graphHide{
+    -webkit-appearance: none;
+    width: 550px;
+    height: 20px;
+  }
+}
+
