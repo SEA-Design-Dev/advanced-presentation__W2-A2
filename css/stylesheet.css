@@ -10,15 +10,6 @@ ul {
   list-style: none;
   padding: 0; }
 
-h2 {
-  font-size: 1.6em; }
-
-h3 {
-  font-size: 1.0em; }
-
-p {
-  font-size: 1em; }
-
 footer h1 {
   margin: .9px; }
 
@@ -89,6 +80,8 @@ footer h1 {
 .p-client-carousel-button {
   border-radius: 50%;
   background-color: #fc6432; }
+  .p-client-carousel-button:hover {
+    background-color: #7f331b; }
 
 .p-client-link {
   color: #fff; }
@@ -109,6 +102,7 @@ footer h1 {
   content: url("http://i.imgur.com/lRzimnO.png"); }
 
 .p-about {
+  padding-bottom: 10em;
   color: #fff;
   background-color: #000; }
 
@@ -142,6 +136,9 @@ footer h1 {
 body {
   box-sizing: border-box;
   margin-top: 0; }
+
+header {
+  margin-top: 3em; }
 
 .l-portfolio {
   padding-top: 2.5em;
@@ -198,6 +195,9 @@ body {
   position: absolute;
   top: 10px;
   left: 15px; }
+
+.l-client {
+  margin-bottom: 3em; }
 
 .p-services figcaption {
   margin: auto;
@@ -302,8 +302,6 @@ body {
     align-items: center;
     margin-left: 30%;
     margin-right: 30%; }
-  .l-home-spacer {
-    height: 12em; }
   .l-upper-columns {
     width: 30%;
     margin-left: 5%;
@@ -316,9 +314,9 @@ body {
     align-items: flex-start;
     margin-left: 5%;
     margin-right: 5%; }
-  .l-about-columns p {
-    margin-left: 2%;
-    margin-right: 2%; }
+    .l-about-columns p {
+      margin-left: 2%;
+      margin-right: 2%; }
   .l-title {
     display: flex;
     flex-direction: row;
@@ -580,17 +578,27 @@ progress[value] {
 .l-order-form input {
   border: 0;
   display: block;
-  width: 25%;
+  width: 75%;
+  margin: auto;
   height: 40px;
   margin-bottom: 5px; }
+  @media only screen and (min-width: 568px) {
+    .l-order-form input {
+      width: 25%;
+      margin-left: 2.5%; } }
 
 .l-order-button {
   position: relative;
   height: 3em;
-  width: 25%;
+  width: 75%;
+  margin: auto;
   background-color: #be4c27;
   padding-top: .75em;
   border: 2px solid #3a3a3a; }
+  @media only screen and (min-width: 568px) {
+    .l-order-button {
+      width: 25%;
+      margin-left: 2.5%; } }
 
 @font-face {
   font-family: 'avengers-icons';
