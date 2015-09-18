@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Avengers | Creative Design Agency</title>
-    <meta name="description" content="Avengers, a Creative Design Agency based out of San Fransisco California, speicalizing in Web Design, UI Design, Icon Design, Branding & Logotype">
+    <meta name="description" content="Avengers, a Creative Design Agency based out of San Fransisco California, speicalizing in Web Design, UI Design, Icon Design, Branding &amp; Logotype">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <input type="checkbox" id="mobileNavToggle" class="mobileNavToggle">
-    <header class="l-nav">
-      <nav class="mainNav">
-        <ul role="navigation">
+    <input type="checkbox" id="mobileNavToggle">
+    <header data-container="navigation">
+      <nav class="main-nav">
+        <ul role="menubar">
           <li role="menuitem" class="nav-link"><a href="#home">Home.</a></li>
           <li role="menuitem" class="nav-link"><a href="#services">Services.</a></li>
           <li role="menuitem" class="nav-link"><a href="#portfolio">Portfolio.</a></li>
@@ -25,7 +25,7 @@
     <main class="page-wrapper" id="home">
       <label for="mobileNavToggle" class="nav-toggle"></label>
       <label for="mobileNavToggle" class="trigger"></label>
-      <section class="hero-text-padding hero-image">
+      <section class="hero-image">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="82" height="82" viewBox="0 0 82 82">
           <defs>
             <style>
@@ -48,45 +48,44 @@
             <path d="M42.587,23.028 C42.625,23.044 56.680,36.919 56.680,48.673 C56.680,56.228 50.555,62.353 43.000,62.353 C39.242,62.353 35.839,60.838 33.366,58.385 C30.868,55.906 29.320,52.470 29.320,48.673 C29.320,36.919 42.639,23.051 42.587,23.028 Z" class="cls-2"/>
           </g>
         </svg>
-        <h1 class="f-light">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong><span class="underline">awesome</span></strong> mobile and websites</h1>
+        <h1 class="f-page-title">Hi there! We're Avengers, <strong>creative design agency</strong> we build <strong class="underline">awesome</strong> mobile and websites</h1>
       </section>
-      <article class="b-orange" id="services">
-        <h2 class="f-bold f-large">SERVICES</h2>
-        <section class="l-flex-container">
-          <p class="f-font-paragraph l-flex-item l-svcs-txt-a">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-          <p class="f-font-paragraph l-flex-item l-svcs-txt-b">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
-          <p class="f-font-paragraph l-flex-item l-svcs-txt-c">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+      <article data-collection="services" id="services">
+        <h2 class="f-article-heading">Services</h2>
+        <section data-flex-container="services-one" class="l-flex-container">
+          <p class="l-flex-item svcs-intro">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+          <p class="l-flex-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+          <p class="l-flex-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
         </section>
-        <section>
-          <div class="l-flex-container l-svcs-txt">
-            <div class="l-flex-item l-svcs">
-              <h3 class="f-bold l-flex-child">UI & UX DESIGN</h3>
-              <span class="icon-brush icon-big"></span>
-              <p class="l-flex-child-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
-            </div>
-            <div class="l-flex-item l-svcs">
-              <h3 class="f-bold l-flex-child">LABORATORY</h3>
-              <span class="icon-lab icon-big"></span>
-              <p class="l-flex-child-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
-            </div>
-            <div class="l-flex-item l-svcs">
-              <h3 class="f-bold l-flex-child">DEVELOPMENT</h3>
-              <span class="icon-cog icon-big"></span>
-              <p class="l-flex-child-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
-            </div>
+        <section data-flex-container="services-two" class="l-flex-container">
+          <div class="l-flex-item">
+            <h3 class="f-sub-heading">Ui &amp; Ux Design</h3>
+            <span class="icon-brush"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
+          </div>
+          <div class="l-flex-item">
+            <h3 class="f-sub-heading">Laboratory</h3>
+            <span class="icon-lab"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
+          </div>
+          <div class="l-flex-item">
+            <h3 class="f-sub-heading">Development</h3>
+            <span class="icon-cog"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected support by humour.</p>
           </div>
         </section>
         <section>
-          <h3 class="f-bold h3-lines">Pricing Tables</h3>
-          <div class="l-flex-container">
-            <table class="l-flex-item l-flex-prices">
+          <h3 class="f-sub-heading">Pricing Tables</h3>
+          <div data-flex-container="prices" class="l-flex-container">
+            <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">BASIC</th>
-                </tr></thead>
+                  <th>BASIC</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold f-client">$5.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$5.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>3 Projects</td>
@@ -103,18 +102,19 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td class="td-btn"><a href=""><button class="btn f-bold">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">STANDART</th>
-                </tr></thead>
+                  <th>STANDART</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold f-client">$10.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$10.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>7 Projects</td>
@@ -131,18 +131,19 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td class="td-btn"><a href=""><button class="btn f-bold">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">PROFESSIONAL</th>
-                </tr></thead>
+                  <th>PROFESSIONAL</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold f-client">$25.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$25.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>15 Projects</td>
@@ -159,18 +160,19 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td class="td-btn"><a href=""><button class="btn f-bold">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
-            <table class="l-flex-item l-flex-prices">
+            <table class="l-flex-item">
               <thead>
                 <tr>
-                  <th class="f-light th-title">PREMIUM</th>
-                </tr></thead>
+                  <th>PREMIUM</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <td class="f-bold f-client">$49.99<span class="f-price"> / Month</span></td>
+                  <td class="f-strong-highlight">$49.99<span class="f-price"> / Month</span></td>
                 </tr>
                 <tr>
                   <td>UNLIMITED Projects</td>
@@ -187,244 +189,226 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <td class="td-btn"><a href=""><button class="btn f-bold">SIGN UP</button></a></td>
+                  <td><a href="" class="btn-small">SIGN UP</a></td>
                 </tr>
               </tfoot>
             </table>
           </div>
         </section>
       </article>
-      <article class="b-white" id="portfolio">
-        <h2 class="f-bold f-large">PORTFOLIO</h2>
-        <img src="/img/Slider.png" alt="Crispers - Nice, crispy and creative landing page" class="l-slider slider-break">
-        <img src="/img/Slider_mini.png" alt="Crispers - Nice, crispy and creative landing page" class="l-slider slider">
-        <ul class="f-bold l-subnav">
-          <li class="s-portfolio-filter-links l-subnav-link">All Works</li>
-          <li class="s-portfolio-filter-links l-subnav-link">Webdesign</li>
-          <li class="s-portfolio-filter-links l-subnav-link">UI design</li>
-          <li class="s-portfolio-filter-links l-subnav-link">Icons design</li>
-          <li class="s-portfolio-filter-links l-subnav-link">Brand & Logotypes</li>
+      <article data-collection="portfolio" id="portfolio">
+        <h2 class="f-article-heading">Portfolio</h2>
+        <img src="/img/slider.png" alt="Crispers - Nice, crispy and creative landing page" class="slider-break">
+        <img src="/img/slider_mini.png" alt="Crispers - Nice, crispy and creative landing page" class="slider">
+        <ul>
+          <li class="subnav-link" data-show-tags="all">All Works</li>
+          <li class="subnav-link" data-show-tags="webdesign">Webdesign</li>
+          <li class="subnav-link" data-show-tags="uidesign">UI design</li>
+          <li class="subnav-link" data-show-tags="iconsdesign">Icons design</li>
+          <li class="subnav-link" data-show-tags="brandsandlogotypes">Brand &amp; Logotypes</li>
         </ul>
-        <div class="l-flex-container l-portfolio-flex">
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
+        <div data-flex-container="portfolio" class="l-flex-container">
+          <figure class="l-flex-item f-small-line-height" data-tags="brandsandlogotypes uidesign">
              <div class="item-wrapper">
                 <div class="s-portfolio-image">
                   <img src="/img/youTube_iphone_app.png" alt="YouTube Iphone App Example" class="s-portfolio-image">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
+                  <span class="portfolio-overlay-filter"> </span>
+                  <div class="portfolio-overlay-button"><a href="">+</a></div>
+                </div>
              </div>
-           </div>
             <figcaption>
-              <p><strong class="f-bold">Youtube iphone app</strong></p>
-              <p>UI design, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Youtube iphone app</strong></p>
+              <p class="portfolio-description">UI design, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                  <img src="/img/hexagon_one_page.png" alt="Web Design Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="webdesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/hexagon_one_page.png" alt="Web Design Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
            </div>
             <figcaption>
-              <p><strong class="f-bold">Hexagon onepage</strong></p>
-              <p>Webdesign, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Hexagon onepage</strong></p>
+              <p class="portfolio-description">Webdesign, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-            <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                  <img src="/img/sketches.png" alt="Sketches Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="brandsandlogotypes icondesign">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/sketches.png" alt="Sketches Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
+            </div>
+          <figcaption>
+            <p><strong class="portfolio-heading">Sketches icon</strong></p>
+            <p class="portfolio-description">Icons design, brand &amp; logotypes</p>
+          </figcaption>
+          </figure>
+          <figure class="l-flex-item f-small-line-height" data-tags="uidesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/logotypes.png" alt="Logotypes Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
            </div>
             <figcaption>
-              <p><strong class="f-bold">Sketches icon</strong></p>
-              <p>Icons design, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Logotypes volume</strong></p>
+              <p class="portfolio-description">UI design, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                  <img src="/img/logotypes.png" alt="Logotypes Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
-           </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="webdesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/flight_control.png" alt="Flight Control Brand Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
+            </div>
             <figcaption>
-              <p><strong class="f-bold">Logotypes volume</strong></p>
-              <p>UI design, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Flight control</strong></p>
+              <p class="portfolio-description">Webdesign, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                  <img src="/img/flight_control.png" alt="Flight Control Brand Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
-           </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="iconsdesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/youtube_app.png" alt="YouTube App Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
+            </div>
             <figcaption>
-              <p><strong class="f-bold">Flight control</strong></p>
-              <p>Webdesign, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Youtube app</strong></p>
+              <p class="portfolio-description">Icons design, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                  <img src="/img/youtube_app.png" alt="YouTube App Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
-           </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="uidesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/management.png" alt="Claim Management Web Design Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
+            </div>
             <figcaption>
-              <p><strong class="f-bold">Youtube app</strong></p>
-              <p>Icons design, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Management</strong></p>
+              <p class="portfolio-description">UI design, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                  <img src="/img/management.png" alt="Claim Management Web Design Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
-           </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="webdesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/korean.png" alt="Korean Restaurant Web Design Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
+            </div>
             <figcaption>
-              <p><strong class="f-bold">Management</strong></p>
-              <p>UI design, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Korean beef</strong></p>
+              <p class="portfolio-description">Webdesign, brand &amp; logotypes</p>
             </figcaption>
           </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                   <img src="/img/korean.png" alt="Korean Restaurant Web Design Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
-           </div>
+          <figure class="l-flex-item f-small-line-height" data-tags="iconsdesign brandsandlogotypes">
+            <div class="item-wrapper">
+              <div class="s-portfolio-image">
+                <img src="/img/facebook_thumbs.png" alt="Facebook Icon Design Example">
+                <span class="portfolio-overlay-filter"> </span>
+                <div class="portfolio-overlay-button"><a href="">+</a></div>
+              </div>
+            </div>
             <figcaption>
-              <p><strong class="f-bold">Korean beef</strong></p>
-              <p>Webdesign, brand & logotypes</p>
-            </figcaption>
-          </figure>
-          <figure class="l-flex-item f-small-line-height">
-            <div class="first-level-hover-wrapper">
-              <div class="item-wrapper">
-                <div class="s-portfolio-image">
-                   <img src="/img/facebook_thumbs.png" alt="Facebook Icon Design Example">
-                 <span class="portfolio-overlay-filter"> </span>
-                 <div class="portfolio-overlay-button"><a href="">+</a></div>
-               </div>
-             </div>
-           </div>
-            <figcaption>
-              <p><strong class="f-bold">Facebook thumbs</strong></p>
-              <p>Icons design, brand & logotypes</p>
+              <p><strong class="portfolio-heading">Facebook thumbs</strong></p>
+              <p class="portfolio-description">Icons design, brand &amp; logotypes</p>
             </figcaption>
           </figure>
         </div>
       </article>
-      <article class="b-black" id="about">
-        <h2 class="f-bold f-large">ABOUT</h2>
-        <section class="l-flex-container">
-          <p class="l-flex-item l-about-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
-          <p class="l-flex-item l-about-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+      <article data-container="about" id="about">
+        <h2 class="f-article-heading">About</h2>
+        <section data-flex-container="about" class="l-flex-container">
+          <p class="l-flex-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+          <p class="l-flex-item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+        </section>
+        <section data-container="progress">
+          <h3 class="f-sub-heading">Skills</h3>
+          <p class="s-progress-paragraph">PHOTOSHOP</p><progress max="100" value="80"></progress>
+          <p class="s-progress-paragraph">HTML/CSS</p><progress max="100" value="90"></progress>
+          <p class="s-progress-paragraph">ILLUSTRATOR</p><progress max="100" value="70"></progress>
+          <p class="s-progress-paragraph">PHP</p><progress max="100" value="60"></progress>
+          <p class="s-progress-paragraph">WORDPRESS</p><progress max="100" value="95"></progress>
         </section>
         <section>
-          <h3 class="f-bold h3-lines">SKILLS</h3>
-          <p class="s-progress-paragraph">PHOTOSHOP</p><progress min="0" max="100" value="80"></progress></p>
-          <p class="s-progress-paragraph">HTML/CSS</p><progress min="0" max="100" value="90"></progress></p>
-          <p class="s-progress-paragraph">ILLUSTRATOR</p><progress min="0" max="100" value="70"></progress></p>
-          <p class="s-progress-paragraph">PHP</p><progress min="0" max="100" value="60"></progress></p>
-          <p class="s-progress-paragraph">WORDPRESS</p><progress min="0" max="100" value="95"></progress></p>
-        </section>
-        <section>
-          <h4 class="f-light s-progress-question-text">Do you want be one of Avengers? Join us!</h4>
-          <a href=""><button class="btn contact-btn">CONTACT US</button></a>
+          <h4 class="f-light">Do you want be one of Avengers? Join us!</h4>
+          <a href="" class="btn-med">CONTACT US</a>
         </section>
       </article>
-      <article class="b-white b-black-white" id="team">
-        <h2 class="f-bold f-large">TEAM</h2>
+      <article data-collection="team" id="team">
+        <h2 class="f-article-heading">Team</h2>
         <section>
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
         </section>
         <section>
-          <ul class="l-flex-container">
-            <li class="l-flex-item l-team">
-              <p class="f-bold f-team"><strong>JONATHAN DOE</strong></p>
-              <p class="f-team-b">CEO, UI&UX designer</p>
+          <ul data-flex-container="team" class="l-flex-container">
+            <li class="l-flex-item">
+              <p class="f-team"><strong>JONATHAN DOE</strong></p>
+              <p class="f-team-b">CEO, UI&amp;UX designer</p>
               <figure>
-                <img src="/img/jonathan.png" alt="Jonathan Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jonathan.png" alt="Jonathan Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="l-flex-item l-team">
-              <p class="f-bold f-team"><strong>JANNETE DOE</strong></p>
-              <p class="f-team-b">Bussines & marketing</p>
+            <li class="l-flex-item">
+              <p class="f-team"><strong>JANNETE DOE</strong></p>
+              <p class="f-team-b">Bussines &amp; marketing</p>
               <figure>
-                <img src="/img/jannete.png" alt="Jannete Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jannete.png" alt="Jannete Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="l-flex-item l-team">
-              <p class="f-bold f-team"><strong>JANE ELLA DOE</strong></p>
+            <li class="l-flex-item">
+              <p class="f-team"><strong>JANE ELLA DOE</strong></p>
               <p class="f-team-b">UX specialist</p>
               <figure>
-                <img src="/img/jane.png" alt="Jane Ella Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jane.png" alt="Jane Ella Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="l-flex-item l-team">
-              <p class="f-bold f-team"><strong>JESSIE DOE</strong></p>
+            <li class="l-flex-item">
+              <p class="f-team"><strong>JESSIE DOE</strong></p>
               <p class="f-team-b">Bussines and legacy</p>
               <figure>
-                <img src="/img/jessie.png" alt="Jessie Doe Photo" class="l-flex-child l-child-m">
+                <img src="/img/jessie.png" alt="Jessie Doe Photo" class="l-flex-child l-team-img">
                 <figcaption>
-                  <a href="" class="icon-facebook2 icon-social"></a>
-                  <a href="" class="icon-twitter2 icon-social"></a>
-                  <a href="" class="icon-dribbble2 icon-social"></a>
-                  <a href="" class="icon-linkedin icon-social"></a>
-                  <a href="" class="icon-google-plus2 icon-social"></a>
+                  <a href="" class="icon-facebook"></a>
+                  <a href="" class="icon-twitter"></a>
+                  <a href="" class="icon-dribbble"></a>
+                  <a href="" class="icon-linkedin"></a>
+                  <a href="" class="icon-google-plus"></a>
                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard.</p>
                 </figcaption>
               </figure>
@@ -432,53 +416,56 @@
           </ul>
         </section>
         <section>
-          <h3 class="f-bold h3-lines">CLIENTS</h3>
-          <section class="l-client">
-            <figure class="l-client-item">
+          <h3 class="f-sub-heading">Clients</h3>
+          <section data-flex-container="client" class="l-flex-container">
+            <figure class="l-flex-item">
               <img src="/img/matthew.png" alt="Client Matthew Broderic Photo" class="l-client-img">
               <figcaption class="l-client-txt">
-                <p class="f-bold"><strong class="f-client">Matthew Broderic</strong> <span class="f-light">(CEO Hopicola Inc.)</span></p>
+                <p><strong class="f-strong-highlight">Matthew Broderic</strong> <span class="f-light">(CEO Hopicola Inc.)</span></p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard my text ever since the 1500s, when lorem upsum is the best text for you.</p>
               </figcaption>
             </figure>
-            <a href="" class="icon-circle-left s-icon-circle" role="button"></a>
-            <a href="" class="icon-circle-right s-icon-circle" role="button"></a>
+            <a href="" class="icon-arrowLeft" role="button"></a>
+            <a href="" class="icon-arrowRight" role="button"></a>
           </section>
         </section>
       </article>
-      <article class="b-orange" id="contact">
-        <h2 class="f-bold f-large">CONTACT</h2>
-        <section class="l-contact-txt">
+      <article data-collection="contact" data-flex-container="contact" id="contact">
+        <h2 class="f-article-heading">Contact</h2>
+        <section>
           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
         </section>
         <section class="l-flex-container">
-          <div class="l-flex-item l-flex-contact">
+          <div class="l-flex-item">
             <form>
               <input type="text" placeholder="Company name">
               <input type="email" placeholder="Your@email.com">
               <textarea class="s-form-message-field" placeholder="Message..."></textarea>
               <br>
-              <button type="submit" class="btn s-form-btn s-form-btn-desktop">SEND MESSAGE</button>
+              <button type="submit" class="btn-large">SEND MESSAGE</button>
             </form>
           </div>
-          <div class="l-flex-item l-flex-contact s-contact-info s-form-map-width">
+          <div class="l-flex-item l-contact-info">
             <ul>
-              <li><span class="icon-mobile"></span> +970 879 580 (7:00 - 20:00)</li>
-              <li><span class="icon-mail"></span> <a href="mailto:info@company.com">info@company.com</a></li>
-              <li><span class="icon-pin"></span> <a href="">USA, San Francisco, 57010, Little Parry St. 826/31</a></li>
+              <li class="f-contact-info"><span class="icon-mobile"></span><a href="tel:+970 879 580" class="f-contact-bold"> +970 879 580 </a>(7:00 - 20:00)</li>
+              <li class="f-contact-info"><span class="icon-mail"></span> <a href="mailto:info@company.com" class="f-contact-bold">info@company.com</a></li>
+              <li class="f-contact-info"><span class="icon-pin"></span> <a href="">USA, San Francisco, 57010, Little Parry St. 826/31</a></li>
             </ul>
             <div class="s-arrow"></div>
           </div>
         </section>
       </article>
-      <footer class="b-white l-footer">
-        <p>Theme by <a href="" class="s-theme-author">Pierre Borodin</a href=""> &copy; copyright 2012</p>
-        <a href="" class="icon-facebook2 icon-social"></a>
-        <a href="" class="icon-twitter2 icon-social"></a>
-        <a href="" class="icon-dribbble2 icon-social"></a>
-        <a href="" class="icon-linkedin icon-social"></a>
-        <a href="" class="icon-google-plus2 icon-social"></a>
+      <footer data-container="footer">
+        <p>Theme by <a href="" class="s-theme-author">Pierre Borodin</a> &copy; copyright 2012</p>
+        <a href="" class="icon-facebook"></a>
+        <a href="" class="icon-twitter"></a>
+        <a href="" class="icon-dribbble"></a>
+        <a href="" class="icon-linkedin"></a>
+        <a href="" class="icon-google-plus"></a>
       </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
+    <script src="js/app.js"></script>
   </body>
 </html>

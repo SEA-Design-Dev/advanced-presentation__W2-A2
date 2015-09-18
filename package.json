@@ -1,0 +1,23 @@
+{
+  "name": "avengers",
+  "version": "1.0.0",
+  "description": "Last week we focussed on HTML semantics and document architecture with slight emphasis on presentation. The project assignment for the second week is going to assume that you have learned and mastered the basics of semantic HTML and we are going to focus on advanced presentation skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdholt/FEDA-Week-2-James-Chris-Assignment-wip-.git"
+  },
+  "author": "James and Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisdholt/FEDA-Week-2-James-Chris-Assignment-wip-/issues"
+  },
+  "homepage": "https://github.com/chrisdholt/FEDA-Week-2-James-Chris-Assignment-wip-#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}

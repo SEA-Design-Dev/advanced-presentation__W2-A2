@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+article {
+  padding: 2em 1em;
+
+  @media only screen and (min-width: $break) {
+    padding: 2em 10%;
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  right: 0;
+}
+
+[data-collection="contact"] {
+  p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+footer {
+  margin-bottom: 5%;
+  margin-top: 2%;
+}

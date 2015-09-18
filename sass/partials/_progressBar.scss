@@ -1,0 +1,30 @@
+%progressBar {
+  width: 90%;
+  -webkit-appearance: none;
+  border:none;
+  appearance: none;
+  height: .75em;
+}
+
+[data-container="progress"] {
+  margin-bottom: 5%;
+  progress {
+    @extend %progressBar;
+    &::-webkit-progress-bar {
+      background-color: #3a3a3a;
+    }
+    &::-webkit-progress-value {
+      background-color: $primary-color;
+    }
+    &::-moz-progress-bar {
+      background-color: $primary-color;
+    }
+  }
+  .s-progress-paragraph {
+    text-align: left;
+    margin-left: 5%;
+    line-height: .1;
+    margin-bottom: .1em;
+    margin-top: 2em;
+  }
+}

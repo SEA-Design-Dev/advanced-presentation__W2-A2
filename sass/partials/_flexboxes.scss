@@ -1,0 +1,122 @@
+%flex-item {
+  text-align: center;
+  margin: auto;
+  max-width: 85%;
+  -webkit-flex-basis: 85%;
+  flex-basis: 85%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.l-flex-item {
+  @extend %flex-item;
+
+  [data-flex-container="prices"] & {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  [data-flex-container="contact"] & {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  [data-flex-container="client"] & {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  [data-flex-container="services-two"] & {
+    .f-sub-heading {
+      margin-bottom: 15%;
+    }
+
+    p {
+      margin-top: 15%;
+    }
+  }
+
+  [data-flex-container="team"] & {
+    .l-team-img {
+      max-width: 100%;
+      padding-bottom: 0%;
+      margin-bottom: 5%;
+    }
+  }
+
+  @media only screen and (min-width: $break) {
+
+    [data-flex-container="about"] & {
+      max-width: 40%;
+      -webkit-flex-basis: 40%;
+      flex-basis: 40%;
+      padding-bottom: 5%;
+    }
+
+    [data-flex-container="team"] & {
+      max-width: 25%;
+        .l-team-img {
+          margin-bottom: 10%;
+        }
+    }
+
+    [data-flex-container="services-one"] & {
+      max-width: 40%;
+      -webkit-flex-basis: 40%;
+      flex-basis: 40%;
+
+      &.svcs-intro {
+        max-width: 85%;
+        -webkit-flex-basis: 85%;
+        flex-basis: 85%;
+      }
+    }
+
+    [data-flex-container="services-two"] & {
+      max-width: 30%;
+      -webkit-flex-basis: 30%;
+      flex-basis: 85%;
+    }
+
+    [data-flex-container="prices"] & {
+      width: 20%;
+      -webkit-flex-basis: 20%;
+      margin: 1%;
+    }
+
+    [data-flex-container="client"] & {
+      -webkit-order: 2;
+      order: 2;
+
+      .l-client-img {
+        display: flex;
+        float: left;
+        clear: right;
+        margin: 5% auto;
+        padding: 2%;
+      }
+
+      .l-client-txt {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-flow: column;
+        text-align: left;
+        margin: 5% auto;
+        padding-left: 3%;
+      }
+    }
+
+    [data-flex-container="contact"] & {
+      text-align: right;
+      margin-left: .5em;
+      margin-right: .5em;
+      width: 45%;
+      margin-top: 0;
+    }
+  }
+}
