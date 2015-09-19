@@ -1,0 +1,16 @@
+.header-container {
+  @include flexbox($justify: center);
+  width: 100%;
+  h1, h2 {
+    margin: 0 1%;
+  }
+}
+
+.header-light {
+  white-space: nowrap;
+}
+
+.header-dark {
+  color: $secondary_font_color;
+  white-space: nowrap;
+}

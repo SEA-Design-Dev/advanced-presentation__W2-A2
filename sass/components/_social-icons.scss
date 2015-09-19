@@ -1,0 +1,43 @@
+%social-icon-style {
+  padding: 0.3em 0.4em;
+  font-size: 1.3em;
+  &:hover {
+    background-color: $theme_1_light;
+  }
+  @media screen and (min-width: 50em) {
+    font-size: 1em;
+  }
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.screen-reader-only {
+  display: none;
+}
+
+.icon-facebook {
+  @extend %social-icon-style;
+  background-color: $facebook_color;
+}
+
+.icon-twitter {
+  @extend %social-icon-style;
+  background-color: $twitter_color;
+}
+
+.icon-dribbble {
+  @extend %social-icon-style;
+  background-color: $dribbble_color;
+}
+
+.icon-linkedin2 {
+  @extend %social-icon-style;
+  background-color: $linkedin_color;
+}
+
+.icon-google-plus {
+  @extend %social-icon-style;
+  background-color: $google_plus_color;
+}

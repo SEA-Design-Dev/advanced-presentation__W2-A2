@@ -1,0 +1,84 @@
+.client-container {
+  @include flexbox($wrap: wrap, $justify: space-between);
+  .header-container {
+    margin-bottom: 2em;
+  }
+  .client-button {
+    margin: 0.5em;
+  }
+  @media screen and (min-width: 50em) {
+    .header-container {
+      margin-bottom: 4em;
+    }
+  }
+}
+
+.client-figure {
+  .client-image {
+    width: 5em;
+    margin: 0 auto;
+  }
+  .client-caption {
+    width: 60vw;
+    max-width: 67em;
+  }
+  @media screen and (min-width: 50em) {
+    @include flexbox;
+    .client-image {
+      margin-right: 2vw;
+    }
+    .client-caption {
+      text-align: left;
+    }
+  }
+}
+
+.client-image {
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.client-caption {
+  .client-header {
+    margin: 0.7em 0;
+  }
+  @media screen and (min-width: 50em) {
+    .client-header {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.client-header {
+  font-size: em($font_small);
+  text-transform: none;
+  color: $secondary_font_color;
+  .client-name {
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  @media screen and (min-width: 50em) {
+    .client-name {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.client-name {
+  color: $theme_1_light;
+}
+
+.client-text {
+  color: $theme_2;
+  font-size: em($font_smallest);
+}
+
+.client-button {
+  border-radius: 100%;
+  background-color: $theme_1_light;
+  font-size: 0.75em;
+  height: 2.75em;
+  padding: 0.9em 1.1em;
+}
