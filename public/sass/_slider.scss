@@ -1,0 +1,135 @@
+.clients {
+  padding-top: 1.5em;
+  @media screen and (min-width: 50em) {
+    clear: both;
+    text-align: left;
+  }
+  h2 {
+    position: relative;
+    font-size: 1.777em;
+    overflow: hidden;
+    @media screen and (min-width: 50em) {
+      font-size: 2.369em;
+      text-align: center;
+      color: $text-color-2;
+    }
+  }
+}
+.carousel-wrap {
+  border: 1px solid $accent-border-2;
+  border-radius: 1.5em;
+  @media screen and (min-width: 50em) {
+    border: none;
+  }
+}
+.img-carousel { 
+  padding-bottom: 1.5em;
+  position: relative; 
+  overflow: auto; 
+  max-width: 100%;
+  li { 
+    list-style-type: none;
+  }
+  ul li { 
+    float: left; 
+  }
+  ol {
+    text-align: center;
+    li {
+      &.dot {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin: 0 0.5em;
+        border-radius: 50%;
+        background-color: $med-dark-background;
+      } 
+      &.dot.active {
+        background-color: $theme-color;
+      }
+    }
+  }
+}
+.fig-carousel {
+  @extend .img-carousel;
+  width: 80%;
+  margin: 0 auto;
+  // border: 1px solid $accent-border-2;
+  // border-radius: 1em;
+  @media screen and (min-width: 50em) {
+    border: none;
+    p {
+      margin-top: 1em;
+      line-height: none;
+    }
+  }
+  h3 {
+    margin-top: 1em;
+    padding: 0;
+    color: $theme-color;
+    line-height: 1;
+    @media screen and (min-width: 50em) {
+      display: inline;
+      margin: 0 1em;
+    }
+  }
+  h4 {
+    padding: 0.5em 0;
+    color: $text-color-2;
+    line-height: 1;
+    @media screen and (min-width: 50em) {
+      padding: 0;
+      display: inline;
+      margin: 0 1em;
+    }
+  }
+  figure {
+    margin: 0 0.5em;
+    @media screen and (min-width: 50em) {
+      border: none;
+      border-radius: 0;
+      padding: 1.5em;
+    }
+  }
+  figcaption {
+    width: 100%;
+    @media screen and (min-width: 50em) {
+      float: left;
+      margin-left: 1em;
+      margin-right: 1em;
+      width: calc(90% - 82px); /*82px is the img dimension*/
+    }
+  }
+  & .client {
+    @media screen and (min-width: 50em) {
+      float: left;
+      margin-left: 1em;
+    }
+  }
+}
+%slider-button {
+  margin: 1em;
+  @media screen and (min-width: 50em) {
+    margin-top: 3em;
+  }
+}
+.prev {
+  @extend %slider-button;
+  float: left;
+}
+.next {
+  @extend %slider-button;
+  float: right;
+}
+.icon-go-right:before, .icon-go-left:before  {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 1.777em;
+  font-weight: 600;
+  color: $text-color-3;
+  @media screen and (min-width: 50em) {
+    font-size: 2.369em;
+    color: $theme-color;
+  }
+}
+
